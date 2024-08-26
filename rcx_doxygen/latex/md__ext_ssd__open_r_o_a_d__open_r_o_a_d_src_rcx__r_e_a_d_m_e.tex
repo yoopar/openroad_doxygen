@@ -1,0 +1,303 @@
+The parasitics extraction module in Open\+R\+O\+AD ({\ttfamily rcx}) is based on the open-\/source Open\+R\+CX, a Parasitic Extraction (P\+EX, or R\+CX) tool that works on Open\+DB design A\+P\+Is. It extracts routed designs based on the L\+E\+F/\+D\+EF layout model.
+
+Open\+R\+CX extracts both Resistance and Capacitance for wires, based on coupling distance to the nearest wire and the track density context over and/or under the wire of interest, as well as cell abstracts. The capacitance and resistance measurements are based on equations of coupling distance interpolated on exact measurements from a calibration file, called the Extraction Rules file. The Extraction Rules file (RC technology file) is generated once for every process node and corner, using a provided utility for D\+EF wire pattern generation and regression modeling.
+
+Open\+R\+CX stores resistance, coupling capacitance and ground (i.\+e., grounded) capacitance on Open\+DB objects with direct pointers to the associated wire and via db objects. Optionally, Open\+R\+CX can generate a {\ttfamily .spef} file.\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md4}{}\doxysection{Commands}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-\/ Parameters in square brackets `[-\/param param]` are optional.}
+\DoxyCodeLine{-\/ Parameters without square brackets `-\/param2 param2` are required.}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{Define Process Corner}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md5}
+This command defines proccess corner.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \mbox{\hyperlink{_open_r_c_x_8tcl_a4b0a41e54f5b17ac7860a6ebb719dd31}{define\_process\_corner}}\textcolor{comment}{ }}
+\DoxyCodeLine{2 \textcolor{comment}{}    [-\/ext\_model\_index index\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{3 \textcolor{comment}{}    filename\textcolor{comment}{}}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md6}{}\doxysubsubsection{Options}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md6}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily -\/ext\+\_\+model\+\_\+index} &Extraction model index. Expects 2 inputs (an index, and corner name).  \\\cline{1-2}
+{\ttfamily filename} &Path to process corner file {\ttfamily rcx\+\_\+patterns.\+rules}.  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{Extract Parasitics}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md7}
+The {\ttfamily extract\+\_\+parasitics} command performs parasitic extraction based on the routed design. If there are no information on routed design, no parasitics are returned.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \mbox{\hyperlink{_open_r_c_x_8tcl_a4be6feb9e339be501152980ba466fbd9}{extract\_parasitics}}\textcolor{comment}{}}
+\DoxyCodeLine{2 \textcolor{comment}{}    [-\/ext\_model\_file filename\textcolor{comment}{}]\textcolor{comment}{      }}
+\DoxyCodeLine{3 \textcolor{comment}{}    [-\/corner\_cnt count\textcolor{comment}{}]\textcolor{comment}{            }}
+\DoxyCodeLine{4 \textcolor{comment}{}    [-\/max\_res ohms\textcolor{comment}{}]\textcolor{comment}{               }}
+\DoxyCodeLine{5 \textcolor{comment}{}    [-\/coupling\_threshold fF\textcolor{comment}{}]\textcolor{comment}{        }}
+\DoxyCodeLine{6 \textcolor{comment}{}    [-\/debug\_net\_id id\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{7 \textcolor{comment}{}    [-\/lef\_res\textcolor{comment}{}]\textcolor{comment}{                     }}
+\DoxyCodeLine{8 \textcolor{comment}{}    [-\/cc\_model track\textcolor{comment}{}]\textcolor{comment}{             }}
+\DoxyCodeLine{9 \textcolor{comment}{}    [-\/context\_depth depth\textcolor{comment}{}]\textcolor{comment}{      }}
+\DoxyCodeLine{10 \textcolor{comment}{}    [-\/no\_merge\_via\_res\textcolor{comment}{}]\textcolor{comment}{       }}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsection{Options}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md8}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily -\/ext\+\_\+model\+\_\+file} &Specify the Extraction Rules file used for the extraction.  \\\cline{1-2}
+{\ttfamily -\/corner\+\_\+cnt} &Defines the number of corners used during the parasitic extraction.  \\\cline{1-2}
+{\ttfamily -\/max\+\_\+res} &Combines resistors in series up to the threshold value.  \\\cline{1-2}
+{\ttfamily -\/coupling\+\_\+threshold} &Coupling below this threshold is grounded. The default value is {\ttfamily 0.\+1}, units are in {\ttfamily fF}, accepted values are floats.  \\\cline{1-2}
+{\ttfamily -\/debug\+\_\+net\+\_\+id} &{\itshape Developer Option}\+: Net ID to evaluate.  \\\cline{1-2}
+{\ttfamily -\/lef\+\_\+res} &Override L\+EF resistance per unit.  \\\cline{1-2}
+{\ttfamily -\/cc\+\_\+model} &Specify the maximum number of tracks of lateral context that the tool considers on the same routing level. The default value is {\ttfamily 10}, and the allowed values are integers {\ttfamily \mbox{[}0, M\+A\+X\+\_\+\+I\+NT\mbox{]}}.  \\\cline{1-2}
+{\ttfamily -\/context\+\_\+depth} &Specify the number of levels of vertical context that Open\+R\+CX needs to consider for the over/under context overlap for capacitance calculation. The default value is {\ttfamily 5}, and the allowed values are integers {\ttfamily \mbox{[}0, M\+A\+X\+\_\+\+I\+NT\mbox{]}}.  \\\cline{1-2}
+{\ttfamily -\/no\+\_\+merge\+\_\+via\+\_\+res} &Separates the via resistance from the wire resistance.  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{Write S\+P\+EF}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md9}
+The {\ttfamily write\+\_\+spef} command writes the {\ttfamily .spef} output of the parasitics stored in the database.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \mbox{\hyperlink{_open_r_c_x_8tcl_adb0e9c3a3cfeb0aa827248801db0e03e}{write\_spef}}\textcolor{comment}{}}
+\DoxyCodeLine{2 \textcolor{comment}{}    [-\/net\_id net\_id\textcolor{comment}{}]\textcolor{comment}{                }}
+\DoxyCodeLine{3 \textcolor{comment}{}    [-\/nets nets\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{4 \textcolor{comment}{}    [-\/coordinates\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{5 \textcolor{comment}{}    filename\textcolor{comment}{                     }}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md10}{}\doxysubsubsection{Options}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md10}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily -\/net\+\_\+id} &Output the parasitics info for specific net I\+Ds.  \\\cline{1-2}
+{\ttfamily -\/nets} &Net name.  \\\cline{1-2}
+{\ttfamily coordinates} &Coordinates T\+BC.  \\\cline{1-2}
+{\ttfamily filename} &Output filename.  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md11}{}\doxysubsection{Scale RC}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md11}
+Use the {\ttfamily adjust\+\_\+rc} command to scale the resistance, ground, and coupling capacitance.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \mbox{\hyperlink{_open_r_c_x_8tcl_a011abb96ef4887b3bfa9d27818fab065}{adjust\_rc}}\textcolor{comment}{}}
+\DoxyCodeLine{2 \textcolor{comment}{}    [-\/res\_factor res\textcolor{comment}{}]\textcolor{comment}{               }}
+\DoxyCodeLine{3 \textcolor{comment}{}    [-\/cc\_factor cc\textcolor{comment}{}]\textcolor{comment}{                }}
+\DoxyCodeLine{4 \textcolor{comment}{}    [-\/gndc\_factor gndc\textcolor{comment}{}]\textcolor{comment}{          }}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md12}{}\doxysubsubsection{Options}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md12}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily -\/res\+\_\+factor} &Scale factor for resistance.  \\\cline{1-2}
+{\ttfamily -\/cc\+\_\+factor} &Scale factor for coupling capacitance.  \\\cline{1-2}
+{\ttfamily -\/gndc\+\_\+factor} &Scale factor for ground capacitance.  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md13}{}\doxysubsection{Comparing different S\+P\+E\+F files}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md13}
+The {\ttfamily diff\+\_\+spef} command compares the parasitics in the reference database {\ttfamily $<$filename$>$.spef}. The output of this command is {\ttfamily diff\+\_\+spef.\+out} and contains the RC numbers from the parasitics in the database and the {\ttfamily $<$filename$>$.spef}, and the percentage RC difference of the two data.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \mbox{\hyperlink{_open_r_c_x_8tcl_a649e13f0b57b5f07cfe3e535cea5804d}{diff\_spef}}\textcolor{comment}{}}
+\DoxyCodeLine{2 \textcolor{comment}{}    [-\/file filename\textcolor{comment}{}]\textcolor{comment}{                }}
+\DoxyCodeLine{3 \textcolor{comment}{}    [-\/r\_res\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{4 \textcolor{comment}{}    [-\/r\_cap\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{5 \textcolor{comment}{}    [-\/r\_cc\_cap\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{6 \textcolor{comment}{}    [-\/r\_conn\textcolor{comment}{}]\textcolor{comment}{}}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md14}{}\doxysubsubsection{Options}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md14}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily -\/file} &Path to the input {\ttfamily .spef} filename.  \\\cline{1-2}
+{\ttfamily -\/r\+\_\+res} &Read resistance.  \\\cline{1-2}
+{\ttfamily -\/r\+\_\+cap} &Read capacitance.  \\\cline{1-2}
+{\ttfamily -\/r\+\_\+cc\+\_\+cap} &Read coupled capacitance.  \\\cline{1-2}
+{\ttfamily r\+\_\+conn} &Read connections.  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md15}{}\doxysubsection{Extraction Rules File Generation}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md15}
+The {\ttfamily bench\+\_\+wires} command produces a layout which contains various patterns that are used to characterize per-\/unit length R and C values. The generated patterns model the lateral, vertical, and diagonal coupling capacitances, as well as ground capacitance effects. This command generates a .def file that contains a number of wire patterns.
+
+This command is specifically intended for the Extraction Rules file generation only.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \mbox{\hyperlink{_open_r_c_x_8tcl_af975115941550221a7a4de26d1c78521}{bench\_wires}}\textcolor{comment}{}}
+\DoxyCodeLine{2 \textcolor{comment}{}    [-\/met\_cnt mcnt\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{3 \textcolor{comment}{}    [-\/cnt count\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{4 \textcolor{comment}{}    [-\/len wire\_len\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{5 \textcolor{comment}{}    [-\/over\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{6 \textcolor{comment}{}    [-\/diag\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{7 \textcolor{comment}{}    [-\/all\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{8 \textcolor{comment}{}    [-\/db\_only\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{9 \textcolor{comment}{}    [-\/under\_met layer\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{10 \textcolor{comment}{}    [-\/w\_list width\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{11 \textcolor{comment}{}    [-\/s\_list space\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{12 \textcolor{comment}{}    [-\/over\_dist dist\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{13 \textcolor{comment}{}    [-\/under\_dist dist\textcolor{comment}{}]\textcolor{comment}{}}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md16}{}\doxysubsubsection{Options}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md16}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily -\/met\+\_\+cnt} &Number of layers used in each pattern. The default value is {\ttfamily -\/1}, meaning it is not set, and the allowed values are integers {\ttfamily \mbox{[}0, M\+A\+X\+\_\+\+I\+NT\mbox{]}}.  \\\cline{1-2}
+{\ttfamily -\/cnt} &Number of wires in each pattern. The default value is {\ttfamily 5}, and the default values are integers {\ttfamily \mbox{[}0, M\+A\+X\+\_\+\+I\+NT\mbox{]}}.  \\\cline{1-2}
+{\ttfamily -\/len} &Wirelength in microns in the pattern. The default value is {\ttfamily 100}, and the allowed values are integers {\ttfamily \mbox{[}0, M\+A\+X\+\_\+\+I\+NT\mbox{]}}.  \\\cline{1-2}
+{\ttfamily -\/all} &Consider all different pattern geometries ({\ttfamily over}, {\ttfamily under}, {\ttfamily over\+\_\+under}, and {\ttfamily diagonal}).  \\\cline{1-2}
+{\ttfamily -\/db\+\_\+only} &Run with db values only. All parameters in {\ttfamily bench\+\_\+wires} are ignored.  \\\cline{1-2}
+{\ttfamily -\/under\+\_\+met} &Consider under metal layer.  \\\cline{1-2}
+{\ttfamily -\/w\+\_\+list} &Lists of wire width multipliers from the minimum spacing defined in the L\+EF.  \\\cline{1-2}
+{\ttfamily -\/s\+\_\+list} &Lists of wire spacing multipliers from the minimum spacing defined in the L\+EF. The list will be the input index on the Open\+R\+CX RC table (Extraction Rules file).  \\\cline{1-2}
+{\ttfamily -\/over\+\_\+dist}, {\ttfamily -\/under\+\_\+dist} &Consider over and under metal distance respectively.  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md17}{}\doxysubsection{Generate verilog netlist}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md17}
+{\ttfamily bench\+\_\+verilog} is used after the {\ttfamily bench\+\_\+wires} command. This command generates a Verilog netlist of the generated pattern layout by the {\ttfamily bench\+\_\+wires} command.
+
+This command is optional when running the Extraction Rules generation flow. This step is required if the favorite extraction tool (i.\+e., reference extractor) requires a Verilog netlist to extract parasitics of the pattern layout.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \mbox{\hyperlink{_open_r_c_x_8tcl_aa6049b68b55a99199ba36264e910bb08}{bench\_verilog}}\textcolor{comment}{}}
+\DoxyCodeLine{2 \textcolor{comment}{}    [filename\textcolor{comment}{}]\textcolor{comment}{                    }}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md18}{}\doxysubsubsection{Options}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md18}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily filename} &Name for the Verilog output file (e.\+g., {\ttfamily output.\+v}).  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md19}{}\doxysubsection{Read S\+P\+EF}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md19}
+The {\ttfamily bench\+\_\+read\+\_\+spef} command reads a {\ttfamily $<$filename$>$.spef} file and stores the parasitics into the database.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \mbox{\hyperlink{_open_r_c_x_8tcl_ac16718b9c91441314a4c177daf7e2136}{bench\_read\_spef}}\textcolor{comment}{}}
+\DoxyCodeLine{2 \textcolor{comment}{}    [filename\textcolor{comment}{}]\textcolor{comment}{                   }}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md20}{}\doxysubsubsection{Options}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md20}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily filename} &Path to the input {\ttfamily .spef} file.  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md21}{}\doxysubsection{Write Rule File}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md21}
+The {\ttfamily write\+\_\+rules} command writes the Extraction Rules file (RC technology file) for Open\+R\+CX. It processes the parasitics data from the layout patterns that are generated using the {\ttfamily bench\+\_\+wires} command, and writes the Extraction Rules file with {\ttfamily $<$filename$>$} as the output file.
+
+This command is specifically intended for the purpose of Extraction Rules file generation.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \mbox{\hyperlink{_open_r_c_x_8tcl_a25fa4108e43707bef2c6dc8eef4e96f8}{write\_rules}}\textcolor{comment}{}}
+\DoxyCodeLine{2 \textcolor{comment}{}  [-\/file filename\textcolor{comment}{}]\textcolor{comment}{           }}
+\DoxyCodeLine{3 \textcolor{comment}{}  [-\/dir dir\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{4 \textcolor{comment}{}  [-\/name name\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{5 \textcolor{comment}{}  [-\/pattern pattern\textcolor{comment}{}]\textcolor{comment}{}}
+\DoxyCodeLine{6 \textcolor{comment}{}  [-\/db\textcolor{comment}{}]\textcolor{comment}{}}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md22}{}\doxysubsubsection{Options}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md22}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Switch Name }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+{\ttfamily -\/file} &Output file name.  \\\cline{1-2}
+{\ttfamily -\/dir} &Output file directory.  \\\cline{1-2}
+{\ttfamily -\/name} &Name of rule.  \\\cline{1-2}
+{\ttfamily -\/pattern} &Flag to write the pattern to rulefile (0/1).  \\\cline{1-2}
+{\ttfamily -\/db} &DB tbc.  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md23}{}\doxysection{Example scripts}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md23}
+Example scripts demonstrating how to run Open\+R\+CX in the Open\+R\+O\+AD environment on sample designs can be found in /test. An example flow test taking a sample design from synthesizable R\+TL Verilog to final-\/routed layout in an open-\/source S\+K\+Y130 technology is shown below.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./test/gcd.tcl}
+\end{DoxyCode}
+
+
+Example scripts demonstrating how to run the Extraction Rules file generation can be found in this \href{https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/src/rcx/calibration/script}{\texttt{ directory}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./calibration/script/generate\_patterns.tcl     \# generate patterns}
+\DoxyCodeLine{./calibration/script/generate\_rules.tcl        \# generate the Extraction Rules file}
+\DoxyCodeLine{./calibration/script/ext\_patterns.tcl          \# check the accuracy of OpenRCX}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md24}{}\doxysection{Regression tests}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md24}
+There are a set of regression tests in {\ttfamily /test}. For more information, refer to this \href{../../README.md\#regression-tests}{\texttt{ section}}.
+
+Simply run the following script\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./test/regression}
+\end{DoxyCode}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md25}{}\doxysection{Extraction Rules File Generation}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md25}
+This flow generates an Extraction Rules file (RC tech file, or RC table) for Open\+R\+CX. This file provides resistance and capacitance tables used for RC extraction for a specific process corner.
+
+The Extraction Rules file (RC technology file) is generated once for every process node and corner automatically.
+
+The detailed documentation can be found \mbox{\hyperlink{calibration_8md}{here}}.\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md26}{}\doxysection{Limitations}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md26}
+\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md27}{}\doxysection{F\+A\+Qs}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md27}
+Check out \href{https://github.com/The-OpenROAD-Project/OpenROAD/discussions/categories/q-a?discussions_q=category\%3AQ\%26A+rcx}{\texttt{ Git\+Hub discussion}} about this tool.\hypertarget{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md28}{}\doxysection{License}\label{md__ext_ssd__open_r_o_a_d__open_r_o_a_d_src_rcx__r_e_a_d_m_e_autotoc_md28}
+B\+SD 3-\/Clause License. See \href{../../LICENSE}{\texttt{ L\+I\+C\+E\+N\+SE}} file. 

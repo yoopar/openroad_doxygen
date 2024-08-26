@@ -1,0 +1,160 @@
+\hypertarget{classrcx_1_1gs}{}\doxysection{rcx\+::gs Class Reference}
+\label{classrcx_1_1gs}\index{rcx::gs@{rcx::gs}}
+
+
+{\ttfamily \#include $<$gseq.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrcx_1_1gs_abf48a1c7e914ccd520a0019e8a3475fe}{gs}} (odb\+::\+Ath\+Pool$<$ \mbox{\hyperlink{structrcx_1_1_s_e_q}{S\+EQ}} $>$ $\ast$seq\+Pool)
+\item 
+\mbox{\hyperlink{classrcx_1_1gs_a4f07ba119019ca05b5c5a0652b46edd9}{$\sim$gs}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1gs_a32216cb622ad95689cb9c68549fec39c}{configure\+Slice}} (int slicenum, int xres, int yres, int x0, int y0, int x1, int y1)
+\item 
+int \mbox{\hyperlink{classrcx_1_1gs_a9152199be08cc602d9070f81de180827}{box}} (int x0, int y0, int x1, int y1, int slice)
+\item 
+int \mbox{\hyperlink{classrcx_1_1gs_af267b28622335fe3e6d30dd1835764f1}{set\+\_\+slices}} (int nslices)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1gs_ae96b914faa67b73c6e62d07b7b769dd2}{get\+\_\+seq}} (int $\ast$ll, int $\ast$ur, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} order, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} plane, odb\+::\+Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{structrcx_1_1_s_e_q}{S\+EQ}} $\ast$ $>$ $\ast$array)
+\item 
+void \mbox{\hyperlink{classrcx_1_1gs_a82ba6a8275cfdb89ef20569c13db5b60}{release}} (\mbox{\hyperlink{structrcx_1_1_s_e_q}{S\+EQ}} $\ast$s)
+\item 
+int \mbox{\hyperlink{classrcx_1_1gs_a4c634ed9361d64ccb87e06f97151c64f}{intersect\+\_\+rows}} (int row1, int row2, int store)
+\item 
+int \mbox{\hyperlink{classrcx_1_1gs_adb2a3a415a372e1f73e235eef3590e41}{union\+\_\+rows}} (int row1, int row2, int store)
+\item 
+int \mbox{\hyperlink{classrcx_1_1gs_a3787de82580d08ffcc224efa9be0f06c}{xor\+\_\+rows}} (int row1, int row2, int store)
+\item 
+\mbox{\hyperlink{structrcx_1_1_s_e_q}{S\+EQ}} $\ast$ \mbox{\hyperlink{classrcx_1_1gs_afbb7f26309fa3e97bd8034c90af2eb86}{salloc}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 47 of file gseq.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrcx_1_1gs_abf48a1c7e914ccd520a0019e8a3475fe}\label{classrcx_1_1gs_abf48a1c7e914ccd520a0019e8a3475fe}} 
+\index{rcx::gs@{rcx::gs}!gs@{gs}}
+\index{gs@{gs}!rcx::gs@{rcx::gs}}
+\doxysubsubsection{\texorpdfstring{gs()}{gs()}}
+{\footnotesize\ttfamily rcx\+::gs\+::gs (\begin{DoxyParamCaption}\item[{odb\+::\+Ath\+Pool$<$ \mbox{\hyperlink{structrcx_1_1_s_e_q}{S\+EQ}} $>$ $\ast$}]{seq\+Pool }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file gs.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1gs_a4f07ba119019ca05b5c5a0652b46edd9}\label{classrcx_1_1gs_a4f07ba119019ca05b5c5a0652b46edd9}} 
+\index{rcx::gs@{rcx::gs}!````~gs@{$\sim$gs}}
+\index{````~gs@{$\sim$gs}!rcx::gs@{rcx::gs}}
+\doxysubsubsection{\texorpdfstring{$\sim$gs()}{~gs()}}
+{\footnotesize\ttfamily rcx\+::gs\+::$\sim$gs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 89 of file gs.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1gs_a9152199be08cc602d9070f81de180827}\label{classrcx_1_1gs_a9152199be08cc602d9070f81de180827}} 
+\index{rcx::gs@{rcx::gs}!box@{box}}
+\index{box@{box}!rcx::gs@{rcx::gs}}
+\doxysubsubsection{\texorpdfstring{box()}{box()}}
+{\footnotesize\ttfamily int rcx\+::gs\+::box (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{slice }\end{DoxyParamCaption})}
+
+
+
+Definition at line 214 of file gs.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1gs_a32216cb622ad95689cb9c68549fec39c}\label{classrcx_1_1gs_a32216cb622ad95689cb9c68549fec39c}} 
+\index{rcx::gs@{rcx::gs}!configureSlice@{configureSlice}}
+\index{configureSlice@{configureSlice}!rcx::gs@{rcx::gs}}
+\doxysubsubsection{\texorpdfstring{configureSlice()}{configureSlice()}}
+{\footnotesize\ttfamily void rcx\+::gs\+::configure\+Slice (\begin{DoxyParamCaption}\item[{int}]{slicenum,  }\item[{int}]{xres,  }\item[{int}]{yres,  }\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{int}]{x1,  }\item[{int}]{y1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 196 of file gs.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1gs_ae96b914faa67b73c6e62d07b7b769dd2}\label{classrcx_1_1gs_ae96b914faa67b73c6e62d07b7b769dd2}} 
+\index{rcx::gs@{rcx::gs}!get\_seq@{get\_seq}}
+\index{get\_seq@{get\_seq}!rcx::gs@{rcx::gs}}
+\doxysubsubsection{\texorpdfstring{get\_seq()}{get\_seq()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::gs\+::get\+\_\+seq (\begin{DoxyParamCaption}\item[{int $\ast$}]{ll,  }\item[{int $\ast$}]{ur,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{order,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{plane,  }\item[{odb\+::\+Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{structrcx_1_1_s_e_q}{S\+EQ}} $\ast$ $>$ $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+Definition at line 395 of file gs.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1gs_a4c634ed9361d64ccb87e06f97151c64f}\label{classrcx_1_1gs_a4c634ed9361d64ccb87e06f97151c64f}} 
+\index{rcx::gs@{rcx::gs}!intersect\_rows@{intersect\_rows}}
+\index{intersect\_rows@{intersect\_rows}!rcx::gs@{rcx::gs}}
+\doxysubsubsection{\texorpdfstring{intersect\_rows()}{intersect\_rows()}}
+{\footnotesize\ttfamily int rcx\+::gs\+::intersect\+\_\+rows (\begin{DoxyParamCaption}\item[{int}]{row1,  }\item[{int}]{row2,  }\item[{int}]{store }\end{DoxyParamCaption})}
+
+
+
+Definition at line 337 of file gs.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1gs_a82ba6a8275cfdb89ef20569c13db5b60}\label{classrcx_1_1gs_a82ba6a8275cfdb89ef20569c13db5b60}} 
+\index{rcx::gs@{rcx::gs}!release@{release}}
+\index{release@{release}!rcx::gs@{rcx::gs}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void rcx\+::gs\+::release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrcx_1_1_s_e_q}{S\+EQ}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 380 of file gs.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1gs_afbb7f26309fa3e97bd8034c90af2eb86}\label{classrcx_1_1gs_afbb7f26309fa3e97bd8034c90af2eb86}} 
+\index{rcx::gs@{rcx::gs}!salloc@{salloc}}
+\index{salloc@{salloc}!rcx::gs@{rcx::gs}}
+\doxysubsubsection{\texorpdfstring{salloc()}{salloc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrcx_1_1_s_e_q}{S\+EQ}} $\ast$ rcx\+::gs\+::salloc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 374 of file gs.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1gs_af267b28622335fe3e6d30dd1835764f1}\label{classrcx_1_1gs_af267b28622335fe3e6d30dd1835764f1}} 
+\index{rcx::gs@{rcx::gs}!set\_slices@{set\_slices}}
+\index{set\_slices@{set\_slices}!rcx::gs@{rcx::gs}}
+\doxysubsubsection{\texorpdfstring{set\_slices()}{set\_slices()}}
+{\footnotesize\ttfamily int rcx\+::gs\+::set\+\_\+slices (\begin{DoxyParamCaption}\item[{int}]{nslices }\end{DoxyParamCaption})}
+
+
+
+Definition at line 126 of file gs.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1gs_adb2a3a415a372e1f73e235eef3590e41}\label{classrcx_1_1gs_adb2a3a415a372e1f73e235eef3590e41}} 
+\index{rcx::gs@{rcx::gs}!union\_rows@{union\_rows}}
+\index{union\_rows@{union\_rows}!rcx::gs@{rcx::gs}}
+\doxysubsubsection{\texorpdfstring{union\_rows()}{union\_rows()}}
+{\footnotesize\ttfamily int rcx\+::gs\+::union\+\_\+rows (\begin{DoxyParamCaption}\item[{int}]{row1,  }\item[{int}]{row2,  }\item[{int}]{store }\end{DoxyParamCaption})}
+
+
+
+Definition at line 320 of file gs.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1gs_a3787de82580d08ffcc224efa9be0f06c}\label{classrcx_1_1gs_a3787de82580d08ffcc224efa9be0f06c}} 
+\index{rcx::gs@{rcx::gs}!xor\_rows@{xor\_rows}}
+\index{xor\_rows@{xor\_rows}!rcx::gs@{rcx::gs}}
+\doxysubsubsection{\texorpdfstring{xor\_rows()}{xor\_rows()}}
+{\footnotesize\ttfamily int rcx\+::gs\+::xor\+\_\+rows (\begin{DoxyParamCaption}\item[{int}]{row1,  }\item[{int}]{row2,  }\item[{int}]{store }\end{DoxyParamCaption})}
+
+
+
+Definition at line 356 of file gs.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/include/rcx/\mbox{\hyperlink{gseq_8h}{gseq.\+h}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{gs_8cpp}{gs.\+cpp}}\end{DoxyCompactItemize}

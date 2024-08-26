@@ -1,0 +1,160 @@
+\hypertarget{classrcx_1_1db_create_net_util}{}\doxysection{rcx\+::db\+Create\+Net\+Util Class Reference}
+\label{classrcx_1_1db_create_net_util}\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+
+
+{\ttfamily \#include $<$db\+Util.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrcx_1_1db_create_net_util_afc4ff54d8754f9f16eca0225c403b59f}{db\+Create\+Net\+Util}} (utl\+::\+Logger $\ast$logger)
+\item 
+\mbox{\hyperlink{classrcx_1_1db_create_net_util_a7562f7437f3253dfbd8e407673828056}{$\sim$db\+Create\+Net\+Util}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1db_create_net_util_a00793c4965d33ef76050503946939719}{set\+Block}} (db\+Block $\ast$block, bool skip\+Init=false)
+\item 
+db\+Block $\ast$ \mbox{\hyperlink{classrcx_1_1db_create_net_util_aea37fc84e1d109cdd78c152dec2d7ab5}{get\+Block}} () const
+\item 
+db\+Net $\ast$ \mbox{\hyperlink{classrcx_1_1db_create_net_util_a77086b893ab16757f9898e7c39a31724}{create\+Net\+Single\+Wire}} (const char $\ast$name, int x1, int y1, int x2, int y2, int rlevel, bool skip\+Bterms=false, bool skip\+Net\+Exists=false, uint8\+\_\+t color=0)
+\item 
+db\+Net $\ast$ \mbox{\hyperlink{classrcx_1_1db_create_net_util_a6fc19a4d49150660ba9b67836323f1b5}{create\+Net\+Single\+Wire}} (const char $\ast$name, int x1, int y1, int x2, int y2, int rlevel, db\+Tech\+Layer\+Dir dir, bool skip\+Bterms=false)
+\item 
+db\+Net $\ast$ \mbox{\hyperlink{classrcx_1_1db_create_net_util_aeb1ad9743b47c91821e6b1fa0fc1bcd2}{create\+Net\+Single\+Wire}} (Rect \&r, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{messages_8txt_a7428096d8378071bf7d71aef6f84ca77}{level}}, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} net\+Id, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} shape\+Id)
+\item 
+db\+S\+Box $\ast$ \mbox{\hyperlink{classrcx_1_1db_create_net_util_a795b91e888dae3ddbcd5fd864292fcd8}{create\+Special\+Wire}} (db\+Net $\ast$main\+Net, Rect \&r, db\+Tech\+Layer $\ast$\mbox{\hyperlink{messages_8txt_a19d0e06b116c74af1daa9ee21a2699e2}{layer}}, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} sbox\+Id)
+\item 
+void \mbox{\hyperlink{classrcx_1_1db_create_net_util_a914601ebb613c5e4c9ec352edeb3df17}{set\+Current\+Net}} (db\+Net $\ast$net)
+\item 
+db\+Inst $\ast$ \mbox{\hyperlink{classrcx_1_1db_create_net_util_a6ce9f9b3da0410e610d50cc133631ef1}{create\+Inst}} (db\+Inst $\ast$inst0)
+\item 
+std\+::vector$<$ db\+Tech\+Layer $\ast$ $>$ \mbox{\hyperlink{classrcx_1_1db_create_net_util_a78f0195be9dab4ec4982deb84e15e954}{get\+Routing\+Layer}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 71 of file db\+Util.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrcx_1_1db_create_net_util_afc4ff54d8754f9f16eca0225c403b59f}\label{classrcx_1_1db_create_net_util_afc4ff54d8754f9f16eca0225c403b59f}} 
+\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}!dbCreateNetUtil@{dbCreateNetUtil}}
+\index{dbCreateNetUtil@{dbCreateNetUtil}!rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+\doxysubsubsection{\texorpdfstring{dbCreateNetUtil()}{dbCreateNetUtil()}}
+{\footnotesize\ttfamily rcx\+::db\+Create\+Net\+Util\+::db\+Create\+Net\+Util (\begin{DoxyParamCaption}\item[{utl\+::\+Logger $\ast$}]{logger }\end{DoxyParamCaption})}
+
+
+
+Definition at line 62 of file db\+Util.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1db_create_net_util_a7562f7437f3253dfbd8e407673828056}\label{classrcx_1_1db_create_net_util_a7562f7437f3253dfbd8e407673828056}} 
+\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}!````~dbCreateNetUtil@{$\sim$dbCreateNetUtil}}
+\index{````~dbCreateNetUtil@{$\sim$dbCreateNetUtil}!rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+\doxysubsubsection{\texorpdfstring{$\sim$dbCreateNetUtil()}{~dbCreateNetUtil()}}
+{\footnotesize\ttfamily rcx\+::db\+Create\+Net\+Util\+::$\sim$db\+Create\+Net\+Util (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 77 of file db\+Util.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1db_create_net_util_a6ce9f9b3da0410e610d50cc133631ef1}\label{classrcx_1_1db_create_net_util_a6ce9f9b3da0410e610d50cc133631ef1}} 
+\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}!createInst@{createInst}}
+\index{createInst@{createInst}!rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+\doxysubsubsection{\texorpdfstring{createInst()}{createInst()}}
+{\footnotesize\ttfamily db\+Inst $\ast$ rcx\+::db\+Create\+Net\+Util\+::create\+Inst (\begin{DoxyParamCaption}\item[{db\+Inst $\ast$}]{inst0 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 88 of file db\+Util.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1db_create_net_util_a77086b893ab16757f9898e7c39a31724}\label{classrcx_1_1db_create_net_util_a77086b893ab16757f9898e7c39a31724}} 
+\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}!createNetSingleWire@{createNetSingleWire}}
+\index{createNetSingleWire@{createNetSingleWire}!rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+\doxysubsubsection{\texorpdfstring{createNetSingleWire()}{createNetSingleWire()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily db\+Net $\ast$ rcx\+::db\+Create\+Net\+Util\+::create\+Net\+Single\+Wire (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{rlevel,  }\item[{bool}]{skip\+Bterms = {\ttfamily false},  }\item[{bool}]{skip\+Net\+Exists = {\ttfamily false},  }\item[{uint8\+\_\+t}]{color = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 526 of file db\+Util.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1db_create_net_util_a6fc19a4d49150660ba9b67836323f1b5}\label{classrcx_1_1db_create_net_util_a6fc19a4d49150660ba9b67836323f1b5}} 
+\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}!createNetSingleWire@{createNetSingleWire}}
+\index{createNetSingleWire@{createNetSingleWire}!rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+\doxysubsubsection{\texorpdfstring{createNetSingleWire()}{createNetSingleWire()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily db\+Net $\ast$ rcx\+::db\+Create\+Net\+Util\+::create\+Net\+Single\+Wire (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{rlevel,  }\item[{db\+Tech\+Layer\+Dir}]{dir,  }\item[{bool}]{skip\+Bterms = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 286 of file db\+Util.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1db_create_net_util_aeb1ad9743b47c91821e6b1fa0fc1bcd2}\label{classrcx_1_1db_create_net_util_aeb1ad9743b47c91821e6b1fa0fc1bcd2}} 
+\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}!createNetSingleWire@{createNetSingleWire}}
+\index{createNetSingleWire@{createNetSingleWire}!rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+\doxysubsubsection{\texorpdfstring{createNetSingleWire()}{createNetSingleWire()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily db\+Net $\ast$ rcx\+::db\+Create\+Net\+Util\+::create\+Net\+Single\+Wire (\begin{DoxyParamCaption}\item[{Rect \&}]{r,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{level,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{net\+Id,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{shape\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 474 of file db\+Util.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1db_create_net_util_a795b91e888dae3ddbcd5fd864292fcd8}\label{classrcx_1_1db_create_net_util_a795b91e888dae3ddbcd5fd864292fcd8}} 
+\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}!createSpecialWire@{createSpecialWire}}
+\index{createSpecialWire@{createSpecialWire}!rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+\doxysubsubsection{\texorpdfstring{createSpecialWire()}{createSpecialWire()}}
+{\footnotesize\ttfamily db\+S\+Box $\ast$ rcx\+::db\+Create\+Net\+Util\+::create\+Special\+Wire (\begin{DoxyParamCaption}\item[{db\+Net $\ast$}]{main\+Net,  }\item[{Rect \&}]{r,  }\item[{db\+Tech\+Layer $\ast$}]{layer,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{sbox\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 421 of file db\+Util.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1db_create_net_util_aea37fc84e1d109cdd78c152dec2d7ab5}\label{classrcx_1_1db_create_net_util_aea37fc84e1d109cdd78c152dec2d7ab5}} 
+\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}!getBlock@{getBlock}}
+\index{getBlock@{getBlock}!rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+\doxysubsubsection{\texorpdfstring{getBlock()}{getBlock()}}
+{\footnotesize\ttfamily db\+Block$\ast$ rcx\+::db\+Create\+Net\+Util\+::get\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 78 of file db\+Util.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1db_create_net_util_a78f0195be9dab4ec4982deb84e15e954}\label{classrcx_1_1db_create_net_util_a78f0195be9dab4ec4982deb84e15e954}} 
+\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}!getRoutingLayer@{getRoutingLayer}}
+\index{getRoutingLayer@{getRoutingLayer}!rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+\doxysubsubsection{\texorpdfstring{getRoutingLayer()}{getRoutingLayer()}}
+{\footnotesize\ttfamily std\+::vector$<$db\+Tech\+Layer$\ast$$>$ rcx\+::db\+Create\+Net\+Util\+::get\+Routing\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 104 of file db\+Util.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1db_create_net_util_a00793c4965d33ef76050503946939719}\label{classrcx_1_1db_create_net_util_a00793c4965d33ef76050503946939719}} 
+\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}!setBlock@{setBlock}}
+\index{setBlock@{setBlock}!rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+\doxysubsubsection{\texorpdfstring{setBlock()}{setBlock()}}
+{\footnotesize\ttfamily void rcx\+::db\+Create\+Net\+Util\+::set\+Block (\begin{DoxyParamCaption}\item[{db\+Block $\ast$}]{block,  }\item[{bool}]{skip\+Init = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 106 of file db\+Util.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1db_create_net_util_a914601ebb613c5e4c9ec352edeb3df17}\label{classrcx_1_1db_create_net_util_a914601ebb613c5e4c9ec352edeb3df17}} 
+\index{rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}!setCurrentNet@{setCurrentNet}}
+\index{setCurrentNet@{setCurrentNet}!rcx::dbCreateNetUtil@{rcx::dbCreateNetUtil}}
+\doxysubsubsection{\texorpdfstring{setCurrentNet()}{setCurrentNet()}}
+{\footnotesize\ttfamily void rcx\+::db\+Create\+Net\+Util\+::set\+Current\+Net (\begin{DoxyParamCaption}\item[{db\+Net $\ast$}]{net }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file db\+Util.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/include/rcx/\mbox{\hyperlink{db_util_8h}{db\+Util.\+h}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{db_util_8cpp}{db\+Util.\+cpp}}\end{DoxyCompactItemize}

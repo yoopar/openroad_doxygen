@@ -1,0 +1,118 @@
+\hypertarget{classrcx_1_1ext_var_table}{}\doxysection{rcx\+::ext\+Var\+Table Class Reference}
+\label{classrcx_1_1ext_var_table}\index{rcx::extVarTable@{rcx::extVarTable}}
+
+
+{\ttfamily \#include $<$extprocess.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_var_table_ad8b458f05148f295dac9a1c4c55d419b}{ext\+Var\+Table}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} row\+Cnt)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_var_table_afb70ecd05923900998ba0511ea4f2732}{$\sim$ext\+Var\+Table}} ()
+\item 
+Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ \mbox{\hyperlink{classrcx_1_1ext_var_table_a2c255dc09d8835287c33c5721a2c9c73}{read\+Double\+Array}} (Ath\+\_\+\+\_\+parser $\ast$parser, const char $\ast$keyword)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_var_table_adb0a72be17bf3bc60e645876431b50bf}{print\+One\+Line}} (F\+I\+LE $\ast$fp, Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$A, const char $\ast$header, const char $\ast$trail)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_var_table_a115d1896db5fd85f1b6aea35a529082f}{print\+Table}} (F\+I\+LE $\ast$fp, const char $\ast$val\+Key)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_var_table_a6baf2e8efb63daacd4a4ae36e783eafb}{get\+Val}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} ii, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} jj)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrcx_1_1ext_var_table_afa5a42bc6a4e59f33dc7232f829bac60}{ext\+Variation}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 176 of file extprocess.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrcx_1_1ext_var_table_ad8b458f05148f295dac9a1c4c55d419b}\label{classrcx_1_1ext_var_table_ad8b458f05148f295dac9a1c4c55d419b}} 
+\index{rcx::extVarTable@{rcx::extVarTable}!extVarTable@{extVarTable}}
+\index{extVarTable@{extVarTable}!rcx::extVarTable@{rcx::extVarTable}}
+\doxysubsubsection{\texorpdfstring{extVarTable()}{extVarTable()}}
+{\footnotesize\ttfamily rcx\+::ext\+Var\+Table\+::ext\+Var\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{row\+Cnt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 904 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_var_table_afb70ecd05923900998ba0511ea4f2732}\label{classrcx_1_1ext_var_table_afb70ecd05923900998ba0511ea4f2732}} 
+\index{rcx::extVarTable@{rcx::extVarTable}!````~extVarTable@{$\sim$extVarTable}}
+\index{````~extVarTable@{$\sim$extVarTable}!rcx::extVarTable@{rcx::extVarTable}}
+\doxysubsubsection{\texorpdfstring{$\sim$extVarTable()}{~extVarTable()}}
+{\footnotesize\ttfamily rcx\+::ext\+Var\+Table\+::$\sim$ext\+Var\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 914 of file extprocess.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1ext_var_table_a6baf2e8efb63daacd4a4ae36e783eafb}\label{classrcx_1_1ext_var_table_a6baf2e8efb63daacd4a4ae36e783eafb}} 
+\index{rcx::extVarTable@{rcx::extVarTable}!getVal@{getVal}}
+\index{getVal@{getVal}!rcx::extVarTable@{rcx::extVarTable}}
+\doxysubsubsection{\texorpdfstring{getVal()}{getVal()}}
+{\footnotesize\ttfamily double rcx\+::ext\+Var\+Table\+::get\+Val (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{ii,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{jj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 189 of file extprocess.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_var_table_adb0a72be17bf3bc60e645876431b50bf}\label{classrcx_1_1ext_var_table_adb0a72be17bf3bc60e645876431b50bf}} 
+\index{rcx::extVarTable@{rcx::extVarTable}!printOneLine@{printOneLine}}
+\index{printOneLine@{printOneLine}!rcx::extVarTable@{rcx::extVarTable}}
+\doxysubsubsection{\texorpdfstring{printOneLine()}{printOneLine()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Var\+Table\+::print\+One\+Line (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$}]{A,  }\item[{const char $\ast$}]{header,  }\item[{const char $\ast$}]{trail }\end{DoxyParamCaption})}
+
+
+
+Definition at line 827 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_var_table_a115d1896db5fd85f1b6aea35a529082f}\label{classrcx_1_1ext_var_table_a115d1896db5fd85f1b6aea35a529082f}} 
+\index{rcx::extVarTable@{rcx::extVarTable}!printTable@{printTable}}
+\index{printTable@{printTable}!rcx::extVarTable@{rcx::extVarTable}}
+\doxysubsubsection{\texorpdfstring{printTable()}{printTable()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Var\+Table\+::print\+Table (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{const char $\ast$}]{val\+Key }\end{DoxyParamCaption})}
+
+
+
+Definition at line 847 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_var_table_a2c255dc09d8835287c33c5721a2c9c73}\label{classrcx_1_1ext_var_table_a2c255dc09d8835287c33c5721a2c9c73}} 
+\index{rcx::extVarTable@{rcx::extVarTable}!readDoubleArray@{readDoubleArray}}
+\index{readDoubleArray@{readDoubleArray}!rcx::extVarTable@{rcx::extVarTable}}
+\doxysubsubsection{\texorpdfstring{readDoubleArray()}{readDoubleArray()}}
+{\footnotesize\ttfamily Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ rcx\+::ext\+Var\+Table\+::read\+Double\+Array (\begin{DoxyParamCaption}\item[{Ath\+\_\+\+\_\+parser $\ast$}]{parser,  }\item[{const char $\ast$}]{keyword }\end{DoxyParamCaption})}
+
+
+
+Definition at line 807 of file extprocess.\+cpp.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1ext_var_table_afa5a42bc6a4e59f33dc7232f829bac60}\label{classrcx_1_1ext_var_table_afa5a42bc6a4e59f33dc7232f829bac60}} 
+\index{rcx::extVarTable@{rcx::extVarTable}!extVariation@{extVariation}}
+\index{extVariation@{extVariation}!rcx::extVarTable@{rcx::extVarTable}}
+\doxysubsubsection{\texorpdfstring{extVariation}{extVariation}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classrcx_1_1ext_variation}{ext\+Variation}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 199 of file extprocess.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/include/rcx/\mbox{\hyperlink{extprocess_8h}{extprocess.\+h}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{extprocess_8cpp}{extprocess.\+cpp}}\end{DoxyCompactItemize}

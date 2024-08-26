@@ -1,0 +1,616 @@
+\hypertarget{classrcx_1_1_ath____track}{}\doxysection{rcx\+::Ath\+\_\+\+\_\+track Class Reference}
+\label{classrcx_1_1_ath____track}\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+
+
+{\ttfamily \#include $<$wire.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_ath____track_ab2fb289c08945c2c758f106c470cb1eb}{get\+Track\+Num}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_aa551b97d2f187858081d87148f20226c}{set}} (\mbox{\hyperlink{classrcx_1_1_ath____grid}{Ath\+\_\+\+\_\+grid}} $\ast$g, int x, int y, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} n, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} width, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} marker\+Len, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} marker\+Cnt, int base)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_aeee5365c3f476fd24e2e68d90f382266}{free\+Wires}} (Ath\+Pool$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $>$ $\ast$pool)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1_ath____track_af03258579184d1a126a29355254fc941}{place}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$w, int mark\+Index1, int mark\+Index2)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1_ath____track_a27cbb32e4b7090f6f612134ee365dfff}{place}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$w, int mark\+Index1)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_ath____track_aa7f4dc6f2c03aab94cabb7f6a20a3be7}{set\+Extrusion\+Marker}} (int marker\+Cnt, int start, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} marker\+Len)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1_ath____track_a3e593f66827da80b16429a4856dc44d8}{place\+Trail}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$w, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} m1, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} m2)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1_ath____track_a786bca28a9b6c4a68e88b5b74a976cbc}{overlap\+Check}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$w, int mark\+Index1, int mark\+Index2)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1_ath____track_ab2206f2146ea40328dbdf8257817fd18}{is\+Ascending\+Ordered}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} marker\+Cnt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} $\ast$w\+Cnt)
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath____grid}{Ath\+\_\+\+\_\+grid}} $\ast$ \mbox{\hyperlink{classrcx_1_1_ath____track_af2da3b8f3899927b997ac563737e35e3}{get\+Grid}} ()
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ \mbox{\hyperlink{classrcx_1_1_ath____track_aa33d836f4b62bd9442062db6f963934e}{get\+Wire\+\_\+\+Linear}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} marker\+Cnt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} id)
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ \mbox{\hyperlink{classrcx_1_1_ath____track_aab9b6b073f9e1506926277ac172ad9c8}{get\+Next\+Wire}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$wire)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_ath____track_ad4f20cd3070ae1a1eda8ceb20d0a1edc}{search}} (int xy1, int xy2, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} mark\+Index1, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} mark\+Index2, Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} $>$ $\ast$idtable)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_ath____track_a40bfa1dc2e1f8aff25f76b4790a7c1d1}{search1}} (int xy1, int xy2, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} mark\+Index1, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} mark\+Index2, Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} $>$ $\ast$id\+Table)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1_ath____track_ad6c96347f17bdb6df44a89af638d538d}{check\+Andplace}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$w, int mark\+Index1)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1_ath____track_ac2c02f94a995215208bffbec1238ede7}{check\+Marker}} (int mark\+Index)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1_ath____track_aea91f5f007e78b01c1b966aa5f2f9ede}{check\+Andplacer\+On\+Marker}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$w, int mark\+Index)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_ath____track_a254d48866e2538a7488e3777cb950df0}{get\+All\+Wires}} (Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$box\+Table, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} marker\+Cnt)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_a934c01d8403d6270edfb8aa1b82a2e49}{reset\+Ext\+Flag}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} marker\+Cnt)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_a732680654dd6554238dd7447895cc34d}{link\+Wire}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$\&w1, \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$\&w2)
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$ \mbox{\hyperlink{classrcx_1_1_ath____track_aa3664f22090bdbf809266dddac633ca4}{get\+Next\+Sub\+Track}} (\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$subt, bool tohi)
+\item 
+int \mbox{\hyperlink{classrcx_1_1_ath____track_ae1a104df015166f1e019e7a6d6e0e6c4}{get\+Base}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_affcffcc12daf9c67b92a12d99952799f}{set\+Hi\+Track}} (\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$hitrack)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_a097eace6a938b5154640d92598831510}{set\+Low\+Track}} (\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$lowtrack)
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$ \mbox{\hyperlink{classrcx_1_1_ath____track_a7568a508ed92f0ba62c2cd2f9ce36fb3}{get\+Hi\+Track}} ()
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$ \mbox{\hyperlink{classrcx_1_1_ath____track_ab7b688189650a8947bdffe47c7d20b97}{get\+Low\+Track}} ()
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$ \mbox{\hyperlink{classrcx_1_1_ath____track_a45652f3257efbba7e787e60982bb8522}{next\+Track\+In\+Range}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \&delt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} track\+Dist, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} src\+Track, bool tohi)
+\item 
+int \mbox{\hyperlink{classrcx_1_1_ath____track_afb5426aaf920acc19a4f79bc27c08b3a}{next\+Sub\+Track\+In\+Range}} (\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$\&tstrack, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \&delt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} track\+Dist, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} src\+Track, bool tohi)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_aa967376636e0a21db65f5a4c9a8061ec}{set\+Lowest}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} lst)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_ath____track_a4cd8fa1b5618049f33c1e89a3705b306}{remove\+Marked\+Net\+Wires}} ()
+\item 
+bool \mbox{\hyperlink{classrcx_1_1_ath____track_a7bd62ae5c949c9846163f3bdfa077444}{place2}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$w, int mark1, int mark2)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_af42a0b83350d252e7cd81645754dd90e}{insert\+Wire}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$w, int mark1, int mark2)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_ath____track_afb48a2eb45547778cb490ff21e6774be}{init\+Target\+Tracks}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} src\+Track, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} track\+Dist, bool tohi)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_ab27f5109c0e7e3bb174a78b2140c8601}{find\+Neighbor\+Wire}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$, Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$, bool)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_a4ae2661bf941fd4c62605a41301d23ce}{get\+Track\+Wires}} (std\+::vector$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ \&ctxwire)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_afdd1ec977cdf599ca459a1bb97154ba0}{build\+Dg\+Context}} (Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{structrcx_1_1_s_e_q}{S\+EQ}} $\ast$ $>$ $\ast$dg\+Context, \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$$\ast$\&all\+Wire, int \&awcnt, int \&awsize)
+\item 
+int \mbox{\hyperlink{classrcx_1_1_ath____track_abdbe8f237c8cfae3121f662308c5dc63}{get\+Band\+Wires}} (Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$band\+Wire)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_ath____track_a33d29b99a816878b7e79966535ecb258}{coupling\+Caps}} (\mbox{\hyperlink{classrcx_1_1_ath____grid}{Ath\+\_\+\+\_\+grid}} $\ast$cc\+Grid, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} src\+Track, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} track\+Dist, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} cc\+Threshold, Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} $>$ $\ast$cc\+Id\+Table, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, \mbox{\hyperlink{namespacercx_a860497a9646e7ec8925a1dbaf0a59eac}{Couple\+And\+Compute}} couple\+And\+Compute, void $\ast$comp\+Ptr)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_ath____track_a54b837521998fe444189afbf9c843fb2}{find\+Overlap}} (\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$orig\+Wire, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} cc\+Threshold, Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$w\+Table, Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$nw\+Table, \mbox{\hyperlink{classrcx_1_1_ath____grid}{Ath\+\_\+\+\_\+grid}} $\ast$cc\+Grid, Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$cc\+Table, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, \mbox{\hyperlink{namespacercx_a860497a9646e7ec8925a1dbaf0a59eac}{Couple\+And\+Compute}} couple\+And\+Compute, void $\ast$comp\+Ptr)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_a26c51adbdbc2d004740d2c34c3346323}{init\+Target\+Wire}} (int no\+Power\+Wire)
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ \mbox{\hyperlink{classrcx_1_1_ath____track_a641c0f1de89a7be162b6d2a6bc2144c6}{next\+Target\+Wire}} (int no\+Power\+Wire)
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ \mbox{\hyperlink{classrcx_1_1_ath____track_a938fdd73ce09b361c074d0ad495f2221}{get\+Target\+Wire}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_a64944d7600d18ad3c34615a1e3688b77}{adjust\+Overlap\+Maker\+End}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} marker\+Cnt)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_a1d8423d47cd40cf9255602b5530873fb}{adjust\+Overlap\+Maker\+End}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} marker\+Cnt, int start, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} marker\+Len)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_ath____track_a293d78eb53193d9f9d59cef18bb484f9}{track\+Context\+On}} (int orig, int end, int base, int width, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} first\+Context\+Track, Ath\+\_\+\+\_\+array1D$<$ int $>$ $\ast$context)
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath____track_a8bf35441edbf4c1003231e3ea5890858}{dealloc}} (Ath\+Pool$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $>$ $\ast$pool)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrcx_1_1_ath____track_a3051fa3eb4cf83231dd5caa14b935a2b}{Ath\+\_\+\+\_\+grid\+Table}}
+\item 
+class \mbox{\hyperlink{classrcx_1_1_ath____track_a4224d121d658dc9f6eb82ca6bbec4a9f}{Ath\+\_\+\+\_\+grid}}
+\item 
+class \mbox{\hyperlink{classrcx_1_1_ath____track_a3713fac939e73073e2b08586a93d9fcc}{Ath\+\_\+\+\_\+wire}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 180 of file wire.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a64944d7600d18ad3c34615a1e3688b77}\label{classrcx_1_1_ath____track_a64944d7600d18ad3c34615a1e3688b77}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!adjustOverlapMakerEnd@{adjustOverlapMakerEnd}}
+\index{adjustOverlapMakerEnd@{adjustOverlapMakerEnd}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{adjustOverlapMakerEnd()}{adjustOverlapMakerEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::adjust\+Overlap\+Maker\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{marker\+Cnt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1251 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a1d8423d47cd40cf9255602b5530873fb}\label{classrcx_1_1_ath____track_a1d8423d47cd40cf9255602b5530873fb}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!adjustOverlapMakerEnd@{adjustOverlapMakerEnd}}
+\index{adjustOverlapMakerEnd@{adjustOverlapMakerEnd}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{adjustOverlapMakerEnd()}{adjustOverlapMakerEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::adjust\+Overlap\+Maker\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{marker\+Cnt,  }\item[{int}]{start,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{marker\+Len }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1213 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_afdd1ec977cdf599ca459a1bb97154ba0}\label{classrcx_1_1_ath____track_afdd1ec977cdf599ca459a1bb97154ba0}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!buildDgContext@{buildDgContext}}
+\index{buildDgContext@{buildDgContext}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{buildDgContext()}{buildDgContext()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::build\+Dg\+Context (\begin{DoxyParamCaption}\item[{Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{structrcx_1_1_s_e_q}{S\+EQ}} $\ast$ $>$ $\ast$}]{dg\+Context,  }\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$$\ast$\&}]{all\+Wire,  }\item[{int \&}]{awcnt,  }\item[{int \&}]{awsize }\end{DoxyParamCaption})}
+
+
+
+Definition at line 641 of file ext\+C\+C.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_ad6c96347f17bdb6df44a89af638d538d}\label{classrcx_1_1_ath____track_ad6c96347f17bdb6df44a89af638d538d}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!checkAndplace@{checkAndplace}}
+\index{checkAndplace@{checkAndplace}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{checkAndplace()}{checkAndplace()}}
+{\footnotesize\ttfamily bool rcx\+::\+Ath\+\_\+\+\_\+track\+::check\+Andplace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$}]{w,  }\item[{int}]{mark\+Index1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 979 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_aea91f5f007e78b01c1b966aa5f2f9ede}\label{classrcx_1_1_ath____track_aea91f5f007e78b01c1b966aa5f2f9ede}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!checkAndplacerOnMarker@{checkAndplacerOnMarker}}
+\index{checkAndplacerOnMarker@{checkAndplacerOnMarker}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{checkAndplacerOnMarker()}{checkAndplacerOnMarker()}}
+{\footnotesize\ttfamily bool rcx\+::\+Ath\+\_\+\+\_\+track\+::check\+Andplacer\+On\+Marker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$}]{w,  }\item[{int}]{mark\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line 964 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_ac2c02f94a995215208bffbec1238ede7}\label{classrcx_1_1_ath____track_ac2c02f94a995215208bffbec1238ede7}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!checkMarker@{checkMarker}}
+\index{checkMarker@{checkMarker}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{checkMarker()}{checkMarker()}}
+{\footnotesize\ttfamily bool rcx\+::\+Ath\+\_\+\+\_\+track\+::check\+Marker (\begin{DoxyParamCaption}\item[{int}]{mark\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line 972 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a33d29b99a816878b7e79966535ecb258}\label{classrcx_1_1_ath____track_a33d29b99a816878b7e79966535ecb258}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!couplingCaps@{couplingCaps}}
+\index{couplingCaps@{couplingCaps}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{couplingCaps()}{couplingCaps()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Ath\+\_\+\+\_\+track\+::coupling\+Caps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____grid}{Ath\+\_\+\+\_\+grid}} $\ast$}]{cc\+Grid,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{src\+Track,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{track\+Dist,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{cc\+Threshold,  }\item[{Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} $>$ $\ast$}]{cc\+Id\+Table,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{\mbox{\hyperlink{namespacercx_a860497a9646e7ec8925a1dbaf0a59eac}{Couple\+And\+Compute}}}]{couple\+And\+Compute,  }\item[{void $\ast$}]{comp\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 348 of file ext\+C\+C.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a8bf35441edbf4c1003231e3ea5890858}\label{classrcx_1_1_ath____track_a8bf35441edbf4c1003231e3ea5890858}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!dealloc@{dealloc}}
+\index{dealloc@{dealloc}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{dealloc()}{dealloc()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::dealloc (\begin{DoxyParamCaption}\item[{Ath\+Pool$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $>$ $\ast$}]{pool }\end{DoxyParamCaption})}
+
+
+
+Definition at line 611 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_ab27f5109c0e7e3bb174a78b2140c8601}\label{classrcx_1_1_ath____track_ab27f5109c0e7e3bb174a78b2140c8601}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!findNeighborWire@{findNeighborWire}}
+\index{findNeighborWire@{findNeighborWire}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{findNeighborWire()}{findNeighborWire()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::find\+Neighbor\+Wire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$}]{,  }\item[{Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$}]{,  }\item[{bool}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a54b837521998fe444189afbf9c843fb2}\label{classrcx_1_1_ath____track_a54b837521998fe444189afbf9c843fb2}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!findOverlap@{findOverlap}}
+\index{findOverlap@{findOverlap}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{findOverlap()}{findOverlap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Ath\+\_\+\+\_\+track\+::find\+Overlap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$}]{orig\+Wire,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{cc\+Threshold,  }\item[{Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$}]{w\+Table,  }\item[{Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$}]{nw\+Table,  }\item[{\mbox{\hyperlink{classrcx_1_1_ath____grid}{Ath\+\_\+\+\_\+grid}} $\ast$}]{cc\+Grid,  }\item[{Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$}]{cc\+Table,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{\mbox{\hyperlink{namespacercx_a860497a9646e7ec8925a1dbaf0a59eac}{rcx\+::\+Couple\+And\+Compute}}}]{couple\+And\+Compute,  }\item[{void $\ast$}]{comp\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file ext\+C\+C.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_aeee5365c3f476fd24e2e68d90f382266}\label{classrcx_1_1_ath____track_aeee5365c3f476fd24e2e68d90f382266}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!freeWires@{freeWires}}
+\index{freeWires@{freeWires}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{freeWires()}{freeWires()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::free\+Wires (\begin{DoxyParamCaption}\item[{Ath\+Pool$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $>$ $\ast$}]{pool }\end{DoxyParamCaption})}
+
+
+
+Definition at line 599 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a254d48866e2538a7488e3777cb950df0}\label{classrcx_1_1_ath____track_a254d48866e2538a7488e3777cb950df0}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getAllWires@{getAllWires}}
+\index{getAllWires@{getAllWires}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getAllWires()}{getAllWires()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+All\+Wires (\begin{DoxyParamCaption}\item[{Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$}]{box\+Table,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{marker\+Cnt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 876 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_abdbe8f237c8cfae3121f662308c5dc63}\label{classrcx_1_1_ath____track_abdbe8f237c8cfae3121f662308c5dc63}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getBandWires@{getBandWires}}
+\index{getBandWires@{getBandWires}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getBandWires()}{getBandWires()}}
+{\footnotesize\ttfamily int rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+Band\+Wires (\begin{DoxyParamCaption}\item[{Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ $\ast$}]{band\+Wire }\end{DoxyParamCaption})}
+
+
+
+Definition at line 937 of file ext\+C\+C.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_ae1a104df015166f1e019e7a6d6e0e6c4}\label{classrcx_1_1_ath____track_ae1a104df015166f1e019e7a6d6e0e6c4}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getBase@{getBase}}
+\index{getBase@{getBase}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getBase()}{getBase()}}
+{\footnotesize\ttfamily int rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 250 of file wire.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_af2da3b8f3899927b997ac563737e35e3}\label{classrcx_1_1_ath____track_af2da3b8f3899927b997ac563737e35e3}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getGrid@{getGrid}}
+\index{getGrid@{getGrid}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getGrid()}{getGrid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1_ath____grid}{Ath\+\_\+\+\_\+grid}} $\ast$ rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1465 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a7568a508ed92f0ba62c2cd2f9ce36fb3}\label{classrcx_1_1_ath____track_a7568a508ed92f0ba62c2cd2f9ce36fb3}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getHiTrack@{getHiTrack}}
+\index{getHiTrack@{getHiTrack}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getHiTrack()}{getHiTrack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$ rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+Hi\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 553 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_ab7b688189650a8947bdffe47c7d20b97}\label{classrcx_1_1_ath____track_ab7b688189650a8947bdffe47c7d20b97}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getLowTrack@{getLowTrack}}
+\index{getLowTrack@{getLowTrack}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getLowTrack()}{getLowTrack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$ rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+Low\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 557 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_aa3664f22090bdbf809266dddac633ca4}\label{classrcx_1_1_ath____track_aa3664f22090bdbf809266dddac633ca4}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getNextSubTrack@{getNextSubTrack}}
+\index{getNextSubTrack@{getNextSubTrack}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getNextSubTrack()}{getNextSubTrack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$ rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+Next\+Sub\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$}]{subt,  }\item[{bool}]{tohi }\end{DoxyParamCaption})}
+
+
+
+Definition at line 534 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_aab9b6b073f9e1506926277ac172ad9c8}\label{classrcx_1_1_ath____track_aab9b6b073f9e1506926277ac172ad9c8}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getNextWire@{getNextWire}}
+\index{getNextWire@{getNextWire}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getNextWire()}{getNextWire()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+Next\+Wire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$}]{wire }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1179 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a938fdd73ce09b361c074d0ad495f2221}\label{classrcx_1_1_ath____track_a938fdd73ce09b361c074d0ad495f2221}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getTargetWire@{getTargetWire}}
+\index{getTargetWire@{getTargetWire}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getTargetWire()}{getTargetWire()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+Target\+Wire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 408 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_ab2fb289c08945c2c758f106c470cb1eb}\label{classrcx_1_1_ath____track_ab2fb289c08945c2c758f106c470cb1eb}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getTrackNum@{getTrackNum}}
+\index{getTrackNum@{getTrackNum}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getTrackNum()}{getTrackNum()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+Track\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 211 of file wire.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a4ae2661bf941fd4c62605a41301d23ce}\label{classrcx_1_1_ath____track_a4ae2661bf941fd4c62605a41301d23ce}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getTrackWires@{getTrackWires}}
+\index{getTrackWires@{getTrackWires}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getTrackWires()}{getTrackWires()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+Track\+Wires (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ $>$ \&}]{ctxwire }\end{DoxyParamCaption})}
+
+
+
+Definition at line 613 of file ext\+C\+C.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_aa33d836f4b62bd9442062db6f963934e}\label{classrcx_1_1_ath____track_aa33d836f4b62bd9442062db6f963934e}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!getWire\_Linear@{getWire\_Linear}}
+\index{getWire\_Linear@{getWire\_Linear}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{getWire\_Linear()}{getWire\_Linear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ rcx\+::\+Ath\+\_\+\+\_\+track\+::get\+Wire\+\_\+\+Linear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{marker\+Cnt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1201 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_afb48a2eb45547778cb490ff21e6774be}\label{classrcx_1_1_ath____track_afb48a2eb45547778cb490ff21e6774be}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!initTargetTracks@{initTargetTracks}}
+\index{initTargetTracks@{initTargetTracks}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{initTargetTracks()}{initTargetTracks()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Ath\+\_\+\+\_\+track\+::init\+Target\+Tracks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{src\+Track,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{track\+Dist,  }\item[{bool}]{tohi }\end{DoxyParamCaption})}
+
+
+
+Definition at line 295 of file ext\+C\+C.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a26c51adbdbc2d004740d2c34c3346323}\label{classrcx_1_1_ath____track_a26c51adbdbc2d004740d2c34c3346323}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!initTargetWire@{initTargetWire}}
+\index{initTargetWire@{initTargetWire}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{initTargetWire()}{initTargetWire()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::init\+Target\+Wire (\begin{DoxyParamCaption}\item[{int}]{no\+Power\+Wire }\end{DoxyParamCaption})}
+
+
+
+Definition at line 412 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_af42a0b83350d252e7cd81645754dd90e}\label{classrcx_1_1_ath____track_af42a0b83350d252e7cd81645754dd90e}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!insertWire@{insertWire}}
+\index{insertWire@{insertWire}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{insertWire()}{insertWire()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::insert\+Wire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$}]{w,  }\item[{int}]{mark1,  }\item[{int}]{mark2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1018 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_ab2206f2146ea40328dbdf8257817fd18}\label{classrcx_1_1_ath____track_ab2206f2146ea40328dbdf8257817fd18}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!isAscendingOrdered@{isAscendingOrdered}}
+\index{isAscendingOrdered@{isAscendingOrdered}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{isAscendingOrdered()}{isAscendingOrdered()}}
+{\footnotesize\ttfamily bool rcx\+::\+Ath\+\_\+\+\_\+track\+::is\+Ascending\+Ordered (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{marker\+Cnt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} $\ast$}]{w\+Cnt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1276 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a732680654dd6554238dd7447895cc34d}\label{classrcx_1_1_ath____track_a732680654dd6554238dd7447895cc34d}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!linkWire@{linkWire}}
+\index{linkWire@{linkWire}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{linkWire()}{linkWire()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::link\+Wire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$\&}]{w1,  }\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$\&}]{w2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1075 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_afb5426aaf920acc19a4f79bc27c08b3a}\label{classrcx_1_1_ath____track_afb5426aaf920acc19a4f79bc27c08b3a}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!nextSubTrackInRange@{nextSubTrackInRange}}
+\index{nextSubTrackInRange@{nextSubTrackInRange}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{nextSubTrackInRange()}{nextSubTrackInRange()}}
+{\footnotesize\ttfamily int rcx\+::\+Ath\+\_\+\+\_\+track\+::next\+Sub\+Track\+In\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$\&}]{tstrack,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \&}]{delt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{track\+Dist,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{src\+Track,  }\item[{bool}]{tohi }\end{DoxyParamCaption})}
+
+
+
+Definition at line 330 of file ext\+C\+C.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a641c0f1de89a7be162b6d2a6bc2144c6}\label{classrcx_1_1_ath____track_a641c0f1de89a7be162b6d2a6bc2144c6}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!nextTargetWire@{nextTargetWire}}
+\index{nextTargetWire@{nextTargetWire}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{nextTargetWire()}{nextTargetWire()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$ rcx\+::\+Ath\+\_\+\+\_\+track\+::next\+Target\+Wire (\begin{DoxyParamCaption}\item[{int}]{no\+Power\+Wire }\end{DoxyParamCaption})}
+
+
+
+Definition at line 428 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a45652f3257efbba7e787e60982bb8522}\label{classrcx_1_1_ath____track_a45652f3257efbba7e787e60982bb8522}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!nextTrackInRange@{nextTrackInRange}}
+\index{nextTrackInRange@{nextTrackInRange}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{nextTrackInRange()}{nextTrackInRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$ rcx\+::\+Ath\+\_\+\+\_\+track\+::next\+Track\+In\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \&}]{delt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{track\+Dist,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{src\+Track,  }\item[{bool}]{tohi }\end{DoxyParamCaption})}
+
+
+
+Definition at line 309 of file ext\+C\+C.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a786bca28a9b6c4a68e88b5b74a976cbc}\label{classrcx_1_1_ath____track_a786bca28a9b6c4a68e88b5b74a976cbc}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!overlapCheck@{overlapCheck}}
+\index{overlapCheck@{overlapCheck}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{overlapCheck()}{overlapCheck()}}
+{\footnotesize\ttfamily bool rcx\+::\+Ath\+\_\+\+\_\+track\+::overlap\+Check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$}]{w,  }\item[{int}]{mark\+Index1,  }\item[{int}]{mark\+Index2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1298 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a27cbb32e4b7090f6f612134ee365dfff}\label{classrcx_1_1_ath____track_a27cbb32e4b7090f6f612134ee365dfff}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!place@{place}}
+\index{place@{place}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{place()}{place()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool rcx\+::\+Ath\+\_\+\+\_\+track\+::place (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$}]{w,  }\item[{int}]{mark\+Index1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1119 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_af03258579184d1a126a29355254fc941}\label{classrcx_1_1_ath____track_af03258579184d1a126a29355254fc941}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!place@{place}}
+\index{place@{place}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{place()}{place()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool rcx\+::\+Ath\+\_\+\+\_\+track\+::place (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$}]{w,  }\item[{int}]{mark\+Index1,  }\item[{int}]{mark\+Index2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 773 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a7bd62ae5c949c9846163f3bdfa077444}\label{classrcx_1_1_ath____track_a7bd62ae5c949c9846163f3bdfa077444}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!place2@{place2}}
+\index{place2@{place2}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{place2()}{place2()}}
+{\footnotesize\ttfamily bool rcx\+::\+Ath\+\_\+\+\_\+track\+::place2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$}]{w,  }\item[{int}]{mark1,  }\item[{int}]{mark2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1030 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a3e593f66827da80b16429a4856dc44d8}\label{classrcx_1_1_ath____track_a3e593f66827da80b16429a4856dc44d8}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!placeTrail@{placeTrail}}
+\index{placeTrail@{placeTrail}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{placeTrail()}{placeTrail()}}
+{\footnotesize\ttfamily bool rcx\+::\+Ath\+\_\+\+\_\+track\+::place\+Trail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}} $\ast$}]{w,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{m1,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{m2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 947 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a4cd8fa1b5618049f33c1e89a3705b306}\label{classrcx_1_1_ath____track_a4cd8fa1b5618049f33c1e89a3705b306}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!removeMarkedNetWires@{removeMarkedNetWires}}
+\index{removeMarkedNetWires@{removeMarkedNetWires}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{removeMarkedNetWires()}{removeMarkedNetWires()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Ath\+\_\+\+\_\+track\+::remove\+Marked\+Net\+Wires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1469 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a934c01d8403d6270edfb8aa1b82a2e49}\label{classrcx_1_1_ath____track_a934c01d8403d6270edfb8aa1b82a2e49}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!resetExtFlag@{resetExtFlag}}
+\index{resetExtFlag@{resetExtFlag}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{resetExtFlag()}{resetExtFlag()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::reset\+Ext\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{marker\+Cnt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 867 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_ad4f20cd3070ae1a1eda8ceb20d0a1edc}\label{classrcx_1_1_ath____track_ad4f20cd3070ae1a1eda8ceb20d0a1edc}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!search@{search}}
+\index{search@{search}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Ath\+\_\+\+\_\+track\+::search (\begin{DoxyParamCaption}\item[{int}]{xy1,  }\item[{int}]{xy2,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{mark\+Index1,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{mark\+Index2,  }\item[{Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} $>$ $\ast$}]{idtable }\end{DoxyParamCaption})}
+
+
+
+Definition at line 849 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a40bfa1dc2e1f8aff25f76b4790a7c1d1}\label{classrcx_1_1_ath____track_a40bfa1dc2e1f8aff25f76b4790a7c1d1}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!search1@{search1}}
+\index{search1@{search1}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{search1()}{search1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Ath\+\_\+\+\_\+track\+::search1 (\begin{DoxyParamCaption}\item[{int}]{xy1,  }\item[{int}]{xy2,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{mark\+Index1,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{mark\+Index2,  }\item[{Ath\+\_\+\+\_\+array1D$<$ \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} $>$ $\ast$}]{id\+Table }\end{DoxyParamCaption})}
+
+
+
+Definition at line 892 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_aa551b97d2f187858081d87148f20226c}\label{classrcx_1_1_ath____track_aa551b97d2f187858081d87148f20226c}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!set@{set}}
+\index{set@{set}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____grid}{Ath\+\_\+\+\_\+grid}} $\ast$}]{g,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{n,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{width,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{marker\+Len,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{marker\+Cnt,  }\item[{int}]{base }\end{DoxyParamCaption})}
+
+
+
+Definition at line 562 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_aa7f4dc6f2c03aab94cabb7f6a20a3be7}\label{classrcx_1_1_ath____track_aa7f4dc6f2c03aab94cabb7f6a20a3be7}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!setExtrusionMarker@{setExtrusionMarker}}
+\index{setExtrusionMarker@{setExtrusionMarker}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{setExtrusionMarker()}{setExtrusionMarker()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Ath\+\_\+\+\_\+track\+::set\+Extrusion\+Marker (\begin{DoxyParamCaption}\item[{int}]{marker\+Cnt,  }\item[{int}]{start,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{marker\+Len }\end{DoxyParamCaption})}
+
+
+
+Definition at line 914 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_affcffcc12daf9c67b92a12d99952799f}\label{classrcx_1_1_ath____track_affcffcc12daf9c67b92a12d99952799f}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!setHiTrack@{setHiTrack}}
+\index{setHiTrack@{setHiTrack}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{setHiTrack()}{setHiTrack()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::set\+Hi\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$}]{hitrack }\end{DoxyParamCaption})}
+
+
+
+Definition at line 545 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_aa967376636e0a21db65f5a4c9a8061ec}\label{classrcx_1_1_ath____track_aa967376636e0a21db65f5a4c9a8061ec}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!setLowest@{setLowest}}
+\index{setLowest@{setLowest}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{setLowest()}{setLowest()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::set\+Lowest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{lst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 264 of file wire.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a097eace6a938b5154640d92598831510}\label{classrcx_1_1_ath____track_a097eace6a938b5154640d92598831510}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!setLowTrack@{setLowTrack}}
+\index{setLowTrack@{setLowTrack}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{setLowTrack()}{setLowTrack()}}
+{\footnotesize\ttfamily void rcx\+::\+Ath\+\_\+\+\_\+track\+::set\+Low\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1_ath____track}{Ath\+\_\+\+\_\+track}} $\ast$}]{lowtrack }\end{DoxyParamCaption})}
+
+
+
+Definition at line 549 of file grids.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a293d78eb53193d9f9d59cef18bb484f9}\label{classrcx_1_1_ath____track_a293d78eb53193d9f9d59cef18bb484f9}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!trackContextOn@{trackContextOn}}
+\index{trackContextOn@{trackContextOn}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{trackContextOn()}{trackContextOn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Ath\+\_\+\+\_\+track\+::track\+Context\+On (\begin{DoxyParamCaption}\item[{int}]{orig,  }\item[{int}]{end,  }\item[{int}]{base,  }\item[{int}]{width,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{first\+Context\+Track,  }\item[{Ath\+\_\+\+\_\+array1D$<$ int $>$ $\ast$}]{context }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file ext\+C\+C.\+cpp.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a4224d121d658dc9f6eb82ca6bbec4a9f}\label{classrcx_1_1_ath____track_a4224d121d658dc9f6eb82ca6bbec4a9f}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!Ath\_\_grid@{Ath\_\_grid}}
+\index{Ath\_\_grid@{Ath\_\_grid}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{Ath\_\_grid}{Ath\_\_grid}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classrcx_1_1_ath____grid}{Ath\+\_\+\+\_\+grid}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 267 of file wire.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a3051fa3eb4cf83231dd5caa14b935a2b}\label{classrcx_1_1_ath____track_a3051fa3eb4cf83231dd5caa14b935a2b}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!Ath\_\_gridTable@{Ath\_\_gridTable}}
+\index{Ath\_\_gridTable@{Ath\_\_gridTable}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{Ath\_\_gridTable}{Ath\_\_gridTable}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classrcx_1_1_ath____grid_table}{Ath\+\_\+\+\_\+grid\+Table}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 264 of file wire.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1_ath____track_a3713fac939e73073e2b08586a93d9fcc}\label{classrcx_1_1_ath____track_a3713fac939e73073e2b08586a93d9fcc}} 
+\index{rcx::Ath\_\_track@{rcx::Ath\_\_track}!Ath\_\_wire@{Ath\_\_wire}}
+\index{Ath\_\_wire@{Ath\_\_wire}!rcx::Ath\_\_track@{rcx::Ath\_\_track}}
+\doxysubsubsection{\texorpdfstring{Ath\_\_wire}{Ath\_\_wire}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classrcx_1_1_ath____wire}{Ath\+\_\+\+\_\+wire}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 268 of file wire.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{wire_8h}{wire.\+h}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{ext_c_c_8cpp}{ext\+C\+C.\+cpp}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{grids_8cpp}{grids.\+cpp}}\end{DoxyCompactItemize}

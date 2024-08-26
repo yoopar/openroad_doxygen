@@ -1,0 +1,93 @@
+\hypertarget{classrcx_1_1_name_table}{}\doxysection{rcx\+::Name\+Table Class Reference}
+\label{classrcx_1_1_name_table}\index{rcx::NameTable@{rcx::NameTable}}
+
+
+{\ttfamily \#include $<$name.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrcx_1_1_name_table_1_1_name_bucket}{Name\+Bucket}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrcx_1_1_name_table_a4c181402af994fd3271430556447ebd3}{Name\+Table}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} n, char $\ast$zero=nullptr)
+\item 
+\mbox{\hyperlink{classrcx_1_1_name_table_a7cba1ae736bcd303bf52dfabd2c3ae02}{$\sim$\+Name\+Table}} ()
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_name_table_a5bc31e6bdf2f34505c185f860b8b4a34}{add\+New\+Name}} (const char $\ast$name, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} data\+Id)
+\item 
+const char $\ast$ \mbox{\hyperlink{classrcx_1_1_name_table_a11792a9586df8c7e084456334748088f}{get\+Name}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} pool\+Id)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1_name_table_a54fafeae276e9a9ee73c6290957df07f}{get\+Data\+Id}} (const char $\ast$name, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} ignore\+Flag=0, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} exit\+Flag=0, int $\ast$nn=nullptr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 46 of file name.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrcx_1_1_name_table_a4c181402af994fd3271430556447ebd3}\label{classrcx_1_1_name_table_a4c181402af994fd3271430556447ebd3}} 
+\index{rcx::NameTable@{rcx::NameTable}!NameTable@{NameTable}}
+\index{NameTable@{NameTable}!rcx::NameTable@{rcx::NameTable}}
+\doxysubsubsection{\texorpdfstring{NameTable()}{NameTable()}}
+{\footnotesize\ttfamily rcx\+::\+Name\+Table\+::\+Name\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{n,  }\item[{char $\ast$}]{zero = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 79 of file name.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_name_table_a7cba1ae736bcd303bf52dfabd2c3ae02}\label{classrcx_1_1_name_table_a7cba1ae736bcd303bf52dfabd2c3ae02}} 
+\index{rcx::NameTable@{rcx::NameTable}!````~NameTable@{$\sim$NameTable}}
+\index{````~NameTable@{$\sim$NameTable}!rcx::NameTable@{rcx::NameTable}}
+\doxysubsubsection{\texorpdfstring{$\sim$NameTable()}{~NameTable()}}
+{\footnotesize\ttfamily rcx\+::\+Name\+Table\+::$\sim$\+Name\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 73 of file name.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1_name_table_a5bc31e6bdf2f34505c185f860b8b4a34}\label{classrcx_1_1_name_table_a5bc31e6bdf2f34505c185f860b8b4a34}} 
+\index{rcx::NameTable@{rcx::NameTable}!addNewName@{addNewName}}
+\index{addNewName@{addNewName}!rcx::NameTable@{rcx::NameTable}}
+\doxysubsubsection{\texorpdfstring{addNewName()}{addNewName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Name\+Table\+::add\+New\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{data\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 105 of file name.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_name_table_a54fafeae276e9a9ee73c6290957df07f}\label{classrcx_1_1_name_table_a54fafeae276e9a9ee73c6290957df07f}} 
+\index{rcx::NameTable@{rcx::NameTable}!getDataId@{getDataId}}
+\index{getDataId@{getDataId}!rcx::NameTable@{rcx::NameTable}}
+\doxysubsubsection{\texorpdfstring{getDataId()}{getDataId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::\+Name\+Table\+::get\+Data\+Id (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{ignore\+Flag = {\ttfamily 0},  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{exit\+Flag = {\ttfamily 0},  }\item[{int $\ast$}]{nn = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 126 of file name.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1_name_table_a11792a9586df8c7e084456334748088f}\label{classrcx_1_1_name_table_a11792a9586df8c7e084456334748088f}} 
+\index{rcx::NameTable@{rcx::NameTable}!getName@{getName}}
+\index{getName@{getName}!rcx::NameTable@{rcx::NameTable}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const char $\ast$ rcx\+::\+Name\+Table\+::get\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{pool\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 116 of file name.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{name_8h}{name.\+h}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{name_8cpp}{name.\+cpp}}\end{DoxyCompactItemize}

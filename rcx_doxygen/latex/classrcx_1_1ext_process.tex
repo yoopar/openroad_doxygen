@@ -1,0 +1,312 @@
+\hypertarget{classrcx_1_1ext_process}{}\doxysection{rcx\+::ext\+Process Class Reference}
+\label{classrcx_1_1ext_process}\index{rcx::extProcess@{rcx::extProcess}}
+
+
+{\ttfamily \#include $<$extprocess.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_process_a3b28dc906837042bf986b47f74a19941}{ext\+Process}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} cond\+Cnt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} diel\+Cnt, Logger $\ast$logger)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_process_a9d86781a8621323f25ea89004b96301a}{$\sim$ext\+Process}} ()
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{classrcx_1_1ext_process_a38074b5b70fe7f44bb05396b023ab06c}{open\+File}} (const char $\ast$filename, const char $\ast$permissions)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_conductor}{ext\+Conductor}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_process_ae00f100d0825bdf5581131d4aab17931}{get\+Conductor}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} ii)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_master_conductor}{ext\+Master\+Conductor}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_process_ace4d1d2c4f8c3adb6b8d91592c9517c5}{get\+Master\+Conductor}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} ii)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_process_a5aa13604a7d17786d616842537ae2192}{get\+Conductor\+Cnt}} ()
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dielectric}{ext\+Dielectric}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_process_a27c7a40ce4596bf58967772109f0d898}{get\+Dielectric}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} ii)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_master_conductor}{ext\+Master\+Conductor}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_process_a2826048a96a8cd30cd3ac979721c8edf}{get\+Master\+Conductor}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} w\+Index, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} s\+Index, double \&w, double \&s)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_process_ab567f4272874259784fb9801b9b1625e}{write\+Full\+Process}} (F\+I\+LE $\ast$fp, double X, double width)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_process_a8bf6f5a5728c101ebd673944687cf091}{write\+Raphael\+Point\+XY}} (F\+I\+LE $\ast$fp, double X, double Y)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_process_a57621bc4646b19fe4a09e64566785ce1}{write\+Param}} (F\+I\+LE $\ast$fp, const char $\ast$name, double val)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_process_ad7c590a50a60705301830aa2333de6d2}{write\+Window}} (F\+I\+LE $\ast$fp, const char $\ast$param\+\_\+width\+\_\+name, double y1, const char $\ast$param\+\_\+thickness\+\_\+name)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_process_a0dfe5cab2b0925c690861186c46c75eb}{write\+Ground}} (F\+I\+LE $\ast$fp, int met, const char $\ast$name, const char $\ast$param\+\_\+width\+\_\+name, double x1, double volt)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_process_a4aeb9af309bb84ad48ebf3df3a639fa7}{write\+Ground}} (F\+I\+LE $\ast$fp, int met, const char $\ast$name, double width, double x1, double volt, bool diag=false)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_process_afb9d1686b3d15c0618430be20b781fb3}{write\+Process\+And\+Ground}} (F\+I\+LE $\ast$wfp, const char $\ast$gnd\+Name, int under\+Met, int over\+Met, double X, double width, double thickness, bool diag=false)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_variation}{ext\+Variation}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_process_a768832006c183d3b48db4446111bf48e}{get\+Variation}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met)
+\item 
+Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ \mbox{\hyperlink{classrcx_1_1ext_process_a8d7e2e6c75a3af41338ee666689eb9a4}{get\+Width\+Table}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met)
+\item 
+Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ \mbox{\hyperlink{classrcx_1_1ext_process_ad5a345ef1832281a8e69af52e1c2061e}{get\+Space\+Table}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met)
+\item 
+Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ \mbox{\hyperlink{classrcx_1_1ext_process_aded0811a2a86d4345be434f77dcb4b95}{get\+Diag\+Space\+Table}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met)
+\item 
+Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ \mbox{\hyperlink{classrcx_1_1ext_process_a6b8cc313219fb4b324566e6f4eff02e2}{get\+Data\+Rate\+Table}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_process_ab64771a9f9bf23dede05cb164ecc6d3a}{adjust\+Master\+Layers\+For\+Height}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, double thickness)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_process_afb3aa455536a984722666184a1dc49b1}{adjust\+Master\+Dielectrics\+For\+Height}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, double dth)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_process_ab3c766581a594bf8f4c1bc21ebce3dfe}{get\+Max\+Min\+Flag}} ()
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_process_a57a0d62cfdd434da40c6257160d8bcd5}{get\+Thick\+Var\+Flag}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 234 of file extprocess.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrcx_1_1ext_process_a3b28dc906837042bf986b47f74a19941}\label{classrcx_1_1ext_process_a3b28dc906837042bf986b47f74a19941}} 
+\index{rcx::extProcess@{rcx::extProcess}!extProcess@{extProcess}}
+\index{extProcess@{extProcess}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{extProcess()}{extProcess()}}
+{\footnotesize\ttfamily rcx\+::ext\+Process\+::ext\+Process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{cond\+Cnt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{diel\+Cnt,  }\item[{Logger $\ast$}]{logger }\end{DoxyParamCaption})}
+
+
+
+Definition at line 885 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a9d86781a8621323f25ea89004b96301a}\label{classrcx_1_1ext_process_a9d86781a8621323f25ea89004b96301a}} 
+\index{rcx::extProcess@{rcx::extProcess}!````~extProcess@{$\sim$extProcess}}
+\index{````~extProcess@{$\sim$extProcess}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{$\sim$extProcess()}{~extProcess()}}
+{\footnotesize\ttfamily rcx\+::ext\+Process\+::$\sim$ext\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1ext_process_afb3aa455536a984722666184a1dc49b1}\label{classrcx_1_1ext_process_afb3aa455536a984722666184a1dc49b1}} 
+\index{rcx::extProcess@{rcx::extProcess}!adjustMasterDielectricsForHeight@{adjustMasterDielectricsForHeight}}
+\index{adjustMasterDielectricsForHeight@{adjustMasterDielectricsForHeight}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{adjustMasterDielectricsForHeight()}{adjustMasterDielectricsForHeight()}}
+{\footnotesize\ttfamily double rcx\+::ext\+Process\+::adjust\+Master\+Dielectrics\+For\+Height (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{double}]{dth }\end{DoxyParamCaption})}
+
+
+
+Definition at line 585 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_ab64771a9f9bf23dede05cb164ecc6d3a}\label{classrcx_1_1ext_process_ab64771a9f9bf23dede05cb164ecc6d3a}} 
+\index{rcx::extProcess@{rcx::extProcess}!adjustMasterLayersForHeight@{adjustMasterLayersForHeight}}
+\index{adjustMasterLayersForHeight@{adjustMasterLayersForHeight}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{adjustMasterLayersForHeight()}{adjustMasterLayersForHeight()}}
+{\footnotesize\ttfamily double rcx\+::ext\+Process\+::adjust\+Master\+Layers\+For\+Height (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{double}]{thickness }\end{DoxyParamCaption})}
+
+
+
+Definition at line 556 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_ae00f100d0825bdf5581131d4aab17931}\label{classrcx_1_1ext_process_ae00f100d0825bdf5581131d4aab17931}} 
+\index{rcx::extProcess@{rcx::extProcess}!getConductor@{getConductor}}
+\index{getConductor@{getConductor}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getConductor()}{getConductor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_conductor}{ext\+Conductor}} $\ast$ rcx\+::ext\+Process\+::get\+Conductor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{ii }\end{DoxyParamCaption})}
+
+
+
+Definition at line 605 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a5aa13604a7d17786d616842537ae2192}\label{classrcx_1_1ext_process_a5aa13604a7d17786d616842537ae2192}} 
+\index{rcx::extProcess@{rcx::extProcess}!getConductorCnt@{getConductorCnt}}
+\index{getConductorCnt@{getConductorCnt}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getConductorCnt()}{getConductorCnt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+Process\+::get\+Conductor\+Cnt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 242 of file extprocess.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a6b8cc313219fb4b324566e6f4eff02e2}\label{classrcx_1_1ext_process_a6b8cc313219fb4b324566e6f4eff02e2}} 
+\index{rcx::extProcess@{rcx::extProcess}!getDataRateTable@{getDataRateTable}}
+\index{getDataRateTable@{getDataRateTable}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getDataRateTable()}{getDataRateTable()}}
+{\footnotesize\ttfamily Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ rcx\+::ext\+Process\+::get\+Data\+Rate\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met }\end{DoxyParamCaption})}
+
+
+
+Definition at line 667 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_aded0811a2a86d4345be434f77dcb4b95}\label{classrcx_1_1ext_process_aded0811a2a86d4345be434f77dcb4b95}} 
+\index{rcx::extProcess@{rcx::extProcess}!getDiagSpaceTable@{getDiagSpaceTable}}
+\index{getDiagSpaceTable@{getDiagSpaceTable}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getDiagSpaceTable()}{getDiagSpaceTable()}}
+{\footnotesize\ttfamily Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ rcx\+::ext\+Process\+::get\+Diag\+Space\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met }\end{DoxyParamCaption})}
+
+
+
+Definition at line 650 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a27c7a40ce4596bf58967772109f0d898}\label{classrcx_1_1ext_process_a27c7a40ce4596bf58967772109f0d898}} 
+\index{rcx::extProcess@{rcx::extProcess}!getDielectric@{getDielectric}}
+\index{getDielectric@{getDielectric}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getDielectric()}{getDielectric()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dielectric}{ext\+Dielectric}} $\ast$ rcx\+::ext\+Process\+::get\+Dielectric (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{ii }\end{DoxyParamCaption})}
+
+
+
+Definition at line 615 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_ace4d1d2c4f8c3adb6b8d91592c9517c5}\label{classrcx_1_1ext_process_ace4d1d2c4f8c3adb6b8d91592c9517c5}} 
+\index{rcx::extProcess@{rcx::extProcess}!getMasterConductor@{getMasterConductor}}
+\index{getMasterConductor@{getMasterConductor}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getMasterConductor()}{getMasterConductor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_master_conductor}{ext\+Master\+Conductor}} $\ast$ rcx\+::ext\+Process\+::get\+Master\+Conductor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{ii }\end{DoxyParamCaption})}
+
+
+
+Definition at line 610 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a2826048a96a8cd30cd3ac979721c8edf}\label{classrcx_1_1ext_process_a2826048a96a8cd30cd3ac979721c8edf}} 
+\index{rcx::extProcess@{rcx::extProcess}!getMasterConductor@{getMasterConductor}}
+\index{getMasterConductor@{getMasterConductor}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getMasterConductor()}{getMasterConductor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_master_conductor}{ext\+Master\+Conductor}} $\ast$ rcx\+::ext\+Process\+::get\+Master\+Conductor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{w\+Index,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{s\+Index,  }\item[{double \&}]{w,  }\item[{double \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 687 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_ab3c766581a594bf8f4c1bc21ebce3dfe}\label{classrcx_1_1ext_process_ab3c766581a594bf8f4c1bc21ebce3dfe}} 
+\index{rcx::extProcess@{rcx::extProcess}!getMaxMinFlag@{getMaxMinFlag}}
+\index{getMaxMinFlag@{getMaxMinFlag}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getMaxMinFlag()}{getMaxMinFlag()}}
+{\footnotesize\ttfamily bool rcx\+::ext\+Process\+::get\+Max\+Min\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 677 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_ad5a345ef1832281a8e69af52e1c2061e}\label{classrcx_1_1ext_process_ad5a345ef1832281a8e69af52e1c2061e}} 
+\index{rcx::extProcess@{rcx::extProcess}!getSpaceTable@{getSpaceTable}}
+\index{getSpaceTable@{getSpaceTable}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getSpaceTable()}{getSpaceTable()}}
+{\footnotesize\ttfamily Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ rcx\+::ext\+Process\+::get\+Space\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met }\end{DoxyParamCaption})}
+
+
+
+Definition at line 635 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a57a0d62cfdd434da40c6257160d8bcd5}\label{classrcx_1_1ext_process_a57a0d62cfdd434da40c6257160d8bcd5}} 
+\index{rcx::extProcess@{rcx::extProcess}!getThickVarFlag@{getThickVarFlag}}
+\index{getThickVarFlag@{getThickVarFlag}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getThickVarFlag()}{getThickVarFlag()}}
+{\footnotesize\ttfamily bool rcx\+::ext\+Process\+::get\+Thick\+Var\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 682 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a768832006c183d3b48db4446111bf48e}\label{classrcx_1_1ext_process_a768832006c183d3b48db4446111bf48e}} 
+\index{rcx::extProcess@{rcx::extProcess}!getVariation@{getVariation}}
+\index{getVariation@{getVariation}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getVariation()}{getVariation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_variation}{ext\+Variation}} $\ast$ rcx\+::ext\+Process\+::get\+Variation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met }\end{DoxyParamCaption})}
+
+
+
+Definition at line 705 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a8d7e2e6c75a3af41338ee666689eb9a4}\label{classrcx_1_1ext_process_a8d7e2e6c75a3af41338ee666689eb9a4}} 
+\index{rcx::extProcess@{rcx::extProcess}!getWidthTable@{getWidthTable}}
+\index{getWidthTable@{getWidthTable}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{getWidthTable()}{getWidthTable()}}
+{\footnotesize\ttfamily Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ rcx\+::ext\+Process\+::get\+Width\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met }\end{DoxyParamCaption})}
+
+
+
+Definition at line 620 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a38074b5b70fe7f44bb05396b023ab06c}\label{classrcx_1_1ext_process_a38074b5b70fe7f44bb05396b023ab06c}} 
+\index{rcx::extProcess@{rcx::extProcess}!openFile@{openFile}}
+\index{openFile@{openFile}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{openFile()}{openFile()}}
+{\footnotesize\ttfamily F\+I\+LE $\ast$ rcx\+::ext\+Process\+::open\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{const char $\ast$}]{permissions }\end{DoxyParamCaption})}
+
+
+
+Definition at line 543 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_ab567f4272874259784fb9801b9b1625e}\label{classrcx_1_1ext_process_ab567f4272874259784fb9801b9b1625e}} 
+\index{rcx::extProcess@{rcx::extProcess}!writeFullProcess@{writeFullProcess}}
+\index{writeFullProcess@{writeFullProcess}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{writeFullProcess()}{writeFullProcess()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Process\+::write\+Full\+Process (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{double}]{X,  }\item[{double}]{width }\end{DoxyParamCaption})}
+
+
+
+Definition at line 213 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a0dfe5cab2b0925c690861186c46c75eb}\label{classrcx_1_1ext_process_a0dfe5cab2b0925c690861186c46c75eb}} 
+\index{rcx::extProcess@{rcx::extProcess}!writeGround@{writeGround}}
+\index{writeGround@{writeGround}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{writeGround()}{writeGround()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rcx\+::ext\+Process\+::write\+Ground (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{int}]{met,  }\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{param\+\_\+width\+\_\+name,  }\item[{double}]{x1,  }\item[{double}]{volt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 182 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a4aeb9af309bb84ad48ebf3df3a639fa7}\label{classrcx_1_1ext_process_a4aeb9af309bb84ad48ebf3df3a639fa7}} 
+\index{rcx::extProcess@{rcx::extProcess}!writeGround@{writeGround}}
+\index{writeGround@{writeGround}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{writeGround()}{writeGround()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rcx\+::ext\+Process\+::write\+Ground (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{int}]{met,  }\item[{const char $\ast$}]{name,  }\item[{double}]{width,  }\item[{double}]{x1,  }\item[{double}]{volt,  }\item[{bool}]{diag = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 142 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a57621bc4646b19fe4a09e64566785ce1}\label{classrcx_1_1ext_process_a57621bc4646b19fe4a09e64566785ce1}} 
+\index{rcx::extProcess@{rcx::extProcess}!writeParam@{writeParam}}
+\index{writeParam@{writeParam}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{writeParam()}{writeParam()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Process\+::write\+Param (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{const char $\ast$}]{name,  }\item[{double}]{val }\end{DoxyParamCaption})}
+
+
+
+Definition at line 123 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_afb9d1686b3d15c0618430be20b781fb3}\label{classrcx_1_1ext_process_afb9d1686b3d15c0618430be20b781fb3}} 
+\index{rcx::extProcess@{rcx::extProcess}!writeProcessAndGround@{writeProcessAndGround}}
+\index{writeProcessAndGround@{writeProcessAndGround}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{writeProcessAndGround()}{writeProcessAndGround()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Process\+::write\+Process\+And\+Ground (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{wfp,  }\item[{const char $\ast$}]{gnd\+Name,  }\item[{int}]{under\+Met,  }\item[{int}]{over\+Met,  }\item[{double}]{X,  }\item[{double}]{width,  }\item[{double}]{thickness,  }\item[{bool}]{diag = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 223 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_a8bf6f5a5728c101ebd673944687cf091}\label{classrcx_1_1ext_process_a8bf6f5a5728c101ebd673944687cf091}} 
+\index{rcx::extProcess@{rcx::extProcess}!writeRaphaelPointXY@{writeRaphaelPointXY}}
+\index{writeRaphaelPointXY@{writeRaphaelPointXY}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{writeRaphaelPointXY()}{writeRaphaelPointXY()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Process\+::write\+Raphael\+Point\+XY (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{double}]{X,  }\item[{double}]{Y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 387 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_process_ad7c590a50a60705301830aa2333de6d2}\label{classrcx_1_1ext_process_ad7c590a50a60705301830aa2333de6d2}} 
+\index{rcx::extProcess@{rcx::extProcess}!writeWindow@{writeWindow}}
+\index{writeWindow@{writeWindow}!rcx::extProcess@{rcx::extProcess}}
+\doxysubsubsection{\texorpdfstring{writeWindow()}{writeWindow()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Process\+::write\+Window (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{const char $\ast$}]{param\+\_\+width\+\_\+name,  }\item[{double}]{y1,  }\item[{const char $\ast$}]{param\+\_\+thickness\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 128 of file extprocess.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/include/rcx/\mbox{\hyperlink{extprocess_8h}{extprocess.\+h}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{extprocess_8cpp}{extprocess.\+cpp}}\end{DoxyCompactItemize}

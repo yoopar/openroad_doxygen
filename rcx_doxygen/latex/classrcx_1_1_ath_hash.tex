@@ -1,0 +1,142 @@
+\hypertarget{classrcx_1_1_ath_hash}{}\doxysection{rcx\+::Ath\+Hash$<$ T $>$ Class Template Reference}
+\label{classrcx_1_1_ath_hash}\index{rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}}
+
+
+{\ttfamily \#include $<$util.\+h$>$}
+
+
+
+Collaboration diagram for rcx\+::Ath\+Hash$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classrcx_1_1_ath_hash__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrcx_1_1_ath_hash_1_1iterator}{iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath_hash_a582edba9e6b09fa56e2955686e863a18}{Ath\+Hash}} (unsigned int size=100, int store=1)
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath_hash_a85910706df8185f56630e410c1617e81}{$\sim$\+Ath\+Hash}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1_ath_hash_a1e49125a6d237e9914ce774ef61315a8}{add}} (const char $\ast$key, T data)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1_ath_hash_a2fc25fa5c095b7834437f52a20c7bf5d}{get}} (const char $\ast$key, T \&data)
+\item 
+\mbox{\hyperlink{structrcx_1_1_ath_hash_1_1iterator}{iterator}} \mbox{\hyperlink{classrcx_1_1_ath_hash_ab3057a9a9cf7210156a586211beacd25}{start}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrcx_1_1_ath_list}{Ath\+List}}$<$ t\+\_\+elem $>$ $\ast$ \mbox{\hyperlink{classrcx_1_1_ath_hash_a62f4544522dc9923a288d0bd00837425}{m\+\_\+data}}
+\item 
+unsigned int \mbox{\hyperlink{classrcx_1_1_ath_hash_a2fef89766ec9d24ae3c20529522cf458}{m\+\_\+prime}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class rcx\+::\+Ath\+Hash$<$ T $>$}
+
+
+
+Definition at line 105 of file util.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrcx_1_1_ath_hash_a582edba9e6b09fa56e2955686e863a18}\label{classrcx_1_1_ath_hash_a582edba9e6b09fa56e2955686e863a18}} 
+\index{rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}!AthHash@{AthHash}}
+\index{AthHash@{AthHash}!rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AthHash()}{AthHash()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classrcx_1_1_ath_hash}{rcx\+::\+Ath\+Hash}}$<$ T $>$\+::\mbox{\hyperlink{classrcx_1_1_ath_hash}{Ath\+Hash}} (\begin{DoxyParamCaption}\item[{unsigned int}]{size = {\ttfamily 100},  }\item[{int}]{store = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 165 of file util.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1_ath_hash_a85910706df8185f56630e410c1617e81}\label{classrcx_1_1_ath_hash_a85910706df8185f56630e410c1617e81}} 
+\index{rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}!````~AthHash@{$\sim$AthHash}}
+\index{````~AthHash@{$\sim$AthHash}!rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$AthHash()}{~AthHash()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classrcx_1_1_ath_hash}{rcx\+::\+Ath\+Hash}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classrcx_1_1_ath_hash}{Ath\+Hash}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 173 of file util.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1_ath_hash_a1e49125a6d237e9914ce774ef61315a8}\label{classrcx_1_1_ath_hash_a1e49125a6d237e9914ce774ef61315a8}} 
+\index{rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}!add@{add}}
+\index{add@{add}!rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classrcx_1_1_ath_hash}{rcx\+::\+Ath\+Hash}}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{T}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 189 of file util.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1_ath_hash_a2fc25fa5c095b7834437f52a20c7bf5d}\label{classrcx_1_1_ath_hash_a2fc25fa5c095b7834437f52a20c7bf5d}} 
+\index{rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}!get@{get}}
+\index{get@{get}!rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classrcx_1_1_ath_hash}{rcx\+::\+Ath\+Hash}}$<$ T $>$\+::get (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{T \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 204 of file util.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1_ath_hash_ab3057a9a9cf7210156a586211beacd25}\label{classrcx_1_1_ath_hash_ab3057a9a9cf7210156a586211beacd25}} 
+\index{rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}!start@{start}}
+\index{start@{start}!rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{structrcx_1_1_ath_hash_1_1iterator}{iterator}} \mbox{\hyperlink{classrcx_1_1_ath_hash}{rcx\+::\+Ath\+Hash}}$<$ T $>$\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 254 of file util.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrcx_1_1_ath_hash_a62f4544522dc9923a288d0bd00837425}\label{classrcx_1_1_ath_hash_a62f4544522dc9923a288d0bd00837425}} 
+\index{rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}!m\_data@{m\_data}}
+\index{m\_data@{m\_data}!rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_data}{m\_data}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classrcx_1_1_ath_list}{Ath\+List}}$<$t\+\_\+elem$>$$\ast$ \mbox{\hyperlink{classrcx_1_1_ath_hash}{rcx\+::\+Ath\+Hash}}$<$ T $>$\+::m\+\_\+data}
+
+
+
+Definition at line 162 of file util.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1_ath_hash_a2fef89766ec9d24ae3c20529522cf458}\label{classrcx_1_1_ath_hash_a2fef89766ec9d24ae3c20529522cf458}} 
+\index{rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}!m\_prime@{m\_prime}}
+\index{m\_prime@{m\_prime}!rcx::AthHash$<$ T $>$@{rcx::AthHash$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_prime}{m\_prime}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+unsigned int \mbox{\hyperlink{classrcx_1_1_ath_hash}{rcx\+::\+Ath\+Hash}}$<$ T $>$\+::m\+\_\+prime}
+
+
+
+Definition at line 163 of file util.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{util_8h}{util.\+h}}\end{DoxyCompactItemize}

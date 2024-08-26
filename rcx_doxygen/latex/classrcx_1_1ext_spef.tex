@@ -1,0 +1,563 @@
+\hypertarget{classrcx_1_1ext_spef}{}\doxysection{rcx\+::ext\+Spef Class Reference}
+\label{classrcx_1_1ext_spef}\index{rcx::extSpef@{rcx::extSpef}}
+
+
+{\ttfamily \#include $<$ext\+Spef.\+h$>$}
+
+
+
+Collaboration diagram for rcx\+::ext\+Spef\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classrcx_1_1ext_spef__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_spef_ac623b69fbc0bfd616a568f01453dd8f0}{ext\+Spef}} (odb\+::db\+Tech $\ast$tech, odb\+::db\+Block $\ast$blk, Logger $\ast$logger, const char $\ast$version, \mbox{\hyperlink{classrcx_1_1ext_main}{ext\+Main}} $\ast$extmain)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_spef_a32cb7e211d04e0b646334c3b2122b1e4}{$\sim$ext\+Spef}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_af52287760f19529de3a3a10f00ea44ed}{reinit}} ()
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_spef_a2daef1ba1ff188b93ac704b80af36050}{set\+Out\+Spef}} (const char $\ast$filename)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_spef_aee46a6a74e0318baf3d44034fd337821}{set\+In\+Spef}} (const char $\ast$filename, bool only\+Open=false)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a02f489cc8222cf779de259b47ff18358}{stop\+Write}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a44b2f85f04929ff40ec2db957945875c}{write\+\_\+spef\+\_\+nets}} (bool flatten, bool parallel)
+\item 
+odb\+::db\+Block $\ast$ \mbox{\hyperlink{classrcx_1_1ext_spef_a4be2ffac911d8ddb36bfc442c2ea2a0d}{get\+Block}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a20fcc5ba8c8d9bd58bf10d5f4c0f033c}{set\+\_\+single\+\_\+pi}} (bool v)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a9ce5ea73728a354d1baf53ff31389c9b}{write\+Net}} (odb\+::db\+Net $\ast$net, double res\+Bound, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} debug)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a534d666815a9f7bce2ad76ae614b20f8}{preserve\+Flag}} (bool v)
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_spef_a68927dd03b93f28ceed77aa804c70d8a}{get\+Write\+Corner}} (int corner, const char $\ast$name)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a64f4440c9d80b646f2f3e9db7bf02a1b}{set\+Use\+Ids\+Flag}} (bool diff=false, bool calib=false)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a09af0e34c87f3e92c691eac37c933485}{set\+Gzip\+Flag}} (bool gz\+Flag)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a8d348cb0b1cef36384a4dcdc22e07d89}{set\+Design}} (const char $\ast$name)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a216e3811ee9aa37970231c7cb3b5a7a6}{write\+Block}} (const char $\ast$node\+Coord, const char $\ast$cap\+Unit, const char $\ast$res\+Unit, bool stop\+After\+Name\+Map, const std\+::vector$<$ odb\+::db\+Net $\ast$ $>$ \&tnets, bool w\+Clock, bool w\+Conn, bool w\+Cap, bool w\+Only\+C\+Ccap, bool w\+Res, bool no\+Cnum, bool stop\+Before\+Dnets, bool no\+Back\+Slash, bool parallel)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_aeefe8375fd3ab49ab04678f8b13143d6}{incr\+\_\+r\+Run}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a2f6cc6aea0974ba6834a5a41db297463}{set\+Corner\+Cnt}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} n)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_spef_a17b8558b5dc40e771082db04cc04dfdc}{read\+Block}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} debug, const std\+::vector$<$ odb\+::db\+Net $\ast$ $>$ \&tnets, bool force, bool r\+Conn, const char $\ast$node\+Coord, bool r\+Cap, bool r\+Only\+C\+Ccap, bool r\+Res, float cc\+\_\+thres, float length\+\_\+unit, bool extracted, bool keep\+Loaded\+Corner, bool stamp\+Wire, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} test\+Parsing, int app\+\_\+print\+\_\+limit, bool m\+\_\+map, int corner, double low, double up, const char $\ast$exclude\+Net\+Sub\+Word, const char $\ast$net\+Sub\+Word, const char $\ast$cap\+Stats\+File, const char $\ast$db\+Corner\+Name, const char $\ast$calibrate\+Base\+Corner, int spef\+Corner, int fix\+Loop, bool \&rseg\+Coord)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_spef_abb1606499c7da155016f3ad07c84ae51}{get\+App\+Print\+Limit}} ()
+\item 
+int $\ast$ \mbox{\hyperlink{classrcx_1_1ext_spef_adf2012816af73fc07f58eb7e03ae7b70}{get\+App\+Cnt}} ()
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_spef_acdbc555a98f957eef3ac6fba6dc79a2b}{read\+Block\+Incr}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} debug)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a9e622978930e114601c70467cbfc916f}{set\+Calib\+Limit}} (float upper\+Limit, float lower\+Limit)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_spef_a8fda7ca9a9e05a65a164c4c9ec31603d}{print\+Appearance}} (const int $\ast$appcnt, int tapp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_spef_a58f5f4a491f808bf2971d308ed9a76ed}{\+\_\+add\+Repeated\+Cap\+Value}} = true
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_spef_ab96cec3ee8b9c2d5c8de290978a58b83}{\+\_\+no\+Cap\+Num\+Collapse}} = false
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{classrcx_1_1ext_spef_a9803e5a747eb5105f65b1597ecf422cd}{\+\_\+cap\+Node\+File}} = nullptr
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_spef_a8e5ce65a14eaa44e0a81a25abff85c6a}{\+\_\+db\+\_\+calibbase\+\_\+corner}}
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_spef_a5a4a408611859cfd82e6d18ea02ecfae}{\+\_\+db\+\_\+ext\+\_\+corner}} = -\/1
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_spef_a8f046c918e908da9ee659becbd75ceac}{\+\_\+active\+\_\+corner\+\_\+cnt}} = 0
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_spef_adc0222a4cbb495afa389ccf871b319f2}{\+\_\+active\+\_\+corner\+\_\+number}} \mbox{[}32\mbox{]}
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_spef_afb0a745218c5735ff7af1d7970e4baa4}{\+\_\+write\+Name\+Map}}
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_spef_a398343fb376989a9df0a2cc8e3dd43c0}{\+\_\+more\+To\+Read}}
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_spef_a7fdde16462d720d2104aadd36e76132a}{\+\_\+term\+Jxy}} = false
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_spef_a32e05f7c301e35a173bdd5073be321b4}{\+\_\+incr\+Plus\+Cc\+Nets}} = false
+\item 
+odb\+::db\+B\+Term $\ast$ \mbox{\hyperlink{classrcx_1_1ext_spef_ac03614d720d3ec8fd83b1ba7dd26e6d0}{\+\_\+ccbterm1}}
+\item 
+odb\+::db\+B\+Term $\ast$ \mbox{\hyperlink{classrcx_1_1ext_spef_ac3ac36ccc1329864c3f55f3ebbd39edf}{\+\_\+ccbterm2}}
+\item 
+odb\+::db\+I\+Term $\ast$ \mbox{\hyperlink{classrcx_1_1ext_spef_a38ffec39e01a7d85abce8a2042939852}{\+\_\+cciterm1}}
+\item 
+odb\+::db\+I\+Term $\ast$ \mbox{\hyperlink{classrcx_1_1ext_spef_a6d8c0c31b0c3b4432d442406f1f9a46d}{\+\_\+cciterm2}}
+\item 
+char $\ast$ \mbox{\hyperlink{classrcx_1_1ext_spef_a12cdfaf1c8504991fbf853174c0edd89}{\+\_\+buf\+String}} = nullptr
+\item 
+char $\ast$ \mbox{\hyperlink{classrcx_1_1ext_spef_ab64ffcef62b412924b006464314a9411}{\+\_\+msg\+Buf1}}
+\item 
+char $\ast$ \mbox{\hyperlink{classrcx_1_1ext_spef_a2f73409fc126afe28df17527adee6f95}{\+\_\+msg\+Buf2}}
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_main}{ext\+Main}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_spef_a5fc78dd3c019b6a93b112f6e6d4f3728}{\+\_\+ext}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 56 of file ext\+Spef.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrcx_1_1ext_spef_ac623b69fbc0bfd616a568f01453dd8f0}\label{classrcx_1_1ext_spef_ac623b69fbc0bfd616a568f01453dd8f0}} 
+\index{rcx::extSpef@{rcx::extSpef}!extSpef@{extSpef}}
+\index{extSpef@{extSpef}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{extSpef()}{extSpef()}}
+{\footnotesize\ttfamily rcx\+::ext\+Spef\+::ext\+Spef (\begin{DoxyParamCaption}\item[{odb\+::db\+Tech $\ast$}]{tech,  }\item[{odb\+::db\+Block $\ast$}]{blk,  }\item[{Logger $\ast$}]{logger,  }\item[{const char $\ast$}]{version,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_main}{ext\+Main}} $\ast$}]{extmain }\end{DoxyParamCaption})}
+
+
+
+Definition at line 49 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a32cb7e211d04e0b646334c3b2122b1e4}\label{classrcx_1_1ext_spef_a32cb7e211d04e0b646334c3b2122b1e4}} 
+\index{rcx::extSpef@{rcx::extSpef}!````~extSpef@{$\sim$extSpef}}
+\index{````~extSpef@{$\sim$extSpef}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{$\sim$extSpef()}{~extSpef()}}
+{\footnotesize\ttfamily rcx\+::ext\+Spef\+::$\sim$ext\+Spef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file ext\+Spef.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1ext_spef_adf2012816af73fc07f58eb7e03ae7b70}\label{classrcx_1_1ext_spef_adf2012816af73fc07f58eb7e03ae7b70}} 
+\index{rcx::extSpef@{rcx::extSpef}!getAppCnt@{getAppCnt}}
+\index{getAppCnt@{getAppCnt}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{getAppCnt()}{getAppCnt()}}
+{\footnotesize\ttfamily int$\ast$ rcx\+::ext\+Spef\+::get\+App\+Cnt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 123 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_abb1606499c7da155016f3ad07c84ae51}\label{classrcx_1_1ext_spef_abb1606499c7da155016f3ad07c84ae51}} 
+\index{rcx::extSpef@{rcx::extSpef}!getAppPrintLimit@{getAppPrintLimit}}
+\index{getAppPrintLimit@{getAppPrintLimit}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{getAppPrintLimit()}{getAppPrintLimit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+Spef\+::get\+App\+Print\+Limit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 122 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a4be2ffac911d8ddb36bfc442c2ea2a0d}\label{classrcx_1_1ext_spef_a4be2ffac911d8ddb36bfc442c2ea2a0d}} 
+\index{rcx::extSpef@{rcx::extSpef}!getBlock@{getBlock}}
+\index{getBlock@{getBlock}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{getBlock()}{getBlock()}}
+{\footnotesize\ttfamily odb\+::db\+Block$\ast$ rcx\+::ext\+Spef\+::get\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 71 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a68927dd03b93f28ceed77aa804c70d8a}\label{classrcx_1_1ext_spef_a68927dd03b93f28ceed77aa804c70d8a}} 
+\index{rcx::extSpef@{rcx::extSpef}!getWriteCorner@{getWriteCorner}}
+\index{getWriteCorner@{getWriteCorner}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{getWriteCorner()}{getWriteCorner()}}
+{\footnotesize\ttfamily int rcx\+::ext\+Spef\+::get\+Write\+Corner (\begin{DoxyParamCaption}\item[{int}]{corner,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2072 of file net\+R\+C.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_aeefe8375fd3ab49ab04678f8b13143d6}\label{classrcx_1_1ext_spef_aeefe8375fd3ab49ab04678f8b13143d6}} 
+\index{rcx::extSpef@{rcx::extSpef}!incr\_rRun@{incr\_rRun}}
+\index{incr\_rRun@{incr\_rRun}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{incr\_rRun()}{incr\_rRun()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::incr\+\_\+r\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 93 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a534d666815a9f7bce2ad76ae614b20f8}\label{classrcx_1_1ext_spef_a534d666815a9f7bce2ad76ae614b20f8}} 
+\index{rcx::extSpef@{rcx::extSpef}!preserveFlag@{preserveFlag}}
+\index{preserveFlag@{preserveFlag}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{preserveFlag()}{preserveFlag()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::preserve\+Flag (\begin{DoxyParamCaption}\item[{bool}]{v }\end{DoxyParamCaption})}
+
+
+
+Definition at line 204 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a8fda7ca9a9e05a65a164c4c9ec31603d}\label{classrcx_1_1ext_spef_a8fda7ca9a9e05a65a164c4c9ec31603d}} 
+\index{rcx::extSpef@{rcx::extSpef}!printAppearance@{printAppearance}}
+\index{printAppearance@{printAppearance}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{printAppearance()}{printAppearance()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::print\+Appearance (\begin{DoxyParamCaption}\item[{const int $\ast$}]{appcnt,  }\item[{int}]{tapp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2734 of file ext\+Spef\+In.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a17b8558b5dc40e771082db04cc04dfdc}\label{classrcx_1_1ext_spef_a17b8558b5dc40e771082db04cc04dfdc}} 
+\index{rcx::extSpef@{rcx::extSpef}!readBlock@{readBlock}}
+\index{readBlock@{readBlock}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{readBlock()}{readBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+Spef\+::read\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{debug,  }\item[{const std\+::vector$<$ odb\+::db\+Net $\ast$ $>$ \&}]{tnets,  }\item[{bool}]{force,  }\item[{bool}]{r\+Conn,  }\item[{const char $\ast$}]{node\+Coord,  }\item[{bool}]{r\+Cap,  }\item[{bool}]{r\+Only\+C\+Ccap,  }\item[{bool}]{r\+Res,  }\item[{float}]{cc\+\_\+thres,  }\item[{float}]{length\+\_\+unit,  }\item[{bool}]{extracted,  }\item[{bool}]{keep\+Loaded\+Corner,  }\item[{bool}]{stamp\+Wire,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{test\+Parsing,  }\item[{int}]{app\+\_\+print\+\_\+limit,  }\item[{bool}]{m\+\_\+map,  }\item[{int}]{corner,  }\item[{double}]{low,  }\item[{double}]{up,  }\item[{const char $\ast$}]{exclude\+Net\+Sub\+Word,  }\item[{const char $\ast$}]{net\+Sub\+Word,  }\item[{const char $\ast$}]{cap\+Stats\+File,  }\item[{const char $\ast$}]{db\+Corner\+Name,  }\item[{const char $\ast$}]{calibrate\+Base\+Corner,  }\item[{int}]{spef\+Corner,  }\item[{int}]{fix\+Loop,  }\item[{bool \&}]{rseg\+Coord }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2276 of file ext\+Spef\+In.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_acdbc555a98f957eef3ac6fba6dc79a2b}\label{classrcx_1_1ext_spef_acdbc555a98f957eef3ac6fba6dc79a2b}} 
+\index{rcx::extSpef@{rcx::extSpef}!readBlockIncr@{readBlockIncr}}
+\index{readBlockIncr@{readBlockIncr}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{readBlockIncr()}{readBlockIncr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+Spef\+::read\+Block\+Incr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{debug }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2203 of file ext\+Spef\+In.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_af52287760f19529de3a3a10f00ea44ed}\label{classrcx_1_1ext_spef_af52287760f19529de3a3a10f00ea44ed}} 
+\index{rcx::extSpef@{rcx::extSpef}!reinit@{reinit}}
+\index{reinit@{reinit}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{reinit()}{reinit()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::reinit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2194 of file ext\+Spef\+In.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a20fcc5ba8c8d9bd58bf10d5f4c0f033c}\label{classrcx_1_1ext_spef_a20fcc5ba8c8d9bd58bf10d5f4c0f033c}} 
+\index{rcx::extSpef@{rcx::extSpef}!set\_single\_pi@{set\_single\_pi}}
+\index{set\_single\_pi@{set\_single\_pi}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{set\_single\_pi()}{set\_single\_pi()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::set\+\_\+single\+\_\+pi (\begin{DoxyParamCaption}\item[{bool}]{v }\end{DoxyParamCaption})}
+
+
+
+Definition at line 123 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a9e622978930e114601c70467cbfc916f}\label{classrcx_1_1ext_spef_a9e622978930e114601c70467cbfc916f}} 
+\index{rcx::extSpef@{rcx::extSpef}!setCalibLimit@{setCalibLimit}}
+\index{setCalibLimit@{setCalibLimit}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{setCalibLimit()}{setCalibLimit()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::set\+Calib\+Limit (\begin{DoxyParamCaption}\item[{float}]{upper\+Limit,  }\item[{float}]{lower\+Limit }\end{DoxyParamCaption})}
+
+
+
+Definition at line 179 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a2f6cc6aea0974ba6834a5a41db297463}\label{classrcx_1_1ext_spef_a2f6cc6aea0974ba6834a5a41db297463}} 
+\index{rcx::extSpef@{rcx::extSpef}!setCornerCnt@{setCornerCnt}}
+\index{setCornerCnt@{setCornerCnt}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{setCornerCnt()}{setCornerCnt()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::set\+Corner\+Cnt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 209 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a8d348cb0b1cef36384a4dcdc22e07d89}\label{classrcx_1_1ext_spef_a8d348cb0b1cef36384a4dcdc22e07d89}} 
+\index{rcx::extSpef@{rcx::extSpef}!setDesign@{setDesign}}
+\index{setDesign@{setDesign}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{setDesign()}{setDesign()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::set\+Design (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 271 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a09af0e34c87f3e92c691eac37c933485}\label{classrcx_1_1ext_spef_a09af0e34c87f3e92c691eac37c933485}} 
+\index{rcx::extSpef@{rcx::extSpef}!setGzipFlag@{setGzipFlag}}
+\index{setGzipFlag@{setGzipFlag}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{setGzipFlag()}{setGzipFlag()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::set\+Gzip\+Flag (\begin{DoxyParamCaption}\item[{bool}]{gz\+Flag }\end{DoxyParamCaption})}
+
+
+
+Definition at line 214 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_aee46a6a74e0318baf3d44034fd337821}\label{classrcx_1_1ext_spef_aee46a6a74e0318baf3d44034fd337821}} 
+\index{rcx::extSpef@{rcx::extSpef}!setInSpef@{setInSpef}}
+\index{setInSpef@{setInSpef}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{setInSpef()}{setInSpef()}}
+{\footnotesize\ttfamily bool rcx\+::ext\+Spef\+::set\+In\+Spef (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{bool}]{only\+Open = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1216 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a2daef1ba1ff188b93ac704b80af36050}\label{classrcx_1_1ext_spef_a2daef1ba1ff188b93ac704b80af36050}} 
+\index{rcx::extSpef@{rcx::extSpef}!setOutSpef@{setOutSpef}}
+\index{setOutSpef@{setOutSpef}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{setOutSpef()}{setOutSpef()}}
+{\footnotesize\ttfamily bool rcx\+::ext\+Spef\+::set\+Out\+Spef (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1234 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a64f4440c9d80b646f2f3e9db7bf02a1b}\label{classrcx_1_1ext_spef_a64f4440c9d80b646f2f3e9db7bf02a1b}} 
+\index{rcx::extSpef@{rcx::extSpef}!setUseIdsFlag@{setUseIdsFlag}}
+\index{setUseIdsFlag@{setUseIdsFlag}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{setUseIdsFlag()}{setUseIdsFlag()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::set\+Use\+Ids\+Flag (\begin{DoxyParamCaption}\item[{bool}]{diff = {\ttfamily false},  }\item[{bool}]{calib = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 186 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a02f489cc8222cf779de259b47ff18358}\label{classrcx_1_1ext_spef_a02f489cc8222cf779de259b47ff18358}} 
+\index{rcx::extSpef@{rcx::extSpef}!stopWrite@{stopWrite}}
+\index{stopWrite@{stopWrite}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{stopWrite()}{stopWrite()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::stop\+Write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1441 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a44b2f85f04929ff40ec2db957945875c}\label{classrcx_1_1ext_spef_a44b2f85f04929ff40ec2db957945875c}} 
+\index{rcx::extSpef@{rcx::extSpef}!write\_spef\_nets@{write\_spef\_nets}}
+\index{write\_spef\_nets@{write\_spef\_nets}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{write\_spef\_nets()}{write\_spef\_nets()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::write\+\_\+spef\+\_\+nets (\begin{DoxyParamCaption}\item[{bool}]{flatten,  }\item[{bool}]{parallel }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1596 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a216e3811ee9aa37970231c7cb3b5a7a6}\label{classrcx_1_1ext_spef_a216e3811ee9aa37970231c7cb3b5a7a6}} 
+\index{rcx::extSpef@{rcx::extSpef}!writeBlock@{writeBlock}}
+\index{writeBlock@{writeBlock}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{writeBlock()}{writeBlock()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::write\+Block (\begin{DoxyParamCaption}\item[{const char $\ast$}]{node\+Coord,  }\item[{const char $\ast$}]{cap\+Unit,  }\item[{const char $\ast$}]{res\+Unit,  }\item[{bool}]{stop\+After\+Name\+Map,  }\item[{const std\+::vector$<$ odb\+::db\+Net $\ast$ $>$ \&}]{tnets,  }\item[{bool}]{w\+Clock,  }\item[{bool}]{w\+Conn,  }\item[{bool}]{w\+Cap,  }\item[{bool}]{w\+Only\+C\+Ccap,  }\item[{bool}]{w\+Res,  }\item[{bool}]{no\+Cnum,  }\item[{bool}]{stop\+Before\+Dnets,  }\item[{bool}]{no\+Back\+Slash,  }\item[{bool}]{parallel }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1477 of file ext\+Spef.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a9ce5ea73728a354d1baf53ff31389c9b}\label{classrcx_1_1ext_spef_a9ce5ea73728a354d1baf53ff31389c9b}} 
+\index{rcx::extSpef@{rcx::extSpef}!writeNet@{writeNet}}
+\index{writeNet@{writeNet}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{writeNet()}{writeNet()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Spef\+::write\+Net (\begin{DoxyParamCaption}\item[{odb\+::db\+Net $\ast$}]{net,  }\item[{double}]{res\+Bound,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{debug }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1121 of file ext\+Spef.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a8f046c918e908da9ee659becbd75ceac}\label{classrcx_1_1ext_spef_a8f046c918e908da9ee659becbd75ceac}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_active\_corner\_cnt@{\_active\_corner\_cnt}}
+\index{\_active\_corner\_cnt@{\_active\_corner\_cnt}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_active\_corner\_cnt}{\_active\_corner\_cnt}}
+{\footnotesize\ttfamily int rcx\+::ext\+Spef\+::\+\_\+active\+\_\+corner\+\_\+cnt = 0}
+
+
+
+Definition at line 527 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_adc0222a4cbb495afa389ccf871b319f2}\label{classrcx_1_1ext_spef_adc0222a4cbb495afa389ccf871b319f2}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_active\_corner\_number@{\_active\_corner\_number}}
+\index{\_active\_corner\_number@{\_active\_corner\_number}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_active\_corner\_number}{\_active\_corner\_number}}
+{\footnotesize\ttfamily int rcx\+::ext\+Spef\+::\+\_\+active\+\_\+corner\+\_\+number\mbox{[}32\mbox{]}}
+
+
+
+Definition at line 528 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a58f5f4a491f808bf2971d308ed9a76ed}\label{classrcx_1_1ext_spef_a58f5f4a491f808bf2971d308ed9a76ed}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_addRepeatedCapValue@{\_addRepeatedCapValue}}
+\index{\_addRepeatedCapValue@{\_addRepeatedCapValue}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_addRepeatedCapValue}{\_addRepeatedCapValue}}
+{\footnotesize\ttfamily bool rcx\+::ext\+Spef\+::\+\_\+add\+Repeated\+Cap\+Value = true}
+
+
+
+Definition at line 522 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a12cdfaf1c8504991fbf853174c0edd89}\label{classrcx_1_1ext_spef_a12cdfaf1c8504991fbf853174c0edd89}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_bufString@{\_bufString}}
+\index{\_bufString@{\_bufString}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_bufString}{\_bufString}}
+{\footnotesize\ttfamily char$\ast$ rcx\+::ext\+Spef\+::\+\_\+buf\+String = nullptr}
+
+
+
+Definition at line 537 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a9803e5a747eb5105f65b1597ecf422cd}\label{classrcx_1_1ext_spef_a9803e5a747eb5105f65b1597ecf422cd}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_capNodeFile@{\_capNodeFile}}
+\index{\_capNodeFile@{\_capNodeFile}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_capNodeFile}{\_capNodeFile}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ rcx\+::ext\+Spef\+::\+\_\+cap\+Node\+File = nullptr}
+
+
+
+Definition at line 524 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_ac03614d720d3ec8fd83b1ba7dd26e6d0}\label{classrcx_1_1ext_spef_ac03614d720d3ec8fd83b1ba7dd26e6d0}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_ccbterm1@{\_ccbterm1}}
+\index{\_ccbterm1@{\_ccbterm1}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_ccbterm1}{\_ccbterm1}}
+{\footnotesize\ttfamily odb\+::db\+B\+Term$\ast$ rcx\+::ext\+Spef\+::\+\_\+ccbterm1}
+
+
+
+Definition at line 533 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_ac3ac36ccc1329864c3f55f3ebbd39edf}\label{classrcx_1_1ext_spef_ac3ac36ccc1329864c3f55f3ebbd39edf}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_ccbterm2@{\_ccbterm2}}
+\index{\_ccbterm2@{\_ccbterm2}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_ccbterm2}{\_ccbterm2}}
+{\footnotesize\ttfamily odb\+::db\+B\+Term$\ast$ rcx\+::ext\+Spef\+::\+\_\+ccbterm2}
+
+
+
+Definition at line 534 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a38ffec39e01a7d85abce8a2042939852}\label{classrcx_1_1ext_spef_a38ffec39e01a7d85abce8a2042939852}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_cciterm1@{\_cciterm1}}
+\index{\_cciterm1@{\_cciterm1}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_cciterm1}{\_cciterm1}}
+{\footnotesize\ttfamily odb\+::db\+I\+Term$\ast$ rcx\+::ext\+Spef\+::\+\_\+cciterm1}
+
+
+
+Definition at line 535 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a6d8c0c31b0c3b4432d442406f1f9a46d}\label{classrcx_1_1ext_spef_a6d8c0c31b0c3b4432d442406f1f9a46d}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_cciterm2@{\_cciterm2}}
+\index{\_cciterm2@{\_cciterm2}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_cciterm2}{\_cciterm2}}
+{\footnotesize\ttfamily odb\+::db\+I\+Term$\ast$ rcx\+::ext\+Spef\+::\+\_\+cciterm2}
+
+
+
+Definition at line 536 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a8e5ce65a14eaa44e0a81a25abff85c6a}\label{classrcx_1_1ext_spef_a8e5ce65a14eaa44e0a81a25abff85c6a}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_db\_calibbase\_corner@{\_db\_calibbase\_corner}}
+\index{\_db\_calibbase\_corner@{\_db\_calibbase\_corner}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_db\_calibbase\_corner}{\_db\_calibbase\_corner}}
+{\footnotesize\ttfamily int rcx\+::ext\+Spef\+::\+\_\+db\+\_\+calibbase\+\_\+corner}
+
+
+
+Definition at line 525 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a5a4a408611859cfd82e6d18ea02ecfae}\label{classrcx_1_1ext_spef_a5a4a408611859cfd82e6d18ea02ecfae}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_db\_ext\_corner@{\_db\_ext\_corner}}
+\index{\_db\_ext\_corner@{\_db\_ext\_corner}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_db\_ext\_corner}{\_db\_ext\_corner}}
+{\footnotesize\ttfamily int rcx\+::ext\+Spef\+::\+\_\+db\+\_\+ext\+\_\+corner = -\/1}
+
+
+
+Definition at line 526 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a5fc78dd3c019b6a93b112f6e6d4f3728}\label{classrcx_1_1ext_spef_a5fc78dd3c019b6a93b112f6e6d4f3728}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_ext@{\_ext}}
+\index{\_ext@{\_ext}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_ext}{\_ext}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_main}{ext\+Main}}$\ast$ rcx\+::ext\+Spef\+::\+\_\+ext}
+
+
+
+Definition at line 541 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a32e05f7c301e35a173bdd5073be321b4}\label{classrcx_1_1ext_spef_a32e05f7c301e35a173bdd5073be321b4}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_incrPlusCcNets@{\_incrPlusCcNets}}
+\index{\_incrPlusCcNets@{\_incrPlusCcNets}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_incrPlusCcNets}{\_incrPlusCcNets}}
+{\footnotesize\ttfamily bool rcx\+::ext\+Spef\+::\+\_\+incr\+Plus\+Cc\+Nets = false}
+
+
+
+Definition at line 532 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a398343fb376989a9df0a2cc8e3dd43c0}\label{classrcx_1_1ext_spef_a398343fb376989a9df0a2cc8e3dd43c0}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_moreToRead@{\_moreToRead}}
+\index{\_moreToRead@{\_moreToRead}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_moreToRead}{\_moreToRead}}
+{\footnotesize\ttfamily bool rcx\+::ext\+Spef\+::\+\_\+more\+To\+Read}
+
+
+
+Definition at line 530 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_ab64ffcef62b412924b006464314a9411}\label{classrcx_1_1ext_spef_ab64ffcef62b412924b006464314a9411}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_msgBuf1@{\_msgBuf1}}
+\index{\_msgBuf1@{\_msgBuf1}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_msgBuf1}{\_msgBuf1}}
+{\footnotesize\ttfamily char$\ast$ rcx\+::ext\+Spef\+::\+\_\+msg\+Buf1}
+
+
+
+Definition at line 538 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a2f73409fc126afe28df17527adee6f95}\label{classrcx_1_1ext_spef_a2f73409fc126afe28df17527adee6f95}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_msgBuf2@{\_msgBuf2}}
+\index{\_msgBuf2@{\_msgBuf2}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_msgBuf2}{\_msgBuf2}}
+{\footnotesize\ttfamily char$\ast$ rcx\+::ext\+Spef\+::\+\_\+msg\+Buf2}
+
+
+
+Definition at line 539 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_ab96cec3ee8b9c2d5c8de290978a58b83}\label{classrcx_1_1ext_spef_ab96cec3ee8b9c2d5c8de290978a58b83}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_noCapNumCollapse@{\_noCapNumCollapse}}
+\index{\_noCapNumCollapse@{\_noCapNumCollapse}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_noCapNumCollapse}{\_noCapNumCollapse}}
+{\footnotesize\ttfamily bool rcx\+::ext\+Spef\+::\+\_\+no\+Cap\+Num\+Collapse = false}
+
+
+
+Definition at line 523 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_a7fdde16462d720d2104aadd36e76132a}\label{classrcx_1_1ext_spef_a7fdde16462d720d2104aadd36e76132a}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_termJxy@{\_termJxy}}
+\index{\_termJxy@{\_termJxy}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_termJxy}{\_termJxy}}
+{\footnotesize\ttfamily bool rcx\+::ext\+Spef\+::\+\_\+term\+Jxy = false}
+
+
+
+Definition at line 531 of file ext\+Spef.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_spef_afb0a745218c5735ff7af1d7970e4baa4}\label{classrcx_1_1ext_spef_afb0a745218c5735ff7af1d7970e4baa4}} 
+\index{rcx::extSpef@{rcx::extSpef}!\_writeNameMap@{\_writeNameMap}}
+\index{\_writeNameMap@{\_writeNameMap}!rcx::extSpef@{rcx::extSpef}}
+\doxysubsubsection{\texorpdfstring{\_writeNameMap}{\_writeNameMap}}
+{\footnotesize\ttfamily bool rcx\+::ext\+Spef\+::\+\_\+write\+Name\+Map}
+
+
+
+Definition at line 529 of file ext\+Spef.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/include/rcx/\mbox{\hyperlink{ext_spef_8h}{ext\+Spef.\+h}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{ext_coords_8cpp}{ext\+Coords.\+cpp}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{ext_spef_8cpp}{ext\+Spef.\+cpp}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{ext_spef_in_8cpp}{ext\+Spef\+In.\+cpp}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{net_r_c_8cpp}{net\+R\+C.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,1136 @@
+\hypertarget{classrcx_1_1ext_r_c_model}{}\doxysection{rcx\+::ext\+R\+C\+Model Class Reference}
+\label{classrcx_1_1ext_r_c_model}\index{rcx::extRCModel@{rcx::extRCModel}}
+
+
+{\ttfamily \#include $<$ext\+R\+Cap.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_met_r_c_table}{ext\+Met\+R\+C\+Table}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a67434018b7a20af773e66a791fa2aa23}{get\+Met\+R\+C\+Table}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} ii)
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a1e937955efe8f167fb8928987ac49168}{get\+Model\+Cnt}} ()
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ae86a74191c2a90f88e0496331a13a1de}{get\+Layer\+Cnt}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a8ff55e10686e2e26672e672c4eae7f26}{set\+Layer\+Cnt}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} n)
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a0739e7012fd761dbca302356b27035cd}{get\+Diag\+Model}} ()
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ac275865ae3343932ae0b3ac6f7f5a901}{get\+Vertical\+Diag\+Flag}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ae9ba475426d444a68c41cb82c093e8dc}{set\+Diag\+Model}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} i)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_r_c_model_ade4af76b74a7320eaa9610a0b096877e}{ext\+R\+C\+Model}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} layer\+Cnt, const char $\ast$name, Logger $\ast$logger)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_r_c_model_aef80ace731a6c87e3d28c9642dd107c8}{ext\+R\+C\+Model}} (const char $\ast$name, Logger $\ast$logger)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_process}{ext\+Process}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a6b944954ff44f3bf4f1143e6ac6aa5ec}{get\+Process}} ()
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a76cb99a6745263f993c4593e3c9a9070}{find\+Biggest\+Datarate\+Index}} (double d)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_r_c_model_ad2d9f1bc0befea2e8c075665f9c8c786}{$\sim$ext\+R\+C\+Model}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a62d9770e6dc3823ac70f89dc7478cee3}{set\+Ext\+Main}} (\mbox{\hyperlink{classrcx_1_1ext_main}{ext\+Main}} $\ast$x)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a7f481eea5ba1215504e382a24123d911}{create\+Model\+Table}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} n, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} layer\+Cnt)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a005b47c1a471e69ffb49ee13b574b905}{add\+Lef\+Tot\+RC}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} under\+Met, double fr, double r)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a14bb1990cc5cf1be53db48d5e2b34098}{add\+Cap\+Over}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} under\+Met, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} d, double cc, double fr, double a, double r)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_r_c_model_afd2e449a080b71d94ce2563844cb6316}{get\+Tot\+Cap\+Over\+Sub}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a6dd8b7bb04ae3dcf21096cdf2a238460}{get\+Res}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a655f00bb6b152ce47f98ca24b4a7d993}{bench\+With\+Var\+\_\+density}} (\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$opt, \mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a4497f86fbdb2bdb961c123de70401e27}{bench\+With\+Var\+\_\+lists}} (\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$opt, \mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a933604f00caa1ab2ee10bb93a2156949}{run\+Wires\+Solver}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} net\+Id, int shape\+Id)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a23fefe561db513f25153b3a424971a78}{set\+Process}} (\mbox{\hyperlink{classrcx_1_1ext_process}{ext\+Process}} $\ast$p)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a30e573bbc1cbb1fd959c445038603173}{set\+Data\+Rate\+Table}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a544fd30c8c5cace2c51433d7447c8f86}{single\+Line\+Over}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} width\+Cnt)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a9be6b9cad42fd692f8754fd9f45083bb}{two\+Line\+Over}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} width\+Cnt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} space\+Cnt)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ad84c95f6901adbf9d4e1cbc81aa3c11a}{three\+Line\+Over}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} width\+Cnt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} space\+Cnt)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a517290720826fa78b171f17d8a3fa4cb}{get\+Cap\+Values}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} last\+Node, double \&cc1, double \&cc2, double \&fr, double \&tot, \mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a234907ae5afdba7d94beece152b38e07}{get\+Cap\+Matrix\+Values}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} last\+Node, \mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ac7973eadac49c136faced7fd47b63b37}{read\+Capacitance}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} wire\+Num, double \&cc1, double \&cc2, double \&fr, double \&tot, bool read\+Cap\+Log, \mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m=nullptr)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a7fa5ff87507257142b0f9d6cdc0064aa}{read\+Capacitance\+Bench}} (bool read\+Cap\+Log, \mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_af9f666b965b70adcf8243539b79a57be}{read\+Capacitance\+Bench\+Diag}} (bool read\+Cap\+Log, \mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a76ae1b400544052fb3c77cbd84d74e4d}{read\+Cap}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} wire\+Cnt, double w, double s, double r)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ab00ac79028d3a910f7dd3ee757b9cca3}{read\+Cap}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} wire\+Cnt, double cc1, double cc2, double fr, double tot)
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a32af3ec29c554441aa109c655b9b9f18}{open\+File}} (const char $\ast$top\+Dir, const char $\ast$name, const char $\ast$suffix, const char $\ast$permissions)
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_aee65c4630f42954e4e1fd93e3becb49e}{open\+Solver\+File}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a7806ac918010dbff6da65da027f9866c}{mk\+Net\+\_\+prefix}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m, const char $\ast$wires\+Name\+Suffix)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a0c75cbe715934e876cac99c04505f9c7}{mk\+File\+Names}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m, char $\ast$wires\+Name\+Suffix)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_af7ea13296ab2d2f8546efad2afa75ae7}{write\+Wires2}} (F\+I\+LE $\ast$fp, \mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} wire\+Cnt)
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_r_c_model_af3d6ff5e6fdbd1cac7a19a240d74db06}{write\+Bench\+Wires}} (F\+I\+LE $\ast$fp, \mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a0a4edc2c152fea21ab85f80600f7462b}{set\+Options}} (const char $\ast$top\+Dir, const char $\ast$pattern, bool write\+Files, bool read\+Files, bool \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a0b963d55436376006cc8e1346fecae4a}{run\+Solver}})
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a710f7daf24ccebcc5274c737057590fe}{set\+Options}} (const char $\ast$top\+Dir, const char $\ast$pattern, bool write\+Files, bool read\+Files, bool \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a0b963d55436376006cc8e1346fecae4a}{run\+Solver}}, bool keep\+File)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a0b963d55436376006cc8e1346fecae4a}{run\+Solver}} (const char $\ast$solver\+Option)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a897cd1c219f56ef0a78eed4542aef5d2}{solver\+Step}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_aeafc6f04481491fae5044d2a10710f55}{clean\+Files}} ()
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a7f03d451f0420ab4d61379956db471f9}{measure\+Pattern}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, int under\+Met, int over\+Met, double width, double space, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} wire\+Cnt, char $\ast$ou, bool read\+Cap\+Log)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ae3da192cd14781710bc695abc19e3ad1}{measure\+Pattern\+Var}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m, double top\+\_\+width, double bot\+\_\+width, double thickness, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} wire\+Cnt, char $\ast$wires\+Name\+Suffix, double res=0.\+0)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_r_c_model_af41a0b1483f0fbcafa92099e07632ca1}{measure\+Resistance}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m, double ro, double top\+\_\+widthR, double bot\+\_\+widthR, double thicknessR)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ac05502a86fa8a5868c9f215a4eee1ed6}{lines\+Over\+Bench}} (\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$opt)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_abd77cef2fd9919ed4314156f7d31a224}{lines\+Under\+Bench}} (\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$opt)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a590acc07c8ef7e862c04d47705fb8d37}{lines\+Diag\+Under\+Bench}} (\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$opt)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_adf902573627ce3ef6cefa58b2f77f07d}{lines\+Over\+Under\+Bench}} (\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$opt)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_aeba10ff0e468d467d790c392b18c47e3}{bench\+With\+Var}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a17d09922540635c4f2d17c466d1128d1}{add\+RC}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ad25d109c075b5b052875ef9ba14fffd6}{get\+Over\+Under\+Index}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} max\+Cnt)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a3232da16edde5ebab448fea0c00a94fd}{get\+Under\+Index}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_width_r_c_table}{ext\+Dist\+Width\+R\+C\+Table}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a4ba2ae5ec9186de7ee6ddc2cce89f4e7}{get\+Width\+Dist\+R\+Ctable}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, int m\+Under, int m\+Over, int \&n, double d\+Rate)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a0761f2bd670defa7170f6b607948151b}{print\+Comment\+Line}} (char comment\+Char, \mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a1e40afcebc61c1d6b8ca4480f25a7d6c}{alloc\+Over\+Table}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a381b4ff9507953efe693742502544e64}{alloc\+Diag\+Under\+Table}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ae37d28439de0875ad548805d7ce0ac86}{alloc\+Under\+Table}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a8f433a7ec50d838998a8bb7cb8e7c869}{alloc\+Over\+Under\+Table}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a9a46bbf3fda8b9e5966f218b844721cc}{compute\+Tables}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} wire\+Cnt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} width\+Cnt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} space\+Cnt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} d\+Cnt)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a05b1c03593afcf2670903de38602fc10}{get\+Diag\+Tables}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} width\+Cnt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} space\+Cnt)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a34398113afbc44f56c84b2b4dbc7bd69}{set\+Diag\+Under\+Tables}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a33df0fb5a64a162e5317d0e1250ffaaa}{get\+R\+Ctable}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, int m\+Under, int Over\+Met, double w, double d\+Rate)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a578950c5e4ad529e58d384362ddf8571}{get\+R\+Ctable}} (Ath\+\_\+\+\_\+array1D$<$ int $>$ $\ast$s\+Table, Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$rc\+Table, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} val\+Type, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, int m\+Under, int m\+Over, int width, double d\+Rate)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ab00975573f01b740a3c02c7babf2be32}{write\+Rules}} (char $\ast$name, bool binary)
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_r_c_model_af1f9fc416f3cc653b07a21f50c745770}{read\+Rules}} (char $\ast$name, bool binary, bool over, bool under, bool over\+Under, bool diag, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} corner\+Cnt=0, const \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} $\ast$corner\+Table=nullptr, double db\+Factor=1.\+0)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a93811021fff95edcf30fac9cc560c775}{read\+Metal\+Header}} (Ath\+\_\+\+\_\+parser $\ast$parser, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \&met, const char $\ast$keyword, bool bin, bool ignore)
+\item 
+Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_aef8b2fe803c56d8596a2c56f6f180070}{read\+Header\+And\+Width}} (Ath\+\_\+\+\_\+parser $\ast$parser, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \&met, const char $\ast$ou\+Key, const char $\ast$w\+Key, bool bin, bool ignore)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a22e06dd29e5383cd83354d7308ee8614}{read\+Rules}} (Ath\+\_\+\+\_\+parser $\ast$parser, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} m, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} ii, const char $\ast$ou\+Key, const char $\ast$w\+Key, bool over, bool under, bool bin, bool diag, bool ignore, double db\+Factor=1.\+0)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a492a36bcb49267f7f87c1666531c5734}{get\+Over\+Fringe\+RC}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} under\+Met, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} width)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a8676e4f29f8f9461a15208aaa13aeeab}{get\+Fringe\+Over}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} m\+Under, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} w, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} s)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_r_c_model_af7e5dda4c31b4260d8b88795beada5da}{get\+Coupling\+Over}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} met, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} m\+Under, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} w, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} s)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ae79d303cfb3516446788e8de2ec31474}{get\+Over\+RC}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a0dc8e4429c002882834f1e7b75d9839b}{get\+Under\+RC}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_abebbc57d2ca63332bca06591676f205f}{get\+Over\+Under\+RC}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a47e97b741ac9da450d27cfd8d3441cbe}{get\+Over\+Fringe\+RC}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_aa7bc48d6a9af13ed0ab00b907499a05d}{get\+Over\+Under\+Fringe\+RC}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a29dc7e2549ecd567e592aab479720a38}{get\+Under\+Fringe\+RC}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$m)
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ae228fd1ab8f9fae7532cada01e024134}{find\+Datarate\+Index}} (double d)
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a4a58e409308d57d86d3132634909b689}{mk\+Pattern\+File}} ()
+\item 
+bool \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a7b5a9fb512a5c2b030b7235a4c470c0b}{open\+Cap\+Log\+File}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_acd692403cc4dcc136488482a012d1d3c}{close\+Cap\+Log\+File}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a0444f0dead41bc98025a11e68098e378}{close\+Files}} ()
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a82bce0af6f0a8a6b845caa3b2eff20a1}{set\+Rule\+File\+Name}} (char $\ast$name)
+\item 
+char $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a7d9099422149d55bce24e7bac50a4047}{get\+Rule\+File\+Name}} ()
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a666fea2bd03468bbf378b759370627b6}{get\+Max\+Cnt}} (int met)
+\item 
+\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a43527390dc6e2c533c75bb09b5541d22}{bench\+D\+B\+\_\+\+WS}} (\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$opt, \mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a40754b41dc623355cca05e6a41595547}{write\+Bench\+Wires\+\_\+\+DB}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a026722f5de63271bd0772fcf320f4868}{write\+Bench\+Wires\+\_\+\+D\+B\+\_\+res}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+int \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a97e821396070613d3492f4f363ff39a6}{write\+Bench\+Wires\+\_\+\+D\+B\+\_\+diag}} (\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$measure)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_met_r_c_table}{ext\+Met\+R\+C\+Table}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_ac76641ab21634c43acc40d4825323bf2}{init\+Cap\+Tables}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} layer\+Cnt, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} width\+Cnt)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_a7b36118a586388fcd94d0a0f2126250b}{get\+Min\+RC}} (int met, int width)
+\item 
+\mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ \mbox{\hyperlink{classrcx_1_1ext_r_c_model_afae534e829e7027d9c35a26be7ea0edf}{get\+Max\+RC}} (int met, int width, int dist)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 399 of file ext\+R\+Cap.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ade4af76b74a7320eaa9610a0b096877e}\label{classrcx_1_1ext_r_c_model_ade4af76b74a7320eaa9610a0b096877e}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!extRCModel@{extRCModel}}
+\index{extRCModel@{extRCModel}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{extRCModel()}{extRCModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily rcx\+::ext\+R\+C\+Model\+::ext\+R\+C\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{layer\+Cnt,  }\item[{const char $\ast$}]{name,  }\item[{Logger $\ast$}]{logger }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2149 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_aef80ace731a6c87e3d28c9642dd107c8}\label{classrcx_1_1ext_r_c_model_aef80ace731a6c87e3d28c9642dd107c8}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!extRCModel@{extRCModel}}
+\index{extRCModel@{extRCModel}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{extRCModel()}{extRCModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily rcx\+::ext\+R\+C\+Model\+::ext\+R\+C\+Model (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{Logger $\ast$}]{logger }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2186 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ad2d9f1bc0befea2e8c075665f9c8c786}\label{classrcx_1_1ext_r_c_model_ad2d9f1bc0befea2e8c075665f9c8c786}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!````~extRCModel@{$\sim$extRCModel}}
+\index{````~extRCModel@{$\sim$extRCModel}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$extRCModel()}{~extRCModel()}}
+{\footnotesize\ttfamily rcx\+::ext\+R\+C\+Model\+::$\sim$ext\+R\+C\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2225 of file ext\+R\+Cmodel.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a14bb1990cc5cf1be53db48d5e2b34098}\label{classrcx_1_1ext_r_c_model_a14bb1990cc5cf1be53db48d5e2b34098}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!addCapOver@{addCapOver}}
+\index{addCapOver@{addCapOver}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{addCapOver()}{addCapOver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::add\+Cap\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{under\+Met,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{d,  }\item[{double}]{cc,  }\item[{double}]{fr,  }\item[{double}]{a,  }\item[{double}]{r }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2323 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a005b47c1a471e69ffb49ee13b574b905}\label{classrcx_1_1ext_r_c_model_a005b47c1a471e69ffb49ee13b574b905}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!addLefTotRC@{addLefTotRC}}
+\index{addLefTotRC@{addLefTotRC}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{addLefTotRC()}{addLefTotRC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::add\+Lef\+Tot\+RC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{under\+Met,  }\item[{double}]{fr,  }\item[{double}]{r }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2314 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a17d09922540635c4f2d17c466d1128d1}\label{classrcx_1_1ext_r_c_model_a17d09922540635c4f2d17c466d1128d1}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!addRC@{addRC}}
+\index{addRC@{addRC}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{addRC()}{addRC()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::add\+RC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3516 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a381b4ff9507953efe693742502544e64}\label{classrcx_1_1ext_r_c_model_a381b4ff9507953efe693742502544e64}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!allocDiagUnderTable@{allocDiagUnderTable}}
+\index{allocDiagUnderTable@{allocDiagUnderTable}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{allocDiagUnderTable()}{allocDiagUnderTable()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::alloc\+Diag\+Under\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4379 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a1e40afcebc61c1d6b8ca4480f25a7d6c}\label{classrcx_1_1ext_r_c_model_a1e40afcebc61c1d6b8ca4480f25a7d6c}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!allocOverTable@{allocOverTable}}
+\index{allocOverTable@{allocOverTable}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{allocOverTable()}{allocOverTable()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::alloc\+Over\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4368 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a8f433a7ec50d838998a8bb7cb8e7c869}\label{classrcx_1_1ext_r_c_model_a8f433a7ec50d838998a8bb7cb8e7c869}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!allocOverUnderTable@{allocOverUnderTable}}
+\index{allocOverUnderTable@{allocOverUnderTable}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{allocOverUnderTable()}{allocOverUnderTable()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::alloc\+Over\+Under\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4429 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ae37d28439de0875ad548805d7ce0ac86}\label{classrcx_1_1ext_r_c_model_ae37d28439de0875ad548805d7ce0ac86}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!allocUnderTable@{allocUnderTable}}
+\index{allocUnderTable@{allocUnderTable}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{allocUnderTable()}{allocUnderTable()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::alloc\+Under\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4418 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a43527390dc6e2c533c75bb09b5541d22}\label{classrcx_1_1ext_r_c_model_a43527390dc6e2c533c75bb09b5541d22}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!benchDB\_WS@{benchDB\_WS}}
+\index{benchDB\_WS@{benchDB\_WS}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{benchDB\_WS()}{benchDB\_WS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::bench\+D\+B\+\_\+\+WS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$}]{opt,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 387 of file ext\+Bench\+D\+B.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_aeba10ff0e468d467d790c392b18c47e3}\label{classrcx_1_1ext_r_c_model_aeba10ff0e468d467d790c392b18c47e3}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!benchWithVar@{benchWithVar}}
+\index{benchWithVar@{benchWithVar}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{benchWithVar()}{benchWithVar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::bench\+With\+Var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a655f00bb6b152ce47f98ca24b4a7d993}\label{classrcx_1_1ext_r_c_model_a655f00bb6b152ce47f98ca24b4a7d993}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!benchWithVar\_density@{benchWithVar\_density}}
+\index{benchWithVar\_density@{benchWithVar\_density}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{benchWithVar\_density()}{benchWithVar\_density()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::bench\+With\+Var\+\_\+density (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$}]{opt,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file ext\+Bench.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a4497f86fbdb2bdb961c123de70401e27}\label{classrcx_1_1ext_r_c_model_a4497f86fbdb2bdb961c123de70401e27}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!benchWithVar\_lists@{benchWithVar\_lists}}
+\index{benchWithVar\_lists@{benchWithVar\_lists}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{benchWithVar\_lists()}{benchWithVar\_lists()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::bench\+With\+Var\+\_\+lists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$}]{opt,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 141 of file ext\+Bench.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_aeafc6f04481491fae5044d2a10710f55}\label{classrcx_1_1ext_r_c_model_aeafc6f04481491fae5044d2a10710f55}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!cleanFiles@{cleanFiles}}
+\index{cleanFiles@{cleanFiles}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{cleanFiles()}{cleanFiles()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::clean\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3453 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_acd692403cc4dcc136488482a012d1d3c}\label{classrcx_1_1ext_r_c_model_acd692403cc4dcc136488482a012d1d3c}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!closeCapLogFile@{closeCapLogFile}}
+\index{closeCapLogFile@{closeCapLogFile}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{closeCapLogFile()}{closeCapLogFile()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::close\+Cap\+Log\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3171 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a0444f0dead41bc98025a11e68098e378}\label{classrcx_1_1ext_r_c_model_a0444f0dead41bc98025a11e68098e378}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!closeFiles@{closeFiles}}
+\index{closeFiles@{closeFiles}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{closeFiles()}{closeFiles()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::close\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3417 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a9a46bbf3fda8b9e5966f218b844721cc}\label{classrcx_1_1ext_r_c_model_a9a46bbf3fda8b9e5966f218b844721cc}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!computeTables@{computeTables}}
+\index{computeTables@{computeTables}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{computeTables()}{computeTables()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::compute\+Tables (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{wire\+Cnt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{width\+Cnt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{space\+Cnt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{d\+Cnt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4239 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a7f481eea5ba1215504e382a24123d911}\label{classrcx_1_1ext_r_c_model_a7f481eea5ba1215504e382a24123d911}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!createModelTable@{createModelTable}}
+\index{createModelTable@{createModelTable}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{createModelTable()}{createModelTable()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::create\+Model\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{n,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{layer\+Cnt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2265 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a76cb99a6745263f993c4593e3c9a9070}\label{classrcx_1_1ext_r_c_model_a76cb99a6745263f993c4593e3c9a9070}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!findBiggestDatarateIndex@{findBiggestDatarateIndex}}
+\index{findBiggestDatarateIndex@{findBiggestDatarateIndex}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{findBiggestDatarateIndex()}{findBiggestDatarateIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::find\+Biggest\+Datarate\+Index (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4451 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ae228fd1ab8f9fae7532cada01e024134}\label{classrcx_1_1ext_r_c_model_ae228fd1ab8f9fae7532cada01e024134}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!findDatarateIndex@{findDatarateIndex}}
+\index{findDatarateIndex@{findDatarateIndex}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{findDatarateIndex()}{findDatarateIndex()}}
+{\footnotesize\ttfamily int rcx\+::ext\+R\+C\+Model\+::find\+Datarate\+Index (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4456 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a234907ae5afdba7d94beece152b38e07}\label{classrcx_1_1ext_r_c_model_a234907ae5afdba7d94beece152b38e07}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getCapMatrixValues@{getCapMatrixValues}}
+\index{getCapMatrixValues@{getCapMatrixValues}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getCapMatrixValues()}{getCapMatrixValues()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::get\+Cap\+Matrix\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{last\+Node,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2723 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a517290720826fa78b171f17d8a3fa4cb}\label{classrcx_1_1ext_r_c_model_a517290720826fa78b171f17d8a3fa4cb}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getCapValues@{getCapValues}}
+\index{getCapValues@{getCapValues}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getCapValues()}{getCapValues()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::get\+Cap\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{last\+Node,  }\item[{double \&}]{cc1,  }\item[{double \&}]{cc2,  }\item[{double \&}]{fr,  }\item[{double \&}]{tot,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2652 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_af7e5dda4c31b4260d8b88795beada5da}\label{classrcx_1_1ext_r_c_model_af7e5dda4c31b4260d8b88795beada5da}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getCouplingOver@{getCouplingOver}}
+\index{getCouplingOver@{getCouplingOver}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getCouplingOver()}{getCouplingOver()}}
+{\footnotesize\ttfamily double rcx\+::ext\+R\+C\+Model\+::get\+Coupling\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{m\+Under,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{w,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1847 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a0739e7012fd761dbca302356b27035cd}\label{classrcx_1_1ext_r_c_model_a0739e7012fd761dbca302356b27035cd}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getDiagModel@{getDiagModel}}
+\index{getDiagModel@{getDiagModel}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getDiagModel()}{getDiagModel()}}
+{\footnotesize\ttfamily int rcx\+::ext\+R\+C\+Model\+::get\+Diag\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 407 of file ext\+R\+Cap.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a05b1c03593afcf2670903de38602fc10}\label{classrcx_1_1ext_r_c_model_a05b1c03593afcf2670903de38602fc10}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getDiagTables@{getDiagTables}}
+\index{getDiagTables@{getDiagTables}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getDiagTables()}{getDiagTables()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::get\+Diag\+Tables (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{width\+Cnt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{space\+Cnt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4213 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a8676e4f29f8f9461a15208aaa13aeeab}\label{classrcx_1_1ext_r_c_model_a8676e4f29f8f9461a15208aaa13aeeab}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getFringeOver@{getFringeOver}}
+\index{getFringeOver@{getFringeOver}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getFringeOver()}{getFringeOver()}}
+{\footnotesize\ttfamily double rcx\+::ext\+R\+C\+Model\+::get\+Fringe\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{m\+Under,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{w,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1840 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ae86a74191c2a90f88e0496331a13a1de}\label{classrcx_1_1ext_r_c_model_ae86a74191c2a90f88e0496331a13a1de}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getLayerCnt@{getLayerCnt}}
+\index{getLayerCnt@{getLayerCnt}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getLayerCnt()}{getLayerCnt()}}
+{\footnotesize\ttfamily int rcx\+::ext\+R\+C\+Model\+::get\+Layer\+Cnt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 405 of file ext\+R\+Cap.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a666fea2bd03468bbf378b759370627b6}\label{classrcx_1_1ext_r_c_model_a666fea2bd03468bbf378b759370627b6}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getMaxCnt@{getMaxCnt}}
+\index{getMaxCnt@{getMaxCnt}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getMaxCnt()}{getMaxCnt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::get\+Max\+Cnt (\begin{DoxyParamCaption}\item[{int}]{met }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 594 of file ext\+R\+Cap.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_afae534e829e7027d9c35a26be7ea0edf}\label{classrcx_1_1ext_r_c_model_afae534e829e7027d9c35a26be7ea0edf}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getMaxRC@{getMaxRC}}
+\index{getMaxRC@{getMaxRC}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getMaxRC()}{getMaxRC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Max\+RC (\begin{DoxyParamCaption}\item[{int}]{met,  }\item[{int}]{width,  }\item[{int}]{dist }\end{DoxyParamCaption})}
+
+
+
+Definition at line 84 of file extstats.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a67434018b7a20af773e66a791fa2aa23}\label{classrcx_1_1ext_r_c_model_a67434018b7a20af773e66a791fa2aa23}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getMetRCTable@{getMetRCTable}}
+\index{getMetRCTable@{getMetRCTable}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getMetRCTable()}{getMetRCTable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_met_r_c_table}{ext\+Met\+R\+C\+Table}}$\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Met\+R\+C\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{ii }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 402 of file ext\+R\+Cap.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a7b36118a586388fcd94d0a0f2126250b}\label{classrcx_1_1ext_r_c_model_a7b36118a586388fcd94d0a0f2126250b}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getMinRC@{getMinRC}}
+\index{getMinRC@{getMinRC}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getMinRC()}{getMinRC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Min\+RC (\begin{DoxyParamCaption}\item[{int}]{met,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Definition at line 69 of file extstats.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a1e937955efe8f167fb8928987ac49168}\label{classrcx_1_1ext_r_c_model_a1e937955efe8f167fb8928987ac49168}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getModelCnt@{getModelCnt}}
+\index{getModelCnt@{getModelCnt}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getModelCnt()}{getModelCnt()}}
+{\footnotesize\ttfamily int rcx\+::ext\+R\+C\+Model\+::get\+Model\+Cnt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 404 of file ext\+R\+Cap.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a47e97b741ac9da450d27cfd8d3441cbe}\label{classrcx_1_1ext_r_c_model_a47e97b741ac9da450d27cfd8d3441cbe}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getOverFringeRC@{getOverFringeRC}}
+\index{getOverFringeRC@{getOverFringeRC}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getOverFringeRC()}{getOverFringeRC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Over\+Fringe\+RC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1925 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a492a36bcb49267f7f87c1666531c5734}\label{classrcx_1_1ext_r_c_model_a492a36bcb49267f7f87c1666531c5734}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getOverFringeRC@{getOverFringeRC}}
+\index{getOverFringeRC@{getOverFringeRC}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getOverFringeRC()}{getOverFringeRC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Over\+Fringe\+RC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{under\+Met,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{width }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1890 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ae79d303cfb3516446788e8de2ec31474}\label{classrcx_1_1ext_r_c_model_ae79d303cfb3516446788e8de2ec31474}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getOverRC@{getOverRC}}
+\index{getOverRC@{getOverRC}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getOverRC()}{getOverRC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Over\+RC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1854 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_aa7bc48d6a9af13ed0ab00b907499a05d}\label{classrcx_1_1ext_r_c_model_aa7bc48d6a9af13ed0ab00b907499a05d}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getOverUnderFringeRC@{getOverUnderFringeRC}}
+\index{getOverUnderFringeRC@{getOverUnderFringeRC}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getOverUnderFringeRC()}{getOverUnderFringeRC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Over\+Under\+Fringe\+RC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1950 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ad25d109c075b5b052875ef9ba14fffd6}\label{classrcx_1_1ext_r_c_model_ad25d109c075b5b052875ef9ba14fffd6}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getOverUnderIndex@{getOverUnderIndex}}
+\index{getOverUnderIndex@{getOverUnderIndex}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getOverUnderIndex()}{getOverUnderIndex()}}
+{\footnotesize\ttfamily int rcx\+::ext\+R\+C\+Model\+::get\+Over\+Under\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{max\+Cnt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3462 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_abebbc57d2ca63332bca06591676f205f}\label{classrcx_1_1ext_r_c_model_abebbc57d2ca63332bca06591676f205f}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getOverUnderRC@{getOverUnderRC}}
+\index{getOverUnderRC@{getOverUnderRC}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getOverUnderRC()}{getOverUnderRC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Over\+Under\+RC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1879 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a6b944954ff44f3bf4f1143e6ac6aa5ec}\label{classrcx_1_1ext_r_c_model_a6b944954ff44f3bf4f1143e6ac6aa5ec}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getProcess@{getProcess}}
+\index{getProcess@{getProcess}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getProcess()}{getProcess()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_process}{ext\+Process}} $\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2255 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a578950c5e4ad529e58d384362ddf8571}\label{classrcx_1_1ext_r_c_model_a578950c5e4ad529e58d384362ddf8571}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getRCtable@{getRCtable}}
+\index{getRCtable@{getRCtable}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getRCtable()}{getRCtable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::get\+R\+Ctable (\begin{DoxyParamCaption}\item[{Ath\+\_\+\+\_\+array1D$<$ int $>$ $\ast$}]{s\+Table,  }\item[{Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$}]{rc\+Table,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{val\+Type,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{int}]{m\+Under,  }\item[{int}]{m\+Over,  }\item[{int}]{width,  }\item[{double}]{d\+Rate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a33df0fb5a64a162e5317d0e1250ffaaa}\label{classrcx_1_1ext_r_c_model_a33df0fb5a64a162e5317d0e1250ffaaa}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getRCtable@{getRCtable}}
+\index{getRCtable@{getRCtable}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getRCtable()}{getRCtable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::get\+R\+Ctable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{int}]{m\+Under,  }\item[{int}]{Over\+Met,  }\item[{double}]{w,  }\item[{double}]{d\+Rate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a6dd8b7bb04ae3dcf21096cdf2a238460}\label{classrcx_1_1ext_r_c_model_a6dd8b7bb04ae3dcf21096cdf2a238460}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getRes@{getRes}}
+\index{getRes@{getRes}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getRes()}{getRes()}}
+{\footnotesize\ttfamily double rcx\+::ext\+R\+C\+Model\+::get\+Res (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2130 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a7d9099422149d55bce24e7bac50a4047}\label{classrcx_1_1ext_r_c_model_a7d9099422149d55bce24e7bac50a4047}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getRuleFileName@{getRuleFileName}}
+\index{getRuleFileName@{getRuleFileName}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getRuleFileName()}{getRuleFileName()}}
+{\footnotesize\ttfamily char$\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Rule\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 593 of file ext\+R\+Cap.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_afd2e449a080b71d94ce2563844cb6316}\label{classrcx_1_1ext_r_c_model_afd2e449a080b71d94ce2563844cb6316}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getTotCapOverSub@{getTotCapOverSub}}
+\index{getTotCapOverSub@{getTotCapOverSub}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getTotCapOverSub()}{getTotCapOverSub()}}
+{\footnotesize\ttfamily double rcx\+::ext\+R\+C\+Model\+::get\+Tot\+Cap\+Over\+Sub (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1693 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a29dc7e2549ecd567e592aab479720a38}\label{classrcx_1_1ext_r_c_model_a29dc7e2549ecd567e592aab479720a38}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getUnderFringeRC@{getUnderFringeRC}}
+\index{getUnderFringeRC@{getUnderFringeRC}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getUnderFringeRC()}{getUnderFringeRC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Under\+Fringe\+RC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1937 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a3232da16edde5ebab448fea0c00a94fd}\label{classrcx_1_1ext_r_c_model_a3232da16edde5ebab448fea0c00a94fd}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getUnderIndex@{getUnderIndex}}
+\index{getUnderIndex@{getUnderIndex}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getUnderIndex()}{getUnderIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::get\+Under\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3468 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a0dc8e4429c002882834f1e7b75d9839b}\label{classrcx_1_1ext_r_c_model_a0dc8e4429c002882834f1e7b75d9839b}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getUnderRC@{getUnderRC}}
+\index{getUnderRC@{getUnderRC}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getUnderRC()}{getUnderRC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}} $\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Under\+RC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1866 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ac275865ae3343932ae0b3ac6f7f5a901}\label{classrcx_1_1ext_r_c_model_ac275865ae3343932ae0b3ac6f7f5a901}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getVerticalDiagFlag@{getVerticalDiagFlag}}
+\index{getVerticalDiagFlag@{getVerticalDiagFlag}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getVerticalDiagFlag()}{getVerticalDiagFlag()}}
+{\footnotesize\ttfamily bool rcx\+::ext\+R\+C\+Model\+::get\+Vertical\+Diag\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 408 of file ext\+R\+Cap.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a4ba2ae5ec9186de7ee6ddc2cce89f4e7}\label{classrcx_1_1ext_r_c_model_a4ba2ae5ec9186de7ee6ddc2cce89f4e7}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!getWidthDistRCtable@{getWidthDistRCtable}}
+\index{getWidthDistRCtable@{getWidthDistRCtable}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{getWidthDistRCtable()}{getWidthDistRCtable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_width_r_c_table}{ext\+Dist\+Width\+R\+C\+Table}} $\ast$ rcx\+::ext\+R\+C\+Model\+::get\+Width\+Dist\+R\+Ctable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{int}]{m\+Under,  }\item[{int}]{m\+Over,  }\item[{int \&}]{n,  }\item[{double}]{d\+Rate }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4469 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ac76641ab21634c43acc40d4825323bf2}\label{classrcx_1_1ext_r_c_model_ac76641ab21634c43acc40d4825323bf2}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!initCapTables@{initCapTables}}
+\index{initCapTables@{initCapTables}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{initCapTables()}{initCapTables()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_met_r_c_table}{ext\+Met\+R\+C\+Table}} $\ast$ rcx\+::ext\+R\+C\+Model\+::init\+Cap\+Tables (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{layer\+Cnt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{width\+Cnt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 53 of file ext\+Bench\+D\+B.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a590acc07c8ef7e862c04d47705fb8d37}\label{classrcx_1_1ext_r_c_model_a590acc07c8ef7e862c04d47705fb8d37}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!linesDiagUnderBench@{linesDiagUnderBench}}
+\index{linesDiagUnderBench@{linesDiagUnderBench}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{linesDiagUnderBench()}{linesDiagUnderBench()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::lines\+Diag\+Under\+Bench (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$}]{opt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 361 of file ext\+Bench.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ac05502a86fa8a5868c9f215a4eee1ed6}\label{classrcx_1_1ext_r_c_model_ac05502a86fa8a5868c9f215a4eee1ed6}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!linesOverBench@{linesOverBench}}
+\index{linesOverBench@{linesOverBench}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{linesOverBench()}{linesOverBench()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::lines\+Over\+Bench (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$}]{opt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 234 of file ext\+Bench.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_adf902573627ce3ef6cefa58b2f77f07d}\label{classrcx_1_1ext_r_c_model_adf902573627ce3ef6cefa58b2f77f07d}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!linesOverUnderBench@{linesOverUnderBench}}
+\index{linesOverUnderBench@{linesOverUnderBench}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{linesOverUnderBench()}{linesOverUnderBench()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::lines\+Over\+Under\+Bench (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$}]{opt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 425 of file ext\+Bench.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_abd77cef2fd9919ed4314156f7d31a224}\label{classrcx_1_1ext_r_c_model_abd77cef2fd9919ed4314156f7d31a224}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!linesUnderBench@{linesUnderBench}}
+\index{linesUnderBench@{linesUnderBench}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{linesUnderBench()}{linesUnderBench()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::lines\+Under\+Bench (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_main_options}{ext\+Main\+Options}} $\ast$}]{opt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 301 of file ext\+Bench.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a7f03d451f0420ab4d61379956db471f9}\label{classrcx_1_1ext_r_c_model_a7f03d451f0420ab4d61379956db471f9}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!measurePattern@{measurePattern}}
+\index{measurePattern@{measurePattern}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{measurePattern()}{measurePattern()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}}$\ast$ rcx\+::ext\+R\+C\+Model\+::measure\+Pattern (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met,  }\item[{int}]{under\+Met,  }\item[{int}]{over\+Met,  }\item[{double}]{width,  }\item[{double}]{space,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{wire\+Cnt,  }\item[{char $\ast$}]{ou,  }\item[{bool}]{read\+Cap\+Log }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ae3da192cd14781710bc695abc19e3ad1}\label{classrcx_1_1ext_r_c_model_ae3da192cd14781710bc695abc19e3ad1}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!measurePatternVar@{measurePatternVar}}
+\index{measurePatternVar@{measurePatternVar}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{measurePatternVar()}{measurePatternVar()}}
+{\footnotesize\ttfamily bool rcx\+::ext\+R\+C\+Model\+::measure\+Pattern\+Var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m,  }\item[{double}]{top\+\_\+width,  }\item[{double}]{bot\+\_\+width,  }\item[{double}]{thickness,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{wire\+Cnt,  }\item[{char $\ast$}]{wires\+Name\+Suffix,  }\item[{double}]{res = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4090 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_af41a0b1483f0fbcafa92099e07632ca1}\label{classrcx_1_1ext_r_c_model_af41a0b1483f0fbcafa92099e07632ca1}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!measureResistance@{measureResistance}}
+\index{measureResistance@{measureResistance}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{measureResistance()}{measureResistance()}}
+{\footnotesize\ttfamily double rcx\+::ext\+R\+C\+Model\+::measure\+Resistance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m,  }\item[{double}]{ro,  }\item[{double}]{top\+\_\+widthR,  }\item[{double}]{bot\+\_\+widthR,  }\item[{double}]{thicknessR }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4070 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a0c75cbe715934e876cac99c04505f9c7}\label{classrcx_1_1ext_r_c_model_a0c75cbe715934e876cac99c04505f9c7}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!mkFileNames@{mkFileNames}}
+\index{mkFileNames@{mkFileNames}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{mkFileNames()}{mkFileNames()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::mk\+File\+Names (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m,  }\item[{char $\ast$}]{wires\+Name\+Suffix }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2975 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a7806ac918010dbff6da65da027f9866c}\label{classrcx_1_1ext_r_c_model_a7806ac918010dbff6da65da027f9866c}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!mkNet\_prefix@{mkNet\_prefix}}
+\index{mkNet\_prefix@{mkNet\_prefix}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{mkNet\_prefix()}{mkNet\_prefix()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::mk\+Net\+\_\+prefix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m,  }\item[{const char $\ast$}]{wires\+Name\+Suffix }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3039 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a4a58e409308d57d86d3132634909b689}\label{classrcx_1_1ext_r_c_model_a4a58e409308d57d86d3132634909b689}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!mkPatternFile@{mkPatternFile}}
+\index{mkPatternFile@{mkPatternFile}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{mkPatternFile()}{mkPatternFile()}}
+{\footnotesize\ttfamily F\+I\+LE $\ast$ rcx\+::ext\+R\+C\+Model\+::mk\+Pattern\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3090 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a7b5a9fb512a5c2b030b7235a4c470c0b}\label{classrcx_1_1ext_r_c_model_a7b5a9fb512a5c2b030b7235a4c470c0b}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!openCapLogFile@{openCapLogFile}}
+\index{openCapLogFile@{openCapLogFile}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{openCapLogFile()}{openCapLogFile()}}
+{\footnotesize\ttfamily bool rcx\+::ext\+R\+C\+Model\+::open\+Cap\+Log\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3114 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a32af3ec29c554441aa109c655b9b9f18}\label{classrcx_1_1ext_r_c_model_a32af3ec29c554441aa109c655b9b9f18}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!openFile@{openFile}}
+\index{openFile@{openFile}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{openFile()}{openFile()}}
+{\footnotesize\ttfamily F\+I\+LE $\ast$ rcx\+::ext\+R\+C\+Model\+::open\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{top\+Dir,  }\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{suffix,  }\item[{const char $\ast$}]{permissions }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2624 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_aee65c4630f42954e4e1fd93e3becb49e}\label{classrcx_1_1ext_r_c_model_aee65c4630f42954e4e1fd93e3becb49e}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!openSolverFile@{openSolverFile}}
+\index{openSolverFile@{openSolverFile}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{openSolverFile()}{openSolverFile()}}
+{\footnotesize\ttfamily F\+I\+LE $\ast$ rcx\+::ext\+R\+C\+Model\+::open\+Solver\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3104 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a0761f2bd670defa7170f6b607948151b}\label{classrcx_1_1ext_r_c_model_a0761f2bd670defa7170f6b607948151b}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!printCommentLine@{printCommentLine}}
+\index{printCommentLine@{printCommentLine}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{printCommentLine()}{printCommentLine()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::print\+Comment\+Line (\begin{DoxyParamCaption}\item[{char}]{comment\+Char,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4179 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ab00ac79028d3a910f7dd3ee757b9cca3}\label{classrcx_1_1ext_r_c_model_ab00ac79028d3a910f7dd3ee757b9cca3}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!readCap@{readCap}}
+\index{readCap@{readCap}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{readCap()}{readCap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::read\+Cap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{wire\+Cnt,  }\item[{double}]{cc1,  }\item[{double}]{cc2,  }\item[{double}]{fr,  }\item[{double}]{tot }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a76ae1b400544052fb3c77cbd84d74e4d}\label{classrcx_1_1ext_r_c_model_a76ae1b400544052fb3c77cbd84d74e4d}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!readCap@{readCap}}
+\index{readCap@{readCap}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{readCap()}{readCap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrcx_1_1ext_dist_r_c}{ext\+Dist\+RC}}$\ast$ rcx\+::ext\+R\+C\+Model\+::read\+Cap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{wire\+Cnt,  }\item[{double}]{w,  }\item[{double}]{s,  }\item[{double}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ac7973eadac49c136faced7fd47b63b37}\label{classrcx_1_1ext_r_c_model_ac7973eadac49c136faced7fd47b63b37}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!readCapacitance@{readCapacitance}}
+\index{readCapacitance@{readCapacitance}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{readCapacitance()}{readCapacitance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::read\+Capacitance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{wire\+Num,  }\item[{double \&}]{cc1,  }\item[{double \&}]{cc2,  }\item[{double \&}]{fr,  }\item[{double \&}]{tot,  }\item[{bool}]{read\+Cap\+Log,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a7fa5ff87507257142b0f9d6cdc0064aa}\label{classrcx_1_1ext_r_c_model_a7fa5ff87507257142b0f9d6cdc0064aa}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!readCapacitanceBench@{readCapacitanceBench}}
+\index{readCapacitanceBench@{readCapacitanceBench}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{readCapacitanceBench()}{readCapacitanceBench()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::read\+Capacitance\+Bench (\begin{DoxyParamCaption}\item[{bool}]{read\+Cap\+Log,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2786 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_af9f666b965b70adcf8243539b79a57be}\label{classrcx_1_1ext_r_c_model_af9f666b965b70adcf8243539b79a57be}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!readCapacitanceBenchDiag@{readCapacitanceBenchDiag}}
+\index{readCapacitanceBenchDiag@{readCapacitanceBenchDiag}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{readCapacitanceBenchDiag()}{readCapacitanceBenchDiag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::read\+Capacitance\+Bench\+Diag (\begin{DoxyParamCaption}\item[{bool}]{read\+Cap\+Log,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2866 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_aef8b2fe803c56d8596a2c56f6f180070}\label{classrcx_1_1ext_r_c_model_aef8b2fe803c56d8596a2c56f6f180070}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!readHeaderAndWidth@{readHeaderAndWidth}}
+\index{readHeaderAndWidth@{readHeaderAndWidth}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{readHeaderAndWidth()}{readHeaderAndWidth()}}
+{\footnotesize\ttfamily Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ rcx\+::ext\+R\+C\+Model\+::read\+Header\+And\+Width (\begin{DoxyParamCaption}\item[{Ath\+\_\+\+\_\+parser $\ast$}]{parser,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \&}]{met,  }\item[{const char $\ast$}]{ou\+Key,  }\item[{const char $\ast$}]{w\+Key,  }\item[{bool}]{bin,  }\item[{bool}]{ignore }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3746 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a93811021fff95edcf30fac9cc560c775}\label{classrcx_1_1ext_r_c_model_a93811021fff95edcf30fac9cc560c775}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!readMetalHeader@{readMetalHeader}}
+\index{readMetalHeader@{readMetalHeader}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{readMetalHeader()}{readMetalHeader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::read\+Metal\+Header (\begin{DoxyParamCaption}\item[{Ath\+\_\+\+\_\+parser $\ast$}]{parser,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} \&}]{met,  }\item[{const char $\ast$}]{keyword,  }\item[{bool}]{bin,  }\item[{bool}]{ignore }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3694 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a22e06dd29e5383cd83354d7308ee8614}\label{classrcx_1_1ext_r_c_model_a22e06dd29e5383cd83354d7308ee8614}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!readRules@{readRules}}
+\index{readRules@{readRules}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{readRules()}{readRules()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::read\+Rules (\begin{DoxyParamCaption}\item[{Ath\+\_\+\+\_\+parser $\ast$}]{parser,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{m,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{ii,  }\item[{const char $\ast$}]{ou\+Key,  }\item[{const char $\ast$}]{w\+Key,  }\item[{bool}]{over,  }\item[{bool}]{under,  }\item[{bool}]{bin,  }\item[{bool}]{diag,  }\item[{bool}]{ignore,  }\item[{double}]{db\+Factor = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3764 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_af1f9fc416f3cc653b07a21f50c745770}\label{classrcx_1_1ext_r_c_model_af1f9fc416f3cc653b07a21f50c745770}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!readRules@{readRules}}
+\index{readRules@{readRules}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{readRules()}{readRules()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool rcx\+::ext\+R\+C\+Model\+::read\+Rules (\begin{DoxyParamCaption}\item[{char $\ast$}]{name,  }\item[{bool}]{binary,  }\item[{bool}]{over,  }\item[{bool}]{under,  }\item[{bool}]{over\+Under,  }\item[{bool}]{diag,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{corner\+Cnt = {\ttfamily 0},  }\item[{const \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} $\ast$}]{corner\+Table = {\ttfamily nullptr},  }\item[{double}]{db\+Factor = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3868 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a0b963d55436376006cc8e1346fecae4a}\label{classrcx_1_1ext_r_c_model_a0b963d55436376006cc8e1346fecae4a}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!runSolver@{runSolver}}
+\index{runSolver@{runSolver}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{runSolver()}{runSolver()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::run\+Solver (\begin{DoxyParamCaption}\item[{const char $\ast$}]{solver\+Option }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3426 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a933604f00caa1ab2ee10bb93a2156949}\label{classrcx_1_1ext_r_c_model_a933604f00caa1ab2ee10bb93a2156949}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!runWiresSolver@{runWiresSolver}}
+\index{runWiresSolver@{runWiresSolver}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{runWiresSolver()}{runWiresSolver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::run\+Wires\+Solver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{net\+Id,  }\item[{int}]{shape\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 594 of file ext\+Bench.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a30e573bbc1cbb1fd959c445038603173}\label{classrcx_1_1ext_r_c_model_a30e573bbc1cbb1fd959c445038603173}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!setDataRateTable@{setDataRateTable}}
+\index{setDataRateTable@{setDataRateTable}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{setDataRateTable()}{setDataRateTable()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::set\+Data\+Rate\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{met }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2277 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ae9ba475426d444a68c41cb82c093e8dc}\label{classrcx_1_1ext_r_c_model_ae9ba475426d444a68c41cb82c093e8dc}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!setDiagModel@{setDiagModel}}
+\index{setDiagModel@{setDiagModel}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{setDiagModel()}{setDiagModel()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::set\+Diag\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 409 of file ext\+R\+Cap.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a34398113afbc44f56c84b2b4dbc7bd69}\label{classrcx_1_1ext_r_c_model_a34398113afbc44f56c84b2b4dbc7bd69}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!setDiagUnderTables@{setDiagUnderTables}}
+\index{setDiagUnderTables@{setDiagUnderTables}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{setDiagUnderTables()}{setDiagUnderTables()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::set\+Diag\+Under\+Tables (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4408 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a62d9770e6dc3823ac70f89dc7478cee3}\label{classrcx_1_1ext_r_c_model_a62d9770e6dc3823ac70f89dc7478cee3}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!setExtMain@{setExtMain}}
+\index{setExtMain@{setExtMain}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{setExtMain()}{setExtMain()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::set\+Ext\+Main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_main}{ext\+Main}} $\ast$}]{x }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2250 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a8ff55e10686e2e26672e672c4eae7f26}\label{classrcx_1_1ext_r_c_model_a8ff55e10686e2e26672e672c4eae7f26}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!setLayerCnt@{setLayerCnt}}
+\index{setLayerCnt@{setLayerCnt}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{setLayerCnt()}{setLayerCnt()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::set\+Layer\+Cnt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 406 of file ext\+R\+Cap.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a0a4edc2c152fea21ab85f80600f7462b}\label{classrcx_1_1ext_r_c_model_a0a4edc2c152fea21ab85f80600f7462b}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::set\+Options (\begin{DoxyParamCaption}\item[{const char $\ast$}]{top\+Dir,  }\item[{const char $\ast$}]{pattern,  }\item[{bool}]{write\+Files,  }\item[{bool}]{read\+Files,  }\item[{bool}]{run\+Solver }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3387 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a710f7daf24ccebcc5274c737057590fe}\label{classrcx_1_1ext_r_c_model_a710f7daf24ccebcc5274c737057590fe}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::set\+Options (\begin{DoxyParamCaption}\item[{const char $\ast$}]{top\+Dir,  }\item[{const char $\ast$}]{pattern,  }\item[{bool}]{write\+Files,  }\item[{bool}]{read\+Files,  }\item[{bool}]{run\+Solver,  }\item[{bool}]{keep\+File }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3354 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a23fefe561db513f25153b3a424971a78}\label{classrcx_1_1ext_r_c_model_a23fefe561db513f25153b3a424971a78}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!setProcess@{setProcess}}
+\index{setProcess@{setProcess}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{setProcess()}{setProcess()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::set\+Process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_process}{ext\+Process}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2260 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a82bce0af6f0a8a6b845caa3b2eff20a1}\label{classrcx_1_1ext_r_c_model_a82bce0af6f0a8a6b845caa3b2eff20a1}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!setRuleFileName@{setRuleFileName}}
+\index{setRuleFileName@{setRuleFileName}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{setRuleFileName()}{setRuleFileName()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::set\+Rule\+File\+Name (\begin{DoxyParamCaption}\item[{char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 592 of file ext\+R\+Cap.\+h.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a544fd30c8c5cace2c51433d7447c8f86}\label{classrcx_1_1ext_r_c_model_a544fd30c8c5cace2c51433d7447c8f86}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!singleLineOver@{singleLineOver}}
+\index{singleLineOver@{singleLineOver}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{singleLineOver()}{singleLineOver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::single\+Line\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{width\+Cnt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a897cd1c219f56ef0a78eed4542aef5d2}\label{classrcx_1_1ext_r_c_model_a897cd1c219f56ef0a78eed4542aef5d2}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!solverStep@{solverStep}}
+\index{solverStep@{solverStep}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{solverStep()}{solverStep()}}
+{\footnotesize\ttfamily bool rcx\+::ext\+R\+C\+Model\+::solver\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4080 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ad84c95f6901adbf9d4e1cbc81aa3c11a}\label{classrcx_1_1ext_r_c_model_ad84c95f6901adbf9d4e1cbc81aa3c11a}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!threeLineOver@{threeLineOver}}
+\index{threeLineOver@{threeLineOver}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{threeLineOver()}{threeLineOver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::three\+Line\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{width\+Cnt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{space\+Cnt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a9be6b9cad42fd692f8754fd9f45083bb}\label{classrcx_1_1ext_r_c_model_a9be6b9cad42fd692f8754fd9f45083bb}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!twoLineOver@{twoLineOver}}
+\index{twoLineOver@{twoLineOver}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{twoLineOver()}{twoLineOver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} rcx\+::ext\+R\+C\+Model\+::two\+Line\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{width\+Cnt,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{space\+Cnt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_af3d6ff5e6fdbd1cac7a19a240d74db06}\label{classrcx_1_1ext_r_c_model_af3d6ff5e6fdbd1cac7a19a240d74db06}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!writeBenchWires@{writeBenchWires}}
+\index{writeBenchWires@{writeBenchWires}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{writeBenchWires()}{writeBenchWires()}}
+{\footnotesize\ttfamily int rcx\+::ext\+R\+C\+Model\+::write\+Bench\+Wires (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3206 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a40754b41dc623355cca05e6a41595547}\label{classrcx_1_1ext_r_c_model_a40754b41dc623355cca05e6a41595547}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!writeBenchWires\_DB@{writeBenchWires\_DB}}
+\index{writeBenchWires\_DB@{writeBenchWires\_DB}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{writeBenchWires\_DB()}{writeBenchWires\_DB()}}
+{\footnotesize\ttfamily int rcx\+::ext\+R\+C\+Model\+::write\+Bench\+Wires\+\_\+\+DB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 577 of file ext\+Bench\+D\+B.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a97e821396070613d3492f4f363ff39a6}\label{classrcx_1_1ext_r_c_model_a97e821396070613d3492f4f363ff39a6}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!writeBenchWires\_DB\_diag@{writeBenchWires\_DB\_diag}}
+\index{writeBenchWires\_DB\_diag@{writeBenchWires\_DB\_diag}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{writeBenchWires\_DB\_diag()}{writeBenchWires\_DB\_diag()}}
+{\footnotesize\ttfamily int rcx\+::ext\+R\+C\+Model\+::write\+Bench\+Wires\+\_\+\+D\+B\+\_\+diag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+
+
+Definition at line 836 of file ext\+Bench\+D\+B.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_a026722f5de63271bd0772fcf320f4868}\label{classrcx_1_1ext_r_c_model_a026722f5de63271bd0772fcf320f4868}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!writeBenchWires\_DB\_res@{writeBenchWires\_DB\_res}}
+\index{writeBenchWires\_DB\_res@{writeBenchWires\_DB\_res}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{writeBenchWires\_DB\_res()}{writeBenchWires\_DB\_res()}}
+{\footnotesize\ttfamily int rcx\+::ext\+R\+C\+Model\+::write\+Bench\+Wires\+\_\+\+D\+B\+\_\+res (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure }\end{DoxyParamCaption})}
+
+write\+Bench\+Wires\+\_\+\+D\+B\+\_\+res routine generates the pattern geometries to capture the effect of spacing wiring neighbors on both sides of wire of interest on the per unit resistance in the calibration flow.
+
+\begin{DoxyReturn}{Returns}
+number of wires in the pattern geometries 
+\end{DoxyReturn}
+
+
+Definition at line 496 of file ext\+Bench\+D\+B.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_ab00975573f01b740a3c02c7babf2be32}\label{classrcx_1_1ext_r_c_model_ab00975573f01b740a3c02c7babf2be32}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!writeRules@{writeRules}}
+\index{writeRules@{writeRules}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{writeRules()}{writeRules()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::write\+Rules (\begin{DoxyParamCaption}\item[{char $\ast$}]{name,  }\item[{bool}]{binary }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3588 of file ext\+R\+Cmodel.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_r_c_model_af7ea13296ab2d2f8546efad2afa75ae7}\label{classrcx_1_1ext_r_c_model_af7ea13296ab2d2f8546efad2afa75ae7}} 
+\index{rcx::extRCModel@{rcx::extRCModel}!writeWires2@{writeWires2}}
+\index{writeWires2@{writeWires2}!rcx::extRCModel@{rcx::extRCModel}}
+\doxysubsubsection{\texorpdfstring{writeWires2()}{writeWires2()}}
+{\footnotesize\ttfamily void rcx\+::ext\+R\+C\+Model\+::write\+Wires2 (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{\mbox{\hyperlink{classrcx_1_1ext_measure}{ext\+Measure}} $\ast$}]{measure,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{wire\+Cnt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3176 of file ext\+R\+Cmodel.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/include/rcx/\mbox{\hyperlink{ext_r_cap_8h}{ext\+R\+Cap.\+h}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{ext_bench_8cpp}{ext\+Bench.\+cpp}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{ext_bench_d_b_8cpp}{ext\+Bench\+D\+B.\+cpp}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{ext_r_cmodel_8cpp}{ext\+R\+Cmodel.\+cpp}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{extstats_8cpp}{extstats.\+cpp}}\end{DoxyCompactItemize}

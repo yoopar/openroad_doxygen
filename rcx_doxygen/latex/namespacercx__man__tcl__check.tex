@@ -1,0 +1,200 @@
+\hypertarget{namespacercx__man__tcl__check}{}\doxysection{rcx\+\_\+man\+\_\+tcl\+\_\+check Namespace Reference}
+\label{namespacercx__man__tcl__check}\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_abf923343913346284c6f82935f85b505}{path}} = os.\+getcwd()
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_aa3a0fc776da1c05e61e8932039371a3b}{module\+\_\+dir}} = os.\+path.\+dirname(\mbox{\hyperlink{namespacercx__man__tcl__check_abf923343913346284c6f82935f85b505}{path}})
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_a2ef97b2191303cb5067420ebeb701891}{module}} = os.\+path.\+basename(\mbox{\hyperlink{namespacercx__man__tcl__check_aa3a0fc776da1c05e61e8932039371a3b}{module\+\_\+dir}})
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_a327a619cfc8625672a5c7d86badf6105}{or\+\_\+home}} = os.\+path.\+dirname(os.\+path.\+dirname(os.\+path.\+dirname(\mbox{\hyperlink{namespacercx__man__tcl__check_abf923343913346284c6f82935f85b505}{path}})))
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_afe3829b27fe36fa344c3599eadcaabb9}{help\+\_\+dict}}
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_ac0be20804a03388e9e6375f86f808d70}{proc\+\_\+dict}}
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_a29ba5503477cf49d65465ae314b6e42e}{readme\+\_\+dict}}
+\item 
+list \mbox{\hyperlink{namespacercx__man__tcl__check_a7bb3870eecc456e8d0042648c5534766}{exclude}} = \mbox{[}\char`\"{}sta\char`\"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacercx__man__tcl__check_a6a0b90d695d2cfeb435affd1b885378d}{include}} = \mbox{[}\char`\"{}./src/odb/src/db/odb.\+tcl\char`\"{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_a83de879216bbba49e9eb2f3dcfea83a3}{tool\+\_\+dir}} = os.\+path.\+dirname(os.\+path.\+dirname(\mbox{\hyperlink{namespacercx__man__tcl__check_abf923343913346284c6f82935f85b505}{path}}))
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_afa948698c81a4c9f6d2747e8b67dd383}{content}} = f.\+read()
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_ab6942d51059fa7d729688ad9e492173e}{matches}} = extract\+\_\+help(\mbox{\hyperlink{namespacercx__man__tcl__check_afa948698c81a4c9f6d2747e8b67dd383}{content}})
+\item 
+list \mbox{\hyperlink{namespacercx__man__tcl__check_aa3d3557ca0cc6f4d5765a08d8fb9422f}{results}} = \mbox{[}x for x in extract\+\_\+tcl\+\_\+code(open(\mbox{\hyperlink{namespacercx__man__tcl__check_abf923343913346284c6f82935f85b505}{path}}).read()) if \char`\"{}gui\+::\char`\"{} not in x\mbox{]}
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_ad9d084d07b06d11aa1a3a19d14060774}{h}}
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_a825f4beb153a4b6695ffa43f0783982e}{p}}
+\item 
+\mbox{\hyperlink{namespacercx__man__tcl__check_aebc24f2fd4d4e80208d5ecb574dc842a}{r}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacercx__man__tcl__check_afa948698c81a4c9f6d2747e8b67dd383}\label{namespacercx__man__tcl__check_afa948698c81a4c9f6d2747e8b67dd383}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!content@{content}}
+\index{content@{content}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{content}{content}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+content = f.\+read()}
+
+
+
+Definition at line 36 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_a7bb3870eecc456e8d0042648c5534766}\label{namespacercx__man__tcl__check_a7bb3870eecc456e8d0042648c5534766}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!exclude@{exclude}}
+\index{exclude@{exclude}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{exclude}{exclude}}
+{\footnotesize\ttfamily list rcx\+\_\+man\+\_\+tcl\+\_\+check.\+exclude = \mbox{[}\char`\"{}sta\char`\"{}\mbox{]}}
+
+
+
+Definition at line 17 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_ad9d084d07b06d11aa1a3a19d14060774}\label{namespacercx__man__tcl__check_ad9d084d07b06d11aa1a3a19d14060774}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!h@{h}}
+\index{h@{h}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+h}
+
+
+
+Definition at line 61 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_afe3829b27fe36fa344c3599eadcaabb9}\label{namespacercx__man__tcl__check_afe3829b27fe36fa344c3599eadcaabb9}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!help\_dict@{help\_dict}}
+\index{help\_dict@{help\_dict}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{help\_dict}{help\_dict}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+help\+\_\+dict}
+
+
+
+Definition at line 14 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_a6a0b90d695d2cfeb435affd1b885378d}\label{namespacercx__man__tcl__check_a6a0b90d695d2cfeb435affd1b885378d}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!include@{include}}
+\index{include@{include}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{include}{include}}
+{\footnotesize\ttfamily list rcx\+\_\+man\+\_\+tcl\+\_\+check.\+include = \mbox{[}\char`\"{}./src/odb/src/db/odb.\+tcl\char`\"{}\mbox{]}}
+
+
+
+Definition at line 18 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_ab6942d51059fa7d729688ad9e492173e}\label{namespacercx__man__tcl__check_ab6942d51059fa7d729688ad9e492173e}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!matches@{matches}}
+\index{matches@{matches}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{matches}{matches}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+matches = extract\+\_\+help(\mbox{\hyperlink{namespacercx__man__tcl__check_afa948698c81a4c9f6d2747e8b67dd383}{content}})}
+
+
+
+Definition at line 37 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_a2ef97b2191303cb5067420ebeb701891}\label{namespacercx__man__tcl__check_a2ef97b2191303cb5067420ebeb701891}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!module@{module}}
+\index{module@{module}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{module}{module}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+module = os.\+path.\+basename(\mbox{\hyperlink{namespacercx__man__tcl__check_aa3a0fc776da1c05e61e8932039371a3b}{module\+\_\+dir}})}
+
+
+
+Definition at line 9 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_aa3a0fc776da1c05e61e8932039371a3b}\label{namespacercx__man__tcl__check_aa3a0fc776da1c05e61e8932039371a3b}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!module\_dir@{module\_dir}}
+\index{module\_dir@{module\_dir}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{module\_dir}{module\_dir}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+module\+\_\+dir = os.\+path.\+dirname(\mbox{\hyperlink{namespacercx__man__tcl__check_abf923343913346284c6f82935f85b505}{path}})}
+
+
+
+Definition at line 8 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_a327a619cfc8625672a5c7d86badf6105}\label{namespacercx__man__tcl__check_a327a619cfc8625672a5c7d86badf6105}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!or\_home@{or\_home}}
+\index{or\_home@{or\_home}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{or\_home}{or\_home}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+or\+\_\+home = os.\+path.\+dirname(os.\+path.\+dirname(os.\+path.\+dirname(\mbox{\hyperlink{namespacercx__man__tcl__check_abf923343913346284c6f82935f85b505}{path}})))}
+
+
+
+Definition at line 11 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_a825f4beb153a4b6695ffa43f0783982e}\label{namespacercx__man__tcl__check_a825f4beb153a4b6695ffa43f0783982e}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!p@{p}}
+\index{p@{p}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+p}
+
+
+
+Definition at line 61 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_abf923343913346284c6f82935f85b505}\label{namespacercx__man__tcl__check_abf923343913346284c6f82935f85b505}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!path@{path}}
+\index{path@{path}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+path = os.\+getcwd()}
+
+
+
+Definition at line 7 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_ac0be20804a03388e9e6375f86f808d70}\label{namespacercx__man__tcl__check_ac0be20804a03388e9e6375f86f808d70}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!proc\_dict@{proc\_dict}}
+\index{proc\_dict@{proc\_dict}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{proc\_dict}{proc\_dict}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+proc\+\_\+dict}
+
+
+
+Definition at line 14 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_aebc24f2fd4d4e80208d5ecb574dc842a}\label{namespacercx__man__tcl__check_aebc24f2fd4d4e80208d5ecb574dc842a}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!r@{r}}
+\index{r@{r}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+r}
+
+
+
+Definition at line 61 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_a29ba5503477cf49d65465ae314b6e42e}\label{namespacercx__man__tcl__check_a29ba5503477cf49d65465ae314b6e42e}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!readme\_dict@{readme\_dict}}
+\index{readme\_dict@{readme\_dict}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{readme\_dict}{readme\_dict}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+readme\+\_\+dict}
+
+
+
+Definition at line 14 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_aa3d3557ca0cc6f4d5765a08d8fb9422f}\label{namespacercx__man__tcl__check_aa3d3557ca0cc6f4d5765a08d8fb9422f}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!results@{results}}
+\index{results@{results}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily list rcx\+\_\+man\+\_\+tcl\+\_\+check.\+results = \mbox{[}x for x in extract\+\_\+tcl\+\_\+code(open(\mbox{\hyperlink{namespacercx__man__tcl__check_abf923343913346284c6f82935f85b505}{path}}).read()) if \char`\"{}gui\+::\char`\"{} not in x\mbox{]}}
+
+
+
+Definition at line 52 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+
+\mbox{\Hypertarget{namespacercx__man__tcl__check_a83de879216bbba49e9eb2f3dcfea83a3}\label{namespacercx__man__tcl__check_a83de879216bbba49e9eb2f3dcfea83a3}} 
+\index{rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}!tool\_dir@{tool\_dir}}
+\index{tool\_dir@{tool\_dir}!rcx\_man\_tcl\_check@{rcx\_man\_tcl\_check}}
+\doxysubsubsection{\texorpdfstring{tool\_dir}{tool\_dir}}
+{\footnotesize\ttfamily rcx\+\_\+man\+\_\+tcl\+\_\+check.\+tool\+\_\+dir = os.\+path.\+dirname(os.\+path.\+dirname(\mbox{\hyperlink{namespacercx__man__tcl__check_abf923343913346284c6f82935f85b505}{path}}))}
+
+
+
+Definition at line 25 of file rcx\+\_\+man\+\_\+tcl\+\_\+check.\+py.
+

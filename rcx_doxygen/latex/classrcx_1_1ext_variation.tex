@@ -1,0 +1,193 @@
+\hypertarget{classrcx_1_1ext_variation}{}\doxysection{rcx\+::ext\+Variation Class Reference}
+\label{classrcx_1_1ext_variation}\index{rcx::extVariation@{rcx::extVariation}}
+
+
+{\ttfamily \#include $<$extprocess.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_variation_ad772f58b99a594b5f78136eda5b46aaa}{print\+Variation}} (F\+I\+LE $\ast$fp, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} n)
+\item 
+Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ \mbox{\hyperlink{classrcx_1_1ext_variation_a7da72e0a889af89bceac33982741a222}{get\+Width\+Table}} ()
+\item 
+Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ \mbox{\hyperlink{classrcx_1_1ext_variation_a2c717ede47c2bdfb39c08471cf9b47c3}{get\+Space\+Table}} ()
+\item 
+Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ \mbox{\hyperlink{classrcx_1_1ext_variation_abbdcac23e97a5542075afc646bdf9868}{get\+Data\+Rate\+Table}} ()
+\item 
+Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ \mbox{\hyperlink{classrcx_1_1ext_variation_a99ef32cf553a70760a5296fa9fe87eb8}{get\+P\+Table}} ()
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_variation_a4cde8004e7bc9a5f9ded05aff24074b4}{get\+Top\+Width}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} ii, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} jj)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_variation_ab8020beef3d02bb1205b7d2162112b80}{get\+Top\+WidthR}} (\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} ii, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} jj)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_variation_a269c18385933e8fc2d3bbe943b0796fa}{get\+Bottom\+Width}} (double w, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} d\+Index)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_variation_af72cf2c7730385139f65d9b09fa34e4f}{get\+Bottom\+WidthR}} (double w, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} d\+Index)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_variation_ab5b1e340dd3ae8c19bcae09c512ba7d7}{get\+Thickness}} (double w, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} d\+Index)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_variation_a97237313c514b1f502cf78b78f965dda}{get\+ThicknessR}} (double w, \mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}} d\+Index)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_variation_a47cd7d5ad7f25ff0e65c87371e8666a3}{getP}} (double w)
+\item 
+double \mbox{\hyperlink{classrcx_1_1ext_variation_a04ff37c263df2e301dd8ccacc4045a39}{interpolate}} (double w, Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$X, Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$Y)
+\item 
+void \mbox{\hyperlink{classrcx_1_1ext_variation_a77f1bc77430634c52068acfc0dd29db8}{set\+Logger}} (Logger $\ast$logger)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 202 of file extprocess.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrcx_1_1ext_variation_a269c18385933e8fc2d3bbe943b0796fa}\label{classrcx_1_1ext_variation_a269c18385933e8fc2d3bbe943b0796fa}} 
+\index{rcx::extVariation@{rcx::extVariation}!getBottomWidth@{getBottomWidth}}
+\index{getBottomWidth@{getBottomWidth}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{getBottomWidth()}{getBottomWidth()}}
+{\footnotesize\ttfamily double rcx\+::ext\+Variation\+::get\+Bottom\+Width (\begin{DoxyParamCaption}\item[{double}]{w,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{d\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line 756 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_af72cf2c7730385139f65d9b09fa34e4f}\label{classrcx_1_1ext_variation_af72cf2c7730385139f65d9b09fa34e4f}} 
+\index{rcx::extVariation@{rcx::extVariation}!getBottomWidthR@{getBottomWidthR}}
+\index{getBottomWidthR@{getBottomWidthR}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{getBottomWidthR()}{getBottomWidthR()}}
+{\footnotesize\ttfamily double rcx\+::ext\+Variation\+::get\+Bottom\+WidthR (\begin{DoxyParamCaption}\item[{double}]{w,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{d\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line 761 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_abbdcac23e97a5542075afc646bdf9868}\label{classrcx_1_1ext_variation_abbdcac23e97a5542075afc646bdf9868}} 
+\index{rcx::extVariation@{rcx::extVariation}!getDataRateTable@{getDataRateTable}}
+\index{getDataRateTable@{getDataRateTable}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{getDataRateTable()}{getDataRateTable()}}
+{\footnotesize\ttfamily Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ rcx\+::ext\+Variation\+::get\+Data\+Rate\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 786 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_a47cd7d5ad7f25ff0e65c87371e8666a3}\label{classrcx_1_1ext_variation_a47cd7d5ad7f25ff0e65c87371e8666a3}} 
+\index{rcx::extVariation@{rcx::extVariation}!getP@{getP}}
+\index{getP@{getP}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{getP()}{getP()}}
+{\footnotesize\ttfamily double rcx\+::ext\+Variation\+::getP (\begin{DoxyParamCaption}\item[{double}]{w }\end{DoxyParamCaption})}
+
+
+
+Definition at line 799 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_a99ef32cf553a70760a5296fa9fe87eb8}\label{classrcx_1_1ext_variation_a99ef32cf553a70760a5296fa9fe87eb8}} 
+\index{rcx::extVariation@{rcx::extVariation}!getPTable@{getPTable}}
+\index{getPTable@{getPTable}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{getPTable()}{getPTable()}}
+{\footnotesize\ttfamily Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ rcx\+::ext\+Variation\+::get\+P\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 791 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_a2c717ede47c2bdfb39c08471cf9b47c3}\label{classrcx_1_1ext_variation_a2c717ede47c2bdfb39c08471cf9b47c3}} 
+\index{rcx::extVariation@{rcx::extVariation}!getSpaceTable@{getSpaceTable}}
+\index{getSpaceTable@{getSpaceTable}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{getSpaceTable()}{getSpaceTable()}}
+{\footnotesize\ttfamily Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ rcx\+::ext\+Variation\+::get\+Space\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 781 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_ab5b1e340dd3ae8c19bcae09c512ba7d7}\label{classrcx_1_1ext_variation_ab5b1e340dd3ae8c19bcae09c512ba7d7}} 
+\index{rcx::extVariation@{rcx::extVariation}!getThickness@{getThickness}}
+\index{getThickness@{getThickness}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{getThickness()}{getThickness()}}
+{\footnotesize\ttfamily double rcx\+::ext\+Variation\+::get\+Thickness (\begin{DoxyParamCaption}\item[{double}]{w,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{d\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line 746 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_a97237313c514b1f502cf78b78f965dda}\label{classrcx_1_1ext_variation_a97237313c514b1f502cf78b78f965dda}} 
+\index{rcx::extVariation@{rcx::extVariation}!getThicknessR@{getThicknessR}}
+\index{getThicknessR@{getThicknessR}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{getThicknessR()}{getThicknessR()}}
+{\footnotesize\ttfamily double rcx\+::ext\+Variation\+::get\+ThicknessR (\begin{DoxyParamCaption}\item[{double}]{w,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{d\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line 751 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_a4cde8004e7bc9a5f9ded05aff24074b4}\label{classrcx_1_1ext_variation_a4cde8004e7bc9a5f9ded05aff24074b4}} 
+\index{rcx::extVariation@{rcx::extVariation}!getTopWidth@{getTopWidth}}
+\index{getTopWidth@{getTopWidth}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{getTopWidth()}{getTopWidth()}}
+{\footnotesize\ttfamily double rcx\+::ext\+Variation\+::get\+Top\+Width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{ii,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{jj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 766 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_ab8020beef3d02bb1205b7d2162112b80}\label{classrcx_1_1ext_variation_ab8020beef3d02bb1205b7d2162112b80}} 
+\index{rcx::extVariation@{rcx::extVariation}!getTopWidthR@{getTopWidthR}}
+\index{getTopWidthR@{getTopWidthR}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{getTopWidthR()}{getTopWidthR()}}
+{\footnotesize\ttfamily double rcx\+::ext\+Variation\+::get\+Top\+WidthR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{ii,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{jj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 771 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_a7da72e0a889af89bceac33982741a222}\label{classrcx_1_1ext_variation_a7da72e0a889af89bceac33982741a222}} 
+\index{rcx::extVariation@{rcx::extVariation}!getWidthTable@{getWidthTable}}
+\index{getWidthTable@{getWidthTable}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{getWidthTable()}{getWidthTable()}}
+{\footnotesize\ttfamily Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$ rcx\+::ext\+Variation\+::get\+Width\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 776 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_a04ff37c263df2e301dd8ccacc4045a39}\label{classrcx_1_1ext_variation_a04ff37c263df2e301dd8ccacc4045a39}} 
+\index{rcx::extVariation@{rcx::extVariation}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{interpolate()}{interpolate()}}
+{\footnotesize\ttfamily double rcx\+::ext\+Variation\+::interpolate (\begin{DoxyParamCaption}\item[{double}]{w,  }\item[{Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$}]{X,  }\item[{Ath\+\_\+\+\_\+array1D$<$ double $>$ $\ast$}]{Y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 717 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_ad772f58b99a594b5f78136eda5b46aaa}\label{classrcx_1_1ext_variation_ad772f58b99a594b5f78136eda5b46aaa}} 
+\index{rcx::extVariation@{rcx::extVariation}!printVariation@{printVariation}}
+\index{printVariation@{printVariation}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{printVariation()}{printVariation()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Variation\+::print\+Variation (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp,  }\item[{\mbox{\hyperlink{namespacercx_ae2718213c896c18a46b77d741604f2b5}{uint}}}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 867 of file extprocess.\+cpp.
+
+\mbox{\Hypertarget{classrcx_1_1ext_variation_a77f1bc77430634c52068acfc0dd29db8}\label{classrcx_1_1ext_variation_a77f1bc77430634c52068acfc0dd29db8}} 
+\index{rcx::extVariation@{rcx::extVariation}!setLogger@{setLogger}}
+\index{setLogger@{setLogger}!rcx::extVariation@{rcx::extVariation}}
+\doxysubsubsection{\texorpdfstring{setLogger()}{setLogger()}}
+{\footnotesize\ttfamily void rcx\+::ext\+Variation\+::set\+Logger (\begin{DoxyParamCaption}\item[{Logger $\ast$}]{logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 220 of file extprocess.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/include/rcx/\mbox{\hyperlink{extprocess_8h}{extprocess.\+h}}\item 
+/ext\+\_\+ssd/\+Open\+R\+O\+A\+D/\+Open\+R\+O\+A\+D/src/rcx/src/\mbox{\hyperlink{extprocess_8cpp}{extprocess.\+cpp}}\end{DoxyCompactItemize}
